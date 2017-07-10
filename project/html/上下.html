@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-	<script src="../js/jquery-3.1.1.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/上下.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+<script src="../js/jquery-3.1.1.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/上下.css">
+
 	<title></title>
 </head>
 <body >
@@ -47,7 +49,15 @@
 	</div>
 	<script>
 		
-			
+		// $(document).ready(function(){
+ 	// 	 $(".ys_img1").click(function(){
+ 	// 	 	$(".ys_img1").css("display","none");
+		// 	$(".ys_imgx").css("display","inline");
+		// 	$(".ys_input3").css("display","inline");
+  //  		 $(".ys_input1").animate({top:'-100px'});
+  //  		 $(".ys_input2").animate({top:'-100px'});
+  // });
+ 	// 	});
 
 		
 		$(".ys_img1").click(function(){
@@ -74,19 +84,21 @@
 		})
 			
 
-		
-
-		$(".menu").click(function(){
-			$(".ys_footer2").css("top","67%");
-			$(".menu").css("display","none");
+		$(document).ready(function(){
+ 		 $(".menu").click(function(){
+ 		 	$(".menu").css("display","none");
 			$(".menu1").css("display","inline");
-			console.log("-=-=-=-=-=-=-=")
-		})
-		$(".menu1").click(function(){
-			$(".ys_footer2").css("top","100%");
-			$(".menu1").css("display","none");
+   		 $(".ys_footer2").animate({top:'500px'});
+  });
+});
+			$(document).ready(function(){
+ 		 $(".menu1").click(function(){
+ 		 	$(".menu1").css("display","none");
 			$(".menu").css("display","inline");
-		})
+   		 $(".ys_footer2").animate({top:'1000px'});
+  });
+});
+
 	</script>
 </body>
 </html>
