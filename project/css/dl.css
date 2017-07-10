@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	/*去掉点击高亮效果-主要针对移动端*/
-	-webkit-tap-highlight-color:transparent;
+	/*-webkit-tap-highlight-color:transparent;*/
 	/*设置元素宽高计算方式*/
 	box-sizing:border-box;
 	-webkit-box-sizing:border-box;
@@ -29,4 +29,11 @@ input{
 }
 ul,li{
 	list-style-type: none;/*去掉列表样式*/
+}
+.login_bg{
+	width: 100%;
+	/*min-height: 1900px;*/
+	/*min-height: 640px;*/
+	margin:0 auto;
+	background-image: url(../images/login-back-3.jpg);
 }
