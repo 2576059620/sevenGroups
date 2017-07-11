@@ -39,7 +39,16 @@ ul,ol{
 margin: 0 auto;
 }
 .ys_boss>.ys_banner{
+<<<<<<< HEAD
+	position: fixed;
+	left: 0;
+	top: 0;
+	max-width: 640px;
+	min-width: 320px;
+	margin-left:  33.2%;
+=======
 	
+>>>>>>> 3a8734e2eea6e89e19143281b49b9a0a1aa88e54
 	height: 44px;
 	width: 100%;
 	z-index: 1000;
@@ -47,10 +56,13 @@ margin: 0 auto;
 	align-items: center;
 	background-color: black;
 	box-shadow: 0px 1px 3px ;
+<<<<<<< HEAD
+=======
 	min-width: 320px;
 	max-width: 640px;
 	
 
+>>>>>>> 3a8734e2eea6e89e19143281b49b9a0a1aa88e54
 }
 .ys_boss>.ys_banner>a{
 	height: 100%;
@@ -94,12 +106,13 @@ margin: 0 auto;
 /*尾部*/
 .ys_footer{
 	position: fixed;
-	
 	bottom:0%;
 	height: 50px;
 	width: 100%;
 	z-index: 1000;
 	display: flex;
+	max-width: 640px;
+	min-width: 320px;
 	align-items: center;
 	background-color: black;
 	box-shadow: 0px 1px 3px ;
@@ -149,13 +162,18 @@ margin: 0 auto;
 	background-color: black;
 	color: white;
 	font-size: 1.2rem;
-	position: fixed;
-	top: 100%;
+	position: absolute;
+	bottom: -35%;
 }
-.ys_footer2>li{
+.ys_footer2 li{
 	color: white;
+	padding-left: 10px;
 }
 .ys_footer2>a{
 	color: white;
-	padding: 10px;
+	margin-top:  5px;
+
+}
+.ys_footer2>.foot{
+	padding-bottom: 10px;
 }
