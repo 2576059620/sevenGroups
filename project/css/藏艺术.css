@@ -91,6 +91,120 @@ margin: 0 auto;
 .ys_imgx{
 	display: none;
 }
+/*中部*/
+.center{
+	width: 100%;
+	background-color: white;
+
+}
+.center>.center_img1{
+	width: 100%;
+	height: 250px;
+}
+.center>.center_input1{
+
+	height: 40px;
+	width: 200px;
+	margin: 0 auto;
+	position: fixed;
+	top: 100px;
+	
+	
+
+}
+.center>.center_input1>input{
+	height: 100%;
+	width:100%;	
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 30px;
+	color: white;
+	font-size: 1.1rem;
+	margin: 0 auto;
+}
+.center>.center_div1{
+	text-align: center;
+	font-size: 1.2rem;
+	position: absolute;
+	top: 180px;
+	margin: 0 auto;
+	margin-left: 50px;
+}
+.center>.center_div2{
+	height: 222px;
+	width: 333px;
+	
+	margin-top: 40px;
+	margin: 0 auto;
+}
+.center>.center_div2>img{
+	width: 100%;
+	height: 100%;
+}
+.center>.center_div3{
+	margin-left: 40px;
+	margin-top: 50px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.center>.center_div4{
+	color: rgba(0,0,0,0.7);
+	margin-top: 20px;
+	margin-left: 40px;
+	font-style:italic;
+
+}
+.center>.center_div5{
+	margin-left: 40px;
+	margin-top: 10px;
+}
+.center>.center_div5>img{
+	height: 16px;
+	width: 12px;
+}
+.center>.center_div6{
+	height: 222px;
+	width: 333px;
+	margin-top: 40px;
+	margin: 0 auto;
+}
+.center>.center_div6>img{
+	width: 100%;
+	height: 100%;
+}
+.center_div7{
+	background-color: white;
+	margin-top: 3px;
+	height: 60px;
+	
+}
+.center_div7>a{
+	font-size:1.7rem;
+	padding: 20px;
+	color: rgb(60,148,139);
+}
+.center_div8{
+	height: 330px;
+	width: 100%;
+	
+	padding-top: 20px;
+}
+.center_div8>img{
+	
+	width: 100%;
+}
+.ys_boss>hr{
+	color: rgb(238,238,238);
+	background-color:  rgb(238,238,238);
+}
+.center_div7>img{
+	height: 540px;
+	width: 100%;
+	margin: 0 auto;
+}
+.center_div9{
+	width: 100%;
+	height: 80px;
+}
 /*尾部*/
 .ys_footer{
 	position: fixed;
@@ -158,4 +272,5 @@ margin: 0 auto;
 .ys_footer2>a{
 	color: white;
 	padding: 10px;
+
 }
