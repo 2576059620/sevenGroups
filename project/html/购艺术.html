@@ -2,11 +2,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-	<script src="../js/jquery-3.1.1.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/上下.css">
-	<title>购艺术</title>
-	<script src="../js/上下.js"></script>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+<script src="../js/jquery-3.1.1.js"></script>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/购艺术.css">
+
+	<title></title>
 </head>
 <body >
 	<div class="ys_boss">
@@ -16,10 +18,11 @@
 			<input type="text" placeholder="搜索艺术家或艺术品" class="ys_input3">
 			<img src="../images/yuan.jpg" class="ys_img1" >
 			<img src="../images/X.jpg" class="ys_imgx">
-		</header>
 		
+		
+		</header>
 		<nav>
-			<table>
+			<table class="menu">
 				<tr>
 					<th>
 						<botton></botton>
@@ -52,8 +55,8 @@
 		</nav>
 	
 		<footer class="ys_footer">
-			<ul class="menu"> 购艺术 ▲</ul>
-			<ul class="menu1"> 购艺术 ▼</ul>
+			<ul class="menu"> 购艺术▲</ul>
+			<ul class="menu1"> 购艺术▼</ul>
 			<a href="https://www.ywart.com/buy?page=1" class="ys_img3"><img src="../images/筛选.jpg" ></a>
 			<a href="https://www.ywart.com/login" class="ys_img4"><img src="../images/购物车.jpg" ></a>
 			<a href="https://www.ywart.com/login"  class="ys_img5"><img src="../images/我.jpg"></a>
@@ -72,20 +75,9 @@
 				<li>数字美术馆</li>
 			</a>
 		</ul>
+		<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
 	</div>
-	<script>
-		function clickMenu (menus, menuClassName) {
-			menus.on('click', function(){
-				$.each(menus, function () {
-					$(this).removeClass(menuClassName);
-				})
-				$(this).addClass(menuClassName);
-			})
-		}
-		var $mainMenuSpan  = $(".menu button");
-		clickMenu($mainMenuSpan,'show-bottomBo');
-	</script>
-<!-- 	<script>		
+	<script>		
 		$(".ys_img1").click(function(){
 			$('.ys_input1').css('display', 'none');
 			$(".ys_input2").css("display","none");
@@ -122,6 +114,8 @@
   });
 });
 
-	</script> -->
+			
+		
+	</script>
 </body>
 </html>

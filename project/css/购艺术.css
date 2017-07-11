@@ -1,0 +1,130 @@
+/*头部*/
+.ys_boss{
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+	background-color: rgb(238,238,238);
+margin: 0 auto;
+}
+.ys_boss>.ys_banner{
+	
+	height: 44px;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	background-color: black;
+	box-shadow: 0px 1px 3px ;
+	min-width: 320px;
+	max-width: 640px;
+	
+
+}
+.ys_boss>.ys_banner>a{
+	height: 100%;
+	width: 45%;
+	padding:0px;
+	margin:0px;
+}
+.ys_input1{
+	height: 100%;
+	width: 100%;
+	background-color: rgb(63,68,74);
+	color: white;
+	font-size: 1.1rem;
+	/*position: absolute;*/
+	
+
+}
+.ys_input2{
+	height: 100%;
+	width: 100%;
+	font-size: 1.1rem;
+	background-color: rgb(255,255,255);
+	/*position: absolute;*/
+	
+}
+.ys_input3{
+	height: 100%;
+	width: 90%;
+	display: none;
+	background-color: white;
+	color:black;
+	font-size: 1.1rem;
+	padding-left: 9px;
+}
+.ys_img1{
+	
+	}
+.ys_imgx{
+	display: none;
+}
+/*尾部*/
+.ys_footer{
+	position: fixed;
+	
+	bottom:0%;
+	height: 50px;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	background-color: black;
+	box-shadow: 0px 1px 3px ;
+	min-width: 320px;
+	max-width: 640px;
+}
+
+.ys_img3{
+	height: 100%;
+	width: 20%;	
+	padding-top: 3px;
+}
+.ys_img4{
+	height: 100%;
+	width: 20%;
+	padding-top: 2px;
+}
+.ys_img5{
+	height: 100%;
+	width: 20%;
+	padding-top: 5px;
+}
+.menu{
+	height: 100%;
+	width: 35%;
+	background-color: rgb(60,148,139);
+	color: white;
+	font-size: 1.3rem;
+	text-align: center;
+	line-height: 50px;
+
+}
+.menu1{
+	height: 100%;
+	width: 35%;
+	background-color: rgb(60,148,139);
+	color: white;
+	font-size: 1.3rem;
+	text-align: center;
+	line-height: 50px;
+	display: none;
+}
+.ys_footer2{
+	list-style: none;
+	height: 200px;
+	width: 35%;
+	background-color: black;
+	color: white;
+	font-size: 1.2rem;
+	position: fixed;
+	top: 100%;
+}
+.ys_footer2>li{
+	color: white;
+}
+.ys_footer2>a{
+	color: white;
+	padding: 10px;
+}
