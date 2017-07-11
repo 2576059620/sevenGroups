@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+<script src="../js/jquery-3.1.1.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/上下.css">
+
+	<title></title>
+</head>
+<body >
+	<div class="ys_boss">
+		<header class="ys_banner">		
+			<a href="https://www.ywart.com/login" class="ys_a"><input type="submit" value="创建账号"  class="ys_input1"></a>
+			<a href="https://www.ywart.com/login" class="ys_a"><input type="submit" value="登录" class="ys_input2"></a>
+			<input type="text" placeholder="搜索艺术家或艺术品" class="ys_input3">
+			<img src="../images/yuan.jpg" class="ys_img1" >
+			<img src="../images/X.jpg" class="ys_imgx">
+		
+		
+		</header>
+		<footer class="ys_footer">
+			<ul class="menu"> 购艺术▲</ul>
+			<ul class="menu1"> 购艺术▼</ul>
+			<a href="https://www.ywart.com/buy?page=1" class="ys_img3"><img src="../images/筛选.jpg" ></a>
+			<a href="https://www.ywart.com/login" class="ys_img4"><img src="../images/购物车.jpg" ></a>
+			<a href="https://www.ywart.com/login"  class="ys_img5"><img src="../images/我.jpg"></a>
+		</footer>
+		<ul class="ys_footer2">
+			<a href="">
+				<li>购艺术</li>
+			</a>
+			<a href="">
+				<li>造艺</li>
+			</a>
+			<a href="">
+				<li>藏艺术</li>
+			</a>
+			<a href="">
+				<li>数字美术馆</li>
+			</a>
+		</ul>
+		<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
+	</div>
+	<script>
+		
+		// $(document).ready(function(){
+ 	// 	 $(".ys_img1").click(function(){
+ 	// 	 	$(".ys_img1").css("display","none");
+		// 	$(".ys_imgx").css("display","inline");
+		// 	$(".ys_input3").css("display","inline");
+  //  		 $(".ys_input1").animate({top:'-100px'});
+  //  		 $(".ys_input2").animate({top:'-100px'});
+  // });
+ 	// 	});
+
+		
+		$(".ys_img1").click(function(){
+			$('.ys_input1').css('display', 'none');
+			$(".ys_input2").css("display","none");
+			$(".ys_input3").css("display","inline");
+			// $(".ys_img1").attr('src',"X.jpg"); 
+			$(".ys_img1").css("display","none");
+			$(".ys_imgx").css("display","inline");
+			$(".ys_a").css("display","none");
+			
+			
+		})
+		$(".ys_imgx").click(function(){
+			$('.ys_input1').css('display', 'inline');
+			$(".ys_input2").css("display","inline");
+			$(".ys_input3").css("display","none");
+			// $(".ys_img1").attr('src',"X.jpg"); 
+			$(".ys_img1").css("display","inline");
+			$(".ys_imgx").css("display","none");
+			$(".ys_a").css("display","inline");
+			
+			
+		})
+			
+
+		$(document).ready(function(){
+ 		 $(".menu").click(function(){
+ 		 	$(".menu").css("display","none");
+			$(".menu1").css("display","inline");
+   		 $(".ys_footer2").animate({top:'500px'});
+  });
+});
+			$(document).ready(function(){
+ 		 $(".menu1").click(function(){
+ 		 	$(".menu1").css("display","none");
+			$(".menu").css("display","inline");
+   		 $(".ys_footer2").animate({top:'1000px'});
+  });
+});
+
+	</script>
+</body>
+</html>
