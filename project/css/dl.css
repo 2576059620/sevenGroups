@@ -10,7 +10,7 @@
 }
 /*设置统一的字体*/
 body{
-	font-size: 14px;
+	font-size: 10px;
 	font-family: "微软雅黑";
 	color: #333;
 }
@@ -45,7 +45,7 @@ ul,li{
 	width: 100%;
 	margin: 0 auto;
 }
-.login_box>form>a{
+form>a{
 	color:rgb(60,148,139);
 	/*text-align: right; */
 	margin-left: 220px;
@@ -66,6 +66,7 @@ hr{
 	height: 30px;
 	border:1px solid transparent;
 	position: relative;
+	opacity: 0.5;
 }
 .divider>p{
 	width: 30px;
@@ -78,4 +79,15 @@ hr{
 	text-align: center;
 	top:0px;
 	background-color: white;
+	opacity: 0.8;
+}
+.account{
+	text-align: center;
+	
+}
+.registered{
+	color:rgb(60,148,139);
+	position: absolute;
+	top: 187px;
+	left: 215px;
 }
