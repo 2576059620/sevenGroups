@@ -21,7 +21,7 @@ $(".ys_img1").click(function(){
  		 	$(".menu").click(function(){
  		 		$(".menu").css("display","none");
 				$(".menu1").css("display","inline");
-   		 		$(".ys_footer2").animate({top:'320px'});
+   		 		$(".ys_footer2").animate({bottom:'490px'});
  			 });
 		});
 		$(document).ready(function(){

@@ -1,9 +1,17 @@
 body{
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+#setting{
+	height: 100%;
+	width: 100%;
 	background-image: url(../images/damIndex.png);
 	background-repeat: no-repeat;
-	background-size: 300% 99.8%;
+	background-size: 300% 100%;
 	background-attachment: fixed;
-	background-position: 36% 0%;
+	background-position: 36% 200%;
 }
 header{
 	text-align: center;
@@ -125,6 +133,12 @@ a>div{
 		right: 2px;	
 	}
 }
+nav{
+	height: 100%;
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+}
 nav>#nav{
 	min-height: 35px;
 	height: 10px;
@@ -135,7 +149,11 @@ nav>#nav{
 	right: -5px;
 	background-color: black;
 	background-image: url(../images/house.png);
-	background-size: 65% 70%;
+	background-size: 58% 70%;
 	background-repeat: no-repeat;
-	background-position: 6px 4px;
+	background-position: 7px 4px;
+}
+nav{
+	margin-bottom: 60%;
+	height: 50px;
 }
