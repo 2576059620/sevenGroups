@@ -14,17 +14,20 @@ $(".ys_img1").click(function(){
 			$(".ys_img1").css("display","inline");
 			$(".ys_imgx").css("display","none");
 			$(".ys_a").css("display","inline");
-			
-//底部点击事件	
-		})
-		$(".menu").click(function(){
-			$(".ys_footer2").css("top","67%");
-			$(".menu").css("display","none");
-			$(".menu1").css("display","inline");
-			console.log("-=-=-=-=-=-=-=")
-		})
-		$(".menu1").click(function(){
-			$(".ys_footer2").css("top","100%");
-			$(".menu1").css("display","none");
-			$(".menu").css("display","inline");
-		})
+		})	
+	
+		//底部点击事件
+		$(document).ready(function(){
+ 		 	$(".menu").click(function(){
+ 		 		$(".menu").css("display","none");
+				$(".menu1").css("display","inline");
+   		 		$(".ys_footer2").animate({top:'320px'});
+ 			 });
+		});
+		$(document).ready(function(){
+ 		 	$(".menu1").click(function(){
+ 		 		$(".menu1").css("display","none");
+				$(".menu").css("display","inline");
+   		 		$(".ys_footer2").animate({top:'1000px'});
+  			});
+		});
