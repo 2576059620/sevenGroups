@@ -126,11 +126,16 @@ a>div{
 	}
 }
 nav>#nav{
-	height: 32px;
-	width: 40px;
+	min-height: 35px;
+	height: 10px;
 	border: 1px solid white;
 	border-radius: 3px;
 	position: fixed;
-	top: 50px;
+	bottom: 75px;
 	right: -5px;
+	background-color: black;
+	background-image: url(../images/house.png);
+	background-size: 65% 70%;
+	background-repeat: no-repeat;
+	background-position: 6px 4px;
 }
