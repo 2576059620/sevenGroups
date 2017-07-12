@@ -1,130 +1,68 @@
-/*头部*/
-.ys_boss{
+.nav{
 	width: 100%;
-	max-width: 640px;
-	min-width: 320px;
-	margin: 0 auto;
-	background-color: rgb(238,238,238);
-margin: 0 auto;
-}
-.ys_boss>.ys_banner{
-	
-	height: 44px;
-	width: 100%;
-	z-index: 1000;
-	display: flex;
-	align-items: center;
-	background-color: black;
-	box-shadow: 0px 1px 3px ;
-	min-width: 320px;
-	max-width: 640px;
-	
-
-}
-.ys_boss>.ys_banner>a{
-	height: 100%;
-	width: 45%;
-	padding:0px;
-	margin:0px;
-}
-.ys_input1{
-	height: 100%;
-	width: 100%;
-	background-color: rgb(63,68,74);
+	height: 140px;
+	background-image: url(../images/Buy_Mobile_Bgi01.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	color: white;
-	font-size: 1.1rem;
-	/*position: absolute;*/
-	
-
 }
-.ys_input2{
+ul{
 	height: 100%;
 	width: 100%;
-	font-size: 1.1rem;
-	background-color: rgb(255,255,255);
-	/*position: absolute;*/
-	
+	padding: 15px;
 }
-.ys_input3{
-	height: 100%;
-	width: 90%;
-	display: none;
+li{
+	float: left;
+	margin-top: 5px;
+}
+li button{
+	background-color: transparent;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	height: 35px;
+	width: 85px;
+	margin-left: 10px;
+}
+.show-bottomBo{
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 8px;
+}
+
+.nav1{
+	width: 100%;
 	background-color: white;
-	color:black;
-	font-size: 1.1rem;
-	padding-left: 9px;
+	height: 45px;
 }
-.ys_img1{
-	
-	}
-.ys_imgx{
-	display: none;
+.nav1 *{
+	color: rgb(170,170,170);
+	font-size: 14px;
+	display: inline-block;
+	padding-top: 7px;
 }
-/*尾部*/
-.ys_footer{
-	position: fixed;
-	
-	bottom:0%;
-	height: 50px;
-	width: 100%;
-	z-index: 1000;
-	display: flex;
-	align-items: center;
-	background-color: black;
-	box-shadow: 0px 1px 3px ;
-	min-width: 320px;
-	max-width: 640px;
+.nav1 div{
+	margin-left: 15px;
 }
-
-.ys_img3{
-	height: 100%;
-	width: 20%;	
-	padding-top: 3px;
+.nav1>.right{	
+	width: 50%;
+	text-align: right;
 }
-.ys_img4{
-	height: 100%;
-	width: 20%;
-	padding-top: 2px;
+.biserial{
+	height: 15px;
+	width: 15px;
+	background-image: url(../images/multi_active.svg);
+	margin-right: 10px;
 }
-.ys_img5{
-	height: 100%;
-	width: 20%;
-	padding-top: 5px;
+.single_row{
+	height: 15px;
+	width: 15px;
+	background-image: url(../images/single_column.svg);
+	margin-right: 10px;
 }
-.menu{
-	height: 100%;
-	width: 35%;
-	background-color: rgb(60,148,139);
-	color: white;
-	font-size: 1.3rem;
-	text-align: center;
-	line-height: 50px;
-
-}
-.menu1{
-	height: 100%;
-	width: 35%;
-	background-color: rgb(60,148,139);
-	color: white;
-	font-size: 1.3rem;
-	text-align: center;
-	line-height: 50px;
-	display: none;
-}
-.ys_footer2{
-	list-style: none;
-	height: 200px;
-	width: 35%;
-	background-color: black;
-	color: white;
-	font-size: 1.2rem;
-	position: fixed;
-	top: 100%;
-}
-.ys_footer2>li{
-	color: white;
-}
-.ys_footer2>a{
-	color: white;
-	padding: 10px;
+.filtrate{
+	width: 45px;
+	border-left: 1px solid rgb(220,220,220);
+	color: black;
 }
