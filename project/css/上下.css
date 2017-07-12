@@ -37,7 +37,6 @@ ul,ol{
 }
 /*头部*/
 .ys_boss{
-	
 	width: 100%;
 	max-width: 640px;
 	min-width: 320px;
@@ -95,7 +94,6 @@ ul,ol{
 /*尾部*/
 .ys_footer{
 	position: fixed;
-	
 	bottom:0%;
 	height: 50px;
 	width: 100%;

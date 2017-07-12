@@ -47,4 +47,23 @@
 		clickMenu($mainMenuSpan,'show-bottomBo');
 
 	})
+
+	$(document).ready(function(){
+ 		 $(".time").click(function(){
+ 		 	$(".time").css("display","none");
+			$(".time1").css("display","inline");
+ 		});
+	});
+	$(document).ready(function(){
+ 		$(".time1").click(function(){
+ 		 	$(".time1").css("display","none");
+			$(".time2").css("display","inline");
+  		});
+	});
+	$(document).ready(function(){
+ 		$(".time2").click(function(){
+ 		 	$(".time2").css("display","none");
+			$(".time1").css("display","inline");
+  		});
+	});
 		

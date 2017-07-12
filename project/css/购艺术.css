@@ -66,3 +66,15 @@ li button{
 	border-left: 1px solid rgb(220,220,220);
 	color: black;
 }
+.time1{
+	display: none;
+	font-size: 14px;
+	display: none;
+	color: black;
+}
+.time2{
+	display: none;
+	font-size: 14px;
+	display: none;
+	color: black;
+}
