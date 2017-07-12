@@ -36,7 +36,7 @@ ul,ol{
 	min-width: 320px;
 	margin: 0 auto;
 	background-color: rgb(238,238,238);
-margin: 0 auto;
+
 }
 .ys_boss>.ys_banner{
 	
@@ -109,11 +109,46 @@ margin: 0 auto;
 	margin-top: 30px;
 	text-align:center;
 }
-.center>.center_text2{
+.center_text2{
 	font-size: 0.9rem;
 	color:rgb(119,119,119);
 	margin-top: 30px;
 	margin-left: 20px;
+}
+
+.center_nav{
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: white;
+}
+.center_nav>.center_nav1{
+	display: flex;
+	justify-content: space-around;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+.center_nav>.center_nav1>.center_nav_friends{
+	margin: 0 auto;
+	width: 40%;
+}
+.center_nav>.center_nav1>.center_nav_friends>img{
+	width: 100%;
+	height: 200px;
+	margin: 0 auto;
+}
+.center_nav>.center_nav1>.center_nav_friends>div>p{
+	color: rgb(60,148,139);
+	font-size: 1.3rem;
+}
+.top{
+	margin:auto;
+	border:1px solid silver;
+	height: 40px;
+	width: 50px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 1.3rem;
 }
 /*尾部*/
 .footer{
