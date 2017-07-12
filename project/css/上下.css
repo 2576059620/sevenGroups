@@ -37,16 +37,15 @@ ul,ol{
 }
 /*头部*/
 .ys_boss{
-	
 	width: 100%;
 	max-width: 640px;
 	min-width: 320px;
-	margin: 0 auto;
 	background-color: rgb(238,238,238);
+	margin: 0 auto;
 }
 .ys_boss>.ys_banner{
 	position: fixed;
-	left: 0;
+	
 	top: 0;
 	height: 44px;
 	width: 100%;
