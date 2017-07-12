@@ -1,4 +1,4 @@
-// $(function () {
+$(function () {
 	function help(el) {
 		console.log(el);
 		var help = el.nextElementSibling;
@@ -13,4 +13,4 @@
 		}
 		
 	}
-// })
+})
