@@ -25,6 +25,7 @@ ul>.help>span{
 }
 .help_display *{
 	padding-top: 5px;
+	margin-left: 5%;
 }
 .box_buttom{
 	border-bottom:1px solid rgb(238,238,238);
