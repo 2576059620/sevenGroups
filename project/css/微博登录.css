@@ -14,7 +14,9 @@ body{
 	font-family: "微软雅黑";
 	color: #333;
 	background-color:#d6dbdd;
-
+	max-width: 640px;
+	min-width: 320px;
+	margin:auto;
 }
 a{
 	color: #333;
@@ -117,3 +119,4 @@ form>.img1_box>.img2{
 .hint{
 	font-size: 1px;
 }
+
