@@ -2,13 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-
-<script src="../js/jquery-3.1.1.js"></script>
-<link rel="stylesheet" href="../css/base.css">
-<link rel="stylesheet" href="../css/购艺术.css">
-
-	<title></title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<script src="../js/jquery-3.1.1.js"></script>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/上下.css">
+	<link rel="stylesheet" href="../css/购艺术.css">
+	<script src="../js/上下.js"></script>
+	<script src="../js/购艺术.js"></script>
+	<title>购艺术</title>
 </head>
 <body >
 	<div class="ys_boss">
@@ -17,41 +18,29 @@
 			<a href="https://www.ywart.com/login" class="ys_a"><input type="submit" value="登录" class="ys_input2"></a>
 			<input type="text" placeholder="搜索艺术家或艺术品" class="ys_input3">
 			<img src="../images/yuan.jpg" class="ys_img1" >
-			<img src="../images/X.jpg" class="ys_imgx">
-		
-		
+			<img src="../images/X.jpg" class="ys_imgx">		
 		</header>
-		<nav>
-			<table class="menu">
-				<tr>
-					<th>
-						<botton></botton>
-					</th>
-					<th>
-						<botton></botton>
-					</th>
-					<th>
-						<botton></botton>
-					</th>
-					<th>
-						<botton></botton>
-					</th>
-				</tr>
-				<tr>
-					<th>
-						<botton></botton>
-					</th>
-					<th>
-						<botton></botton>
-					</th>
-					<th>
-						<botton></botton>
-					</th>
-					<th>
-						<botton></botton>
-					</th>
-				</tr>
-			</table>
+
+		<nav class="nav">
+			<ul class="select">
+				<li><button class="show-bottomBo">全部</button></li>
+				<li><button>油画</button></li>
+				<li><button>版画</button></li>
+				<li><button>水墨</button></li><br><br><br>
+				<li><button>水彩(粉)</button></li>
+				<li><button>雕塑</button></li>
+				<li><button>摄影</button></li>
+				<li><button>其他</button></li>
+			</ul>
+		</nav>
+		<nav class="nav1">
+			<div class="time">上架时间 ▼</div>
+			<div class="cost">价格 ▼</div>
+			<div class="right">
+				<p class="biserial"></p>
+				<p class="single_row"></p>
+				<p class="filtrate">筛选</p>
+			</div>
 		</nav>
 	
 		<footer class="ys_footer">
@@ -75,47 +64,7 @@
 				<li>数字美术馆</li>
 			</a>
 		</ul>
-		<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
 	</div>
-	<script>		
-		$(".ys_img1").click(function(){
-			$('.ys_input1').css('display', 'none');
-			$(".ys_input2").css("display","none");
-			$(".ys_input3").css("display","inline");
-			// $(".ys_img1").attr('src',"X.jpg"); 
-			$(".ys_img1").css("display","none");
-			$(".ys_imgx").css("display","inline");
-			$(".ys_a").css("display","none");
-			
-		})
-		$(".ys_imgx").click(function(){
-			$('.ys_input1').css('display', 'inline');
-			$(".ys_input2").css("display","inline");
-			$(".ys_input3").css("display","none");
-			// $(".ys_img1").attr('src',"X.jpg"); 
-			$(".ys_img1").css("display","inline");
-			$(".ys_imgx").css("display","none");
-			$(".ys_a").css("display","inline");		
-		})
-			
-
-		$(document).ready(function(){
- 		 $(".menu").click(function(){
- 		 	$(".menu").css("display","none");
-			$(".menu1").css("display","inline");
-   		 $(".ys_footer2").animate({top:'500px'});
-  });
-});
-			$(document).ready(function(){
- 		 $(".menu1").click(function(){
- 		 	$(".menu1").css("display","none");
-			$(".menu").css("display","inline");
-   		 $(".ys_footer2").animate({top:'1000px'});
-  });
-});
-
-			
-		
-	</script>
 </body>
+<!-- <script src="../js/购艺术.js"></script> -->
 </html>
