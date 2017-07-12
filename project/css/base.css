@@ -30,3 +30,31 @@ input{
 ul,li{
 	list-style-type: none;/*去掉列表样式*/
 }
+
+/*当页面中出现布局极其类似，只是位置稍微有些变化的，可以使用组合的样式，进行代码的简写*/
+.w_50{
+	width: 50%;
+	display: block;
+}
+.w_50>img{
+	width: 100%;
+	display: block;
+}
+.f_left{
+	float: left;
+}
+.f_right{
+	float:right;
+}
+.b_left{
+	border-left: 1px solid #e0e0e0;
+}
+.b_right{
+	border-right: 1px solid #e0e0e0;
+}
+.b_bottom{
+	border-bottom: 1px solid #e0e0e0;
+}
+.clear_f{
+	overflow: hidden;
+}
