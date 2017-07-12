@@ -86,13 +86,19 @@ hr{
 }
 .account{
 	text-align: center;
-	
+	display: inline-block;
+}
+.reg{
+	position: absolute;
+	top: 190px;
+	right: 170px;
 }
 .registered{
 	color:rgb(60,148,139);
 	position: absolute;
-	top: 187px;
-	left: 215px;
+	right: 130px;
+	top: 190px;
+	display: inline-block;
 }
 .three_img1{
 	margin:auto;
@@ -108,7 +114,7 @@ hr{
 }
 .icon_three{
 	margin:auto;
-	border:1px solid black;
 	margin-top: 20px;
-	margin-left:30px;
+	margin-left:50px;
+	border:1px solid black;
 }
