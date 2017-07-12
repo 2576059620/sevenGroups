@@ -4,7 +4,6 @@
 				$('.ys_input1').css('display', 'none');
 				$(".ys_input2").css("display","none");
 				$(".ys_input3").css("display","inline");
-				// $(".ys_img1").attr('src',"X.jpg"); 
 				$(".ys_img1").css("display","none");
 				$(".ys_imgx").css("display","inline");
 				$(".ys_a").css("display","none");
@@ -14,8 +13,7 @@
 			$(".ys_imgx").click(function(){
 				$('.ys_input1').css('display', 'inline');
 				$(".ys_input2").css("display","inline");
-				$(".ys_input3").css("display","none");
-				// $(".ys_img1").attr('src',"X.jpg"); 
+				$(".ys_input3").css("display","none"); 
 				$(".ys_img1").css("display","inline");
 				$(".ys_imgx").css("display","none");
 				$(".ys_a").css("display","inline");
