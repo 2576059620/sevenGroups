@@ -21,13 +21,13 @@ $(".ys_img1").click(function(){
  		 	$(".menu").click(function(){
  		 		$(".menu").css("display","none");
 				$(".menu1").css("display","inline");
-   		 		$(".ys_footer2").animate({top:'320px'});
+   		 		$(".ys_footer2").animate({bottom:'10%'});
  			 });
 		});
 		$(document).ready(function(){
  		 	$(".menu1").click(function(){
  		 		$(".menu1").css("display","none");
 				$(".menu").css("display","inline");
-   		 		$(".ys_footer2").animate({top:'1000px'});
+   		 		$(".ys_footer2").animate({bottom:'-35%'});
   			});
 		});
