@@ -41,7 +41,8 @@ ul,ol{
 margin: 0 auto;
 }
 .ys_boss>.ys_banner{
-	
+	position: fixed;
+	top: 0%;
 	height: 44px;
 	width: 100%;
 	z-index: 1000;
@@ -97,7 +98,7 @@ margin: 0 auto;
 .center{
 	width: 100%;
 	background-color: rgb(255,255,255);
-	
+
 
 }
 .center>.center_img1{
@@ -109,9 +110,10 @@ margin: 0 auto;
 	width: 266px;
 	background-color: rgba(0,0,0,0.7);
 	position: absolute;
-	top: 300px;
+	top: 250px;
 	margin-left: 100px;
 	border:2px solid yellow;
+	
 }
 .center>.center_text1>div{
 	color: yellow;
@@ -121,15 +123,18 @@ margin: 0 auto;
 	font-size: 1.1rem;
 }
 .center>.cneter_home{
+	max-width: 640px;
 	height: 30px;
 	width: 40px;
 	background-color: rgba(0,0,0,0.7);
 	border:1px solid white;
 	position: fixed;
-	top: 550px;
-
-	margin-left: 380px;
+	top: 30%;
+	left: 65%;
+	
 	border-radius: 5px;
+	
+	
 
 
 }
@@ -149,7 +154,7 @@ margin: 0 auto;
 	border-top: 2px solid black;
 	margin-left: 40px;
 	position: absolute;
-	top: 1200px;
+	top: 1150px;
 	background-color: white;
 }
 .center>.center_text2>div{
@@ -199,7 +204,7 @@ margin: 0 auto;
 	border-top: 2px solid black;
 	margin-left: 40px;
 	position: absolute;
-	top: 2400px;
+	top: 2350px;
 	background-color: white;
 }
 .center>.center_text3>div{
@@ -215,7 +220,7 @@ margin: 0 auto;
 	border-top: 2px solid black;
 	margin-left: 40px;
 	position: absolute;
-	top: 3700px;
+	top: 3650px;
 	background-color: white;
 }
 .center>.center_text4>div{
@@ -231,7 +236,7 @@ margin: 0 auto;
 	border-top: 2px solid black;
 	margin-left: 40px;
 	position: absolute;
-	top: 4700px;
+	top: 4650px;
 	background-color: white;
 }
 .center>.center_text5>div{
@@ -247,7 +252,7 @@ margin: 0 auto;
 	border-top: 2px solid black;
 	margin-left: 40px;
 	position: absolute;
-	top: 5800px;
+	top: 5750px;
 	background-color: white;
 }
 .center>.center_text6>div{
@@ -262,7 +267,7 @@ margin: 0 auto;
 	border-top: 2px solid black;
 	margin-left: 40px;
 	position: absolute;
-	top: 6900px;
+	top: 6850px;
 	background-color: white;
 }
 .center>.center_text7>div{
