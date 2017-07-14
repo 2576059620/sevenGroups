@@ -39,7 +39,8 @@ ul,ol{
 margin: 0 auto;
 }
 .ys_boss>.ys_banner{
-	
+	position: fixed;
+	top: 0%;
 	height: 44px;
 	width: 100%;
 	z-index: 1000;
