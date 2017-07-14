@@ -8,7 +8,7 @@
 }
 body{
 	font-size: 14px;
-	font-family: "黑体";s
+	font-family: "黑体";
 	color: #333;
 	min-width: 320px;
 	max-width: 640px;
@@ -35,11 +35,12 @@ ul,ol{
 	max-width: 640px;
 	min-width: 320px;
 	margin: 0 auto;
-	background-color: rgb(238,238,238);
+	
 
 }
 .ys_boss>.ys_banner{
-	
+	position: fixed;
+	top: 0%;
 	height: 44px;
 	width: 100%;
 	z-index: 1000;
@@ -91,65 +92,20 @@ ul,ol{
 .ys_imgx{
 	display: none;
 }
-/*中部*/
-.center{
-	width: 100%;
-	background-color: rgb(248,248,248);
-
-}
-.center>.center_img1{
-	width: 90%;
-	height: 330px;
-	margin-left: 20px;
-	margin-top: 80px;
-}
-.center>.center_text1{
-	font-size: 1.3rem;
-	color:rgb(81,81,81);
-	margin-top: 30px;
-	text-align:center;
-}
-.center_text2{
-	font-size: 0.9rem;
-	color:rgb(119,119,119);
-	margin-top: 30px;
-	margin-left: 20px;
-}
-
-.center_nav{
-	display: flex;
-	flex-direction: column;
-	border-bottom: 1px solid #e0e0e0;
+.section_div{
+	width: 80%;
+	margin-left: 50px;
+	margin-top: 100px;
 	background-color: white;
+	color: rgb(81,81,81);
 }
-.center_nav>.center_nav1{
-	display: flex;
-	justify-content: space-around;
-	margin-top:10px;
-	margin-bottom: 10px;
+.section_div>p{
+	font-size: 2.5rem;
 }
-.center_nav>.center_nav1>.center_nav_friends{
-	margin: 0 auto;
-	width: 40%;
-}
-.center_nav>.center_nav1>.center_nav_friends>img{
-	width: 100%;
-	height: 200px;
-	margin: 0 auto;
-}
-.center_nav>.center_nav1>.center_nav_friends>div>p{
-	color: rgb(60,148,139);
-	font-size: 1.3rem;
-}
-.top{
-	margin:auto;
-	border:1px solid silver;
-	height: 40px;
-	width: 50px;
-	text-align: center;
-	line-height: 40px;
-	font-size: 1.3rem;
-}
+
+
+
+
 /*尾部*/
 .footer{
 	width: 90%;
@@ -186,5 +142,3 @@ ul,ol{
 .footer>a>input{
 	height: 100%;
 	width: 100%;
-
-}

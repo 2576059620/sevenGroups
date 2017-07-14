@@ -1,8 +1,12 @@
 /*内容底部的footer类*/
-.footer{
+section{
 	width: 100%;
 	max-width: 640px;
 	min-width: 320px;
+	margin: 0 auto;
+}
+.footer{
+	width: 100%;
 	margin-top: 50px;
 	background-color: #fff;
 	margin-bottom: 0px;
@@ -25,6 +29,7 @@ ul>.help>span{
 }
 .help_display *{
 	padding-top: 5px;
+	margin-left: 5%;
 }
 .box_buttom{
 	border-bottom:1px solid rgb(238,238,238);

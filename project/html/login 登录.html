@@ -8,19 +8,79 @@
 </head>
 <body>	
 	<div class="login_box">
-		<form action="">
+		<form action="" >
+			<a href="https://www.ywart.com/"><img src="../images/差号.png" alt="" class="poor"></a>
 			<input type="text" required="" placeholder="请输入手机或邮箱"><br>
 			<input type="password" required="" placeholder="请输入密码"><br>
-			<a href="#">忘记密码？</a><br>
+			<h6 id="pwd"><a href="../html/登录-忘记密码.html">忘记密码？</a></h6><br>
 			<input type="submit" value="登录" class="sub">
 		</form>
 	<div class="divider"><hr><p>或</p></div>
-	<div class="account"><p>还没有账号？</p><p><a href="#" class="registered">请注册</a></p></div>
 	<!-- 三个图标 -->
 	<div class="icon_three">
-	<a href="../html/微博登录.html"><img src="../images/微博.png" alt="" class="three_img1"></a>
-	<a href="#"><img src="../images/微信.png" alt="" alt="" class="three_img"></a>
-	<a href="#"><img src="../images/F图片.png" alt="" alt="" class="three_img"></a></div>
+		<a href="../html/微博登录.html"><img src="../images/微博.png" alt="" class="three_img1"></a>
+		<a href="../html/微信登录.html"><img src="../images/微信.png" alt="" class="three_img"></a>
+		<a href="#"><img src="../images/F图片.png" alt="" class="three_img"></a>
 	</div>
+		<div class="account">
+			<span class="reg">还没有账号？</span>
+				<a href="#" ><span class="registered">请注册</span></a>
+		</div>
+
+	<!-- 忘记密码 -->
+	<div class="Forgot">
+		<form>
+		<!-- 关闭按钮 -->
+			  <a href="https://www.ywart.com/"><img src="../images/差号.png" alt="" class="poor"></a>
+				<input type="tel" required="" placeholder="请输入手机号" class="Forgot_text">
+				<input type="text" placeholder="请输入旁边的验证码" class="slide"> 
+				<!-- 随机验证码点击按钮 -->
+				<input type="button" id="code3" onclick="createCode()">
+				<br><br>
+				<input type="submit" value="获取短信验证码" class="obtain" onclick="step()">
+				<br><br>
+				<input type="text" placeholder="请输入手机收到的验证码">
+				<button class="next_step">下一步</button>
+			</form>
+    </div>
+
+	</div> <!--  大边框 -->
+
+	<script>
+		 // 随机验证码
+// 忘记密码随机验证码
+	var code ;
+    	function createCode(){  
+     		code = "";   
+     		var codeLength = 4;//验证码的长度  
+    		var checkCode = document.getElementById("code3");     
+     		var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R',  
+    			 'S','T','U','V','W','X','Y','Z');//随机数  
+    	 for(var i = 0; i < codeLength; i++) {//循环操作  
+        	var index = Math.floor(Math.random()*36);//取得随机数的索引（0~35）  
+        		code += random[index];//根据索引取得随机数加到code上  
+    }  
+    checkCode.value = code;//把code值赋给验证码  
+}  	
+// 隐藏登录页面，显示密码页面
+  // $("#pwd").gestureend(function(){
+  // 	$(".Forgot").css("display",'block');
+  // 	$(".login_box").css("display","none");
+  // })
+  // 	document.addEventListener('touchstart',fun,false);
+  // 	function fun(event){
+  // 		console.log("kjdsfjkfdsf");
+  // 		var e = event || window.event;
+		// var div = document.getElementById('pwd');
+		// 	switch(e.type){
+		// 			case 'touchstart':
+		// 				// div.innerHTML = $(".Forgot").css("display",'block');
+		// 				$(".Forgot").css("display",'block');
+  // 						$(".login_box").css("display","none");
+		// 				break;
+		// }
+  // 	}
+
+	</script>
 </body>
 </html>
