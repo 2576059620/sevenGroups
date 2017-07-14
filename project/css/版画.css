@@ -118,6 +118,7 @@ margin: 0 auto;
 .center>.center_text1>div{
 	color: yellow;
 	width: 80%;
+	height: 100%;
 	margin-left: 25px;
 	margin-top: 25px;
 	font-size: 1.1rem;
@@ -159,6 +160,7 @@ margin: 0 auto;
 }
 .center>.center_text2>div{
 	width: 80%;
+	height: 100%;
 	font-size: 1.1rem;
 	margin-left: 30px;
 	margin-top: 20px;
@@ -209,6 +211,7 @@ margin: 0 auto;
 }
 .center>.center_text3>div{
 	width: 80%;
+	height: 100%;
 	font-size: 1.1rem;
 	margin-left: 30px;
 	margin-top: 20px;
@@ -225,6 +228,7 @@ margin: 0 auto;
 }
 .center>.center_text4>div{
 	width: 80%;
+	height: 100%;
 	font-size: 1.1rem;
 	margin-left: 30px;
 	margin-top: 20px;
@@ -241,6 +245,7 @@ margin: 0 auto;
 }
 .center>.center_text5>div{
 	width: 80%;
+	height: 100%;
 	font-size: 1.1rem;
 	margin-left: 30px;
 	margin-top: 20px;
@@ -257,6 +262,7 @@ margin: 0 auto;
 }
 .center>.center_text6>div{
 	width: 80%;
+	height: 100%;
 	font-size: 1.1rem;
 	margin-left: 30px;
 	margin-top: 20px;
@@ -272,6 +278,7 @@ margin: 0 auto;
 }
 .center>.center_text7>div{
 	width: 80%;
+	height: 100%;
 	font-size: 1.1rem;
 	margin-left: 30px;
 	margin-top: 20px;
