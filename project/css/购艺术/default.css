@@ -40,16 +40,6 @@ a:active {
 	margin: 0 auto;
 	padding: 2em;
 }
-.ys_boss{
-	position: relative;
-}
-.grid{
-	position: none;
-}
-.shown,.animate{
-	position: absolute;
-	left: 50%;
-}
 .container > header {
 	text-align: center;
 	background: rgba(0,0,0,0.01);
