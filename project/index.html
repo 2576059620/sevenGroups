@@ -5,11 +5,15 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 	<script src="js/jquery-3.1.1.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/上下.css">
+	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+	<script src="js/swiper.min.js"></script>
 	<script src = "js/上下.js"></script>
 	<script src = "js/footer.js"></script>
-	<script type="text/javascript" src = "js/jquery-3.1.1.min.js"></script>
+	<script src = "js/index.js"></script>
 	<title>首页</title>
 </head>
 <body >
@@ -21,37 +25,57 @@
 			<img src="images/yuan.jpg" class="ys_img1" >
 			<img src="images/X.jpg" class="ys_imgx">
 		</header>
-		<section>
-			<div class="footer">
-				<ul>
-					<li class="help help1" onclick="help1()">YWART.com <span>+</span></li>
-					<ul class="help_display display1">
-						<li><a href="index.html">精选</a></li>
-						<li><a href="html/购艺术.html">购艺术</a></li>
-						<li><a href="html/造艺.html">造艺</a></li>
-						<li><a href="html/藏艺术.html">藏艺术</a></li>
-						<li><a href="html/我的珍藏.html">我的珍藏</a></li>
+		<div>
+			<section class="section_head">
+				<img src="images/indexhead.jpg" class="section_head_img">
+				<div class="section_head_text">
+					<a href="html/购艺术.html"><div>艺网，原创艺术品电商平台</div>
+					<div>ART YOU WANT</div>
+					<div>你可以买到</div></a>
+				</div>
+			</section>
+			<section>
+				<div class="jd_banner swiper-container">
+					<ul class="image_box swiper-wrapper">
+						<li  class="swiper-slide"><a href="#"><img src="images/dwd2app.jpg" alt=""></a></li>
+						<li  class="swiper-slide"><a href="#"><img src="images/collectbannerMobi.jpg" alt=""></a></li>
+						<li  class="swiper-slide"><a href="#"><img src="images/framehead.png" alt=""></a></li>
 					</ul>
-					<li class="help help2" onclick="help2()">了解艺网 <span>+</span></li>
-					<ul class="help_display display2">
-						<li><a href="html/关于我们.html">关于我们</a></li>
-						<li><a href="html/工作机会.html">工作机会</a></li>
-						<li><a href="html/网站地图.html">网站地图</a></li>
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+			<section>
+				<div class="footer">
+					<ul>
+						<li class="help help1" onclick="help1()">YWART.com <span>+</span></li>
+						<ul class="help_display display1">
+							<li><a href="index.html">精选</a></li>
+							<li><a href="html/购艺术.html">购艺术</a></li>
+							<li><a href="html/造艺.html">造艺</a></li>
+							<li><a href="html/藏艺术.html">藏艺术</a></li>
+							<li><a href="html/我的珍藏.html">我的珍藏</a></li>
+						</ul>
+						<li class="help help2" onclick="help2()">了解艺网 <span>+</span></li>
+						<ul class="help_display display2">
+							<li><a href="html/关于我们.html">关于我们</a></li>
+							<li><a href="html/工作机会.html">工作机会</a></li>
+							<li><a href="html/网站地图.html">网站地图</a></li>
+						</ul>
+						<li class="help help3" onclick="help3()">支持与帮助 <span>+</span></li>
+						<ul class="help_display display3">
+							<li><a href="html/如何购买.html">如何购买</a></li>
+							<li><a href="html/物流说明.html">物流说明</a></li>
+							<li><a href="html/联系我们.html">联系我们</a></li>
+						</ul>
+						<li class="help help4 box_buttom" onclick="help4()">合作 <span>+</span></li>
+						<ul class="help_display display4">
+							<li><a href="html/作品征集.html">作品征集</a></li>
+							<li><a href="html/合作伙伴入驻.html">合作伙伴入驻</a></li>
+						</ul>
 					</ul>
-					<li class="help help3" onclick="help3()">支持与帮助 <span>+</span></li>
-					<ul class="help_display display3">
-						<li><a href="html/如何购买.html">如何购买</a></li>
-						<li><a href="html/物流说明.html">物流说明</a></li>
-						<li><a href="html/联系我们.html">联系我们</a></li>
-					</ul>
-					<li class="help help4 box_buttom" onclick="help4()">合作 <span>+</span></li>
-					<ul class="help_display display4">
-						<li><a href="html/作品征集.html">作品征集</a></li>
-						<li><a href="html/合作伙伴入驻.html">合作伙伴入驻</a></li>
-					</ul>
-				</ul>
-			</div>
-		</section>
+				</div>
+			</section>
+		</div>
 		<footer class="ys_footer">
 			<ul class="ys_footer2">
 				<a href="">
@@ -74,5 +98,18 @@
 			<a href=""  class="ys_img5"><img src="images/我.jpg"></a>
 		</footer>
 	</div>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+		    loop:true,
+		    autoplay:3000,
+		    pagination: '.swiper-pagination',
+		    paginationClickable: true,
+		    nextButton: '.swiper-button-next',
+        	prevButton: '.swiper-button-prev',
+        	// spaceBetween: 30,
+        	centeredSlides: true,
+        	autoplayDisableOnInteraction: false
+		});
+    </script>
 </body>
 </html>
