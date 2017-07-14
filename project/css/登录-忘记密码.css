@@ -57,6 +57,7 @@ width:  60%;
 	color: rgb(60,148,139);
 	font-style: italic;
 	font-size:20px;
+	/*background-image: url(../images/验证码图片.jpg);*/
 }
 .obtain{
 	background-color: white;
