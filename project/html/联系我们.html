@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+	<script src="../js/jquery-3.1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/联系我们.css">
+
+	<title></title>
+</head>
+<body>
+	<div class="ys_boss">
+		<header class="ys_banner">		
+			<a href="https://www.ywart.com/login" class="ys_a"><input type="submit" value="创建账号"  class="ys_input1"></a>
+			<a href="https://www.ywart.com/login" class="ys_a"><input type="submit" value="登录" class="ys_input2"></a>
+			<input type="text" placeholder="搜索艺术家或艺术品" class="ys_input3">
+			<img src="../images/yuan.jpg" class="ys_img1" >
+			<img src="../images/X.jpg" class="ys_imgx">
+		
+		
+		</header>
+		
+		<div class="section_div">
+			<p>联系我们</p>
+			地址：北京市东城区工人体育馆南配楼
+			<br><br>
+			电话:  <a href="">400-605-7033</a>
+
+			<br><br>
+			客户服务：
+			<br><br>
+			电话:  <a href="">400-605-7033</a>（工作日9:00-17:30）
+			Email:  <a href="">service@ywart.com</a>
+			<br><br>
+			艺术家合作：
+			<br><br>
+			电话:  <a href="">010-65532511</a>
+			Email:  <a href="">ywart@ywart.com</a>
+
+			<br><br>
+			公关/市场/媒介合作：
+			<br><br>
+			电话:  <a href="">010-65533381</a>
+			Email:  <a href="">yanxin.wang@ywart.com</a>
+
+			<br><br>
+
+			艺网致力于给客户最专业和最贴心的艺术品在线购买服务，我们一定有不完善的地方，请相信我们正在努力。
+			<br><br><br><br>
+			====================
+			<br><br>
+			联系在线客服：
+ 			<br><br>
+ 			<img src="../images/kefu.jpg" class="section_img1" >
+		</div>
+		<br><br><br><br><br><br><br><br>
+		
+
+
+
+
+	<footer class="footer">
+			<img src="../images/96.png" alt="">
+			<div>艺网APP<br>艺术生活方式专家</div>
+			<a href=""><input type="button" value="查看更多"></a>
+	</footer>
+
+	</div>
+	<script>
+				$(".ys_img1").click(function(){
+			$('.ys_input1').css('display', 'none');
+			$(".ys_input2").css("display","none");
+			$(".ys_input3").css("display","inline");
+			// $(".ys_img1").attr('src',"X.jpg"); 
+			$(".ys_img1").css("display","none");
+			$(".ys_imgx").css("display","inline");
+			$(".ys_a").css("display","none");
+			
+			
+		})
+		$(".ys_imgx").click(function(){
+			$('.ys_input1').css('display', 'inline');
+			$(".ys_	input2").css("display","inline");
+			$(".ys_input3").css("display","none");
+			// $(".ys_img1").attr('src',"X.jpg"); 
+			$(".ys_img1").css("display","inline");
+			$(".ys_imgx").css("display","none");
+			$(".ys_a").css("display","inline");
+			
+			
+		})
+				
+	</script>	
+</body>
+</html>
