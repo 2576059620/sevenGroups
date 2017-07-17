@@ -199,5 +199,15 @@ section{
 .section_workes>a>img{
 	width: 80%;
 	height: 80%;
-	
+}
+.section_logo_en{
+	max-width: 640px;
+	min-width: 320px;
+	border:1px solid red;
+	width: 30px;
+	height: 30px;
+}
+section>.section_logo_en>img{
+	width: 30px;
+	height: 30px;
 }
