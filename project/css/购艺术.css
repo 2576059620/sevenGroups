@@ -114,23 +114,28 @@ body{
 }
 /*主页隐藏*/
 .ys_boss{
+	/*display: none;*/
+}
+
+/*筛选*/
+.screen{
 	display: none;
 }
 
 /*尺寸 价格*/
-.screen{
+/*.screen{
 	background-color: rgb(247,247,247);
 }
-.select{
+.select1{
 	width: 100%;
 	height: 110px;
 	background-color: white;
 	margin-bottom: 10px;
 }
-.screen>.select>.size{
+.screen>.select1>.size{
 	margin-bottom: 20px;
 }
-.screen>.select>select{	
+.screen>.select1>select{	
 	margin-left: 10px;
 	width: 83%;
 	height: 30px;
@@ -140,14 +145,14 @@ body{
 	border-radius: 10px;
 	border: 1px solid rgb(238,238,238);
 }
-.screen>.select>span{
+.screen>.select1>span{
 	margin-left: 6px;
 	font-size: 15px;
 	font-weight: bold;
 }
-
+*/
 /*颜色*/
-.select_colour{
+/*.select_colour{
 	width: 100%;
 	height: 125px;
 	background-color: white;
@@ -234,9 +239,9 @@ table span{
 .show-color{
 	border: 1px solid black;
 }
-
+*/
 /*形状*/
-.shape{
+/*.shape{
 	width: 100%;
 	height: 105px;
 	background-color: white;
@@ -317,7 +322,7 @@ table span{
 	width: 30px;
 	margin-left: 40px;
 	margin-bottom: 5px;
-	background-image: url(../images/icon_star.svg);	/*ºÚ*/
+	background-image: url(../images/icon_star.svg);	
 }
 .show-shape{
 	background-color: black;
@@ -326,9 +331,9 @@ table span{
 .show-shape{
 	background-color: black;
 	border: none;
-}
+}*/
 /*风格 题材*/
-.style,.theme{
+/*.style,.theme{
 	width: 100%;
 	height: 135px;
 	background-color: white;
@@ -367,10 +372,10 @@ table span{
 .theme tr .show-theme{
 	border: 1px solid rgb(129,129,129);
 	color: rgb(0,0,0);
-}
+}*/
 
 /*按钮*/
-.button{
+/*.button{
 	border: 1px solid rgb(229,229,229);
 	width: 100%;
 	height: 60px;
@@ -401,3 +406,4 @@ table span{
 	margin-top: 15px;
 	margin-right: 18px;
 }
+*/
