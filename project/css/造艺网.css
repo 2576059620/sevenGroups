@@ -169,7 +169,7 @@ section{
 	min-width: 320px;
     background-color: rgb(238,238,238);
 	border:1px solid black;
-
+	margin:auto;
 }
 .section_bg{
 	width: 100%;
@@ -182,12 +182,65 @@ section{
 }
 .bg_box{
 	width: 100%;
-	height: 600px;
-	background-color:rgba(0,0,0,0.5);
+	height: 92%;
+	background-color:rgba(0,0,0,0.5);	
 }
 .section_workes{
+	max-width: 640px;
+	min-width: 320px;
 	width: 80%;
 	height: 50%;
-	background-image: url(../images/banner_works.png);
+	margin: 50px auto;
+	/*border:1px solid red;*/
+}
+.section_workes>a>img{
+	width: 100%;
+	height: 100%;
+}
+
+.section_logo_en{
+	max-width: 640px;
+	min-width: 320px;
+	/*border:1px solid red;*/
+	width: 30%;
+	height: 30%;
+	margin: 0 auto;
+	text-align: center;
+	margin:-50px auto;
+	
+}
+.section_logo_en>img{
+	width: 30%;
+	height: 30%;
+}
+hr{
+	width: 60px;
+	margin: -90px auto;
+}
+.section_text{
+	color: white;
+	margin:110px auto;
+	text-align: center;
+	font-size: 1.2rem;
+}
+.tops{
+	font-size: 1.2rem;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	padding-top: 10px;
+	background-color:white;
+}
+.tops_box{
+	width: 100%;
+	height:350px;
+	max-width: 640px;
+	min-width: 320px;
 	border:1px solid blue;
+
+}
+.tops_box>.year>a>img{
+	width: 50%;
+	height: 50%;
+	/*border:1px solid red ;*/
 }
