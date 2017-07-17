@@ -121,21 +121,7 @@
 		$("#else").css("display","block");
 	}
 
-	//	颜色选择
-	$(document).ready(function(){
-		function clickMenu (menus, menuClassName) {
-			menus.on('click', function(){
-				$.each(menus, function () {
-					$(this).removeClass(menuClassName);
-				})
-				$(this).addClass(menuClassName);
-			})
-		}
-		var $mainMenuSpan  = $(".colour td");
-		clickMenu($mainMenuSpan,'show-color');
-	})
-
-	//形状选择
+	// //	颜色选择
 	// $(document).ready(function(){
 	// 	function clickMenu (menus, menuClassName) {
 	// 		menus.on('click', function(){
@@ -145,131 +131,132 @@
 	// 			$(this).addClass(menuClassName);
 	// 		})
 	// 	}
-	// 	var $mainMenuSpan  = $(".shape div");
-	// 	clickMenu($mainMenuSpan,'show-shape');
+	// 	var $mainMenuSpan  = $(".colour td");
+	// 	clickMenu($mainMenuSpan,'show-color');
 	// })
-	//正方形
-	var just1 = true;
-	function just(){
-		just1 = !just1;		
-		if (!just1) {
-			$(".just").addClass('just2');
-			$(".just2").removeClass('just1');
 
-			$(".long2").addClass('long1');
-			$(".long1").removeClass('long2');
+	// //正方形
+	// var just1 = true;
+	// function just(){
+	// 	just1 = !just1;		
+	// 	if (!just1) {
+	// 		$(".just").addClass('just2');
+	// 		$(".just2").removeClass('just1');
 
-			$(".vertical2").addClass('vertical1');
-			$(".vertical1").removeClass('vertical2');
+	// 		$(".long2").addClass('long1');
+	// 		$(".long1").removeClass('long2');
 
-			$(".circle2").addClass('circle1');
-			$(".circle1").removeClass('circle2');
+	// 		$(".vertical2").addClass('vertical1');
+	// 		$(".vertical1").removeClass('vertical2');
 
-			$(".star1").addClass('star');
-			$(".star").removeClass('star1');
-		}else{
-			$(".just2").addClass('just1');
-			$(".just1").removeClass('just2');
-		}
-	}
-	//长方形
-	var long1 = true;
-	function long(){
-		long1 = !long1;		
-		if (!long1) {
-			$(".long").addClass('long2');
-			$(".long2").removeClass('long1');
+	// 		$(".circle2").addClass('circle1');
+	// 		$(".circle1").removeClass('circle2');
 
-			$(".just2").addClass('just1');
-			$(".just1").removeClass('just2');
+	// 		$(".star1").addClass('star');
+	// 		$(".star").removeClass('star1');
+	// 	}else{
+	// 		$(".just2").addClass('just1');
+	// 		$(".just1").removeClass('just2');
+	// 	}
+	// }
+	// //长方形
+	// var long1 = true;
+	// function long(){
+	// 	long1 = !long1;		
+	// 	if (!long1) {
+	// 		$(".long").addClass('long2');
+	// 		$(".long2").removeClass('long1');
 
-			$(".vertical2").addClass('vertical1');
-			$(".vertical1").removeClass('vertical2');
+	// 		$(".just2").addClass('just1');
+	// 		$(".just1").removeClass('just2');
 
-			$(".circle2").addClass('circle1');
-			$(".circle1").removeClass('circle2');
+	// 		$(".vertical2").addClass('vertical1');
+	// 		$(".vertical1").removeClass('vertical2');
 
-			$(".star1").addClass('star');
-			$(".star").removeClass('star1');
-		}else{
-			$(".long2").addClass('long1');
-			$(".long1").removeClass('long2');
-		}
-	}
-	//竖方形
-	var vertical1 = true;
-	function vertical(){
-		vertical1 = !vertical1;		
-		if (!vertical1) {
-			$(".vertical").addClass('vertical2');
-			$(".vertical2").removeClass('vertical1');
+	// 		$(".circle2").addClass('circle1');
+	// 		$(".circle1").removeClass('circle2');
 
-			$(".long2").addClass('long1');
-			$(".long1").removeClass('long2');
+	// 		$(".star1").addClass('star');
+	// 		$(".star").removeClass('star1');
+	// 	}else{
+	// 		$(".long2").addClass('long1');
+	// 		$(".long1").removeClass('long2');
+	// 	}
+	// }
+	// //竖方形
+	// var vertical1 = true;
+	// function vertical(){
+	// 	vertical1 = !vertical1;		
+	// 	if (!vertical1) {
+	// 		$(".vertical").addClass('vertical2');
+	// 		$(".vertical2").removeClass('vertical1');
 
-			$(".just2").addClass('just1');
-			$(".just1").removeClass('just2');
+	// 		$(".long2").addClass('long1');
+	// 		$(".long1").removeClass('long2');
 
-			$(".circle2").addClass('circle1');
-			$(".circle1").removeClass('circle2');
+	// 		$(".just2").addClass('just1');
+	// 		$(".just1").removeClass('just2');
+
+	// 		$(".circle2").addClass('circle1');
+	// 		$(".circle1").removeClass('circle2');
 			
-			$(".star1").addClass('star');
-			$(".star").removeClass('star1');
-		}else{
-			$(".vertical2").addClass('vertical1');
-			$(".vertical1").removeClass('vertical2');
-		}
-	}
-	//圆
-	var circle1 = true;
-	function circle(){
-		circle1 = !circle1;		
-		if (!circle1) {
-			$(".circle").addClass('circle2');
-			$(".circle2").removeClass('circle1');	
+	// 		$(".star1").addClass('star');
+	// 		$(".star").removeClass('star1');
+	// 	}else{
+	// 		$(".vertical2").addClass('vertical1');
+	// 		$(".vertical1").removeClass('vertical2');
+	// 	}
+	// }
+	// //圆
+	// var circle1 = true;
+	// function circle(){
+	// 	circle1 = !circle1;		
+	// 	if (!circle1) {
+	// 		$(".circle").addClass('circle2');
+	// 		$(".circle2").removeClass('circle1');	
 
-			$(".vertical2").addClass('vertical1');
-			$(".vertical1").removeClass('vertical2');
+	// 		$(".vertical2").addClass('vertical1');
+	// 		$(".vertical1").removeClass('vertical2');
 				
-			$(".long2").addClass('long1');
-			$(".long1").removeClass('long2');
+	// 		$(".long2").addClass('long1');
+	// 		$(".long1").removeClass('long2');
 
-			$(".just2").addClass('just1');
-			$(".just1").removeClass('just2');
+	// 		$(".just2").addClass('just1');
+	// 		$(".just1").removeClass('just2');
 			
-			$(".star1").addClass('star');
-			$(".star").removeClass('star1');
-		}else{
-			$(".circle2").addClass('circle1');
-			$(".circle1").removeClass('circle2');
-		}
-	}
-	//星
-	var flag = true;
-	function star(){
-		flag = !flag;		
-		if (flag) {
-			$(".star1").addClass('star');
-			$(".star").removeClass('star1');
-		}else{
-			$(".star").addClass('star1');
-			$(".star1").removeClass('star');
+	// 		$(".star1").addClass('star');
+	// 		$(".star").removeClass('star1');
+	// 	}else{
+	// 		$(".circle2").addClass('circle1');
+	// 		$(".circle1").removeClass('circle2');
+	// 	}
+	// }
+	// //星
+	// var flag = true;
+	// function star(){
+	// 	flag = !flag;		
+	// 	if (flag) {
+	// 		$(".star1").addClass('star');
+	// 		$(".star").removeClass('star1');
+	// 	}else{
+	// 		$(".star").addClass('star1');
+	// 		$(".star1").removeClass('star');
 
-			$(".circle2").addClass('circle1');
-			$(".circle1").removeClass('circle2');	
+	// 		$(".circle2").addClass('circle1');
+	// 		$(".circle1").removeClass('circle2');	
 
-			$(".vertical2").addClass('vertical1');
-			$(".vertical1").removeClass('vertical2');
+	// 		$(".vertical2").addClass('vertical1');
+	// 		$(".vertical1").removeClass('vertical2');
 				
-			$(".long2").addClass('long1');
-			$(".long1").removeClass('long2');
+	// 		$(".long2").addClass('long1');
+	// 		$(".long1").removeClass('long2');
 
-			$(".just2").addClass('just1');
-			$(".just1").removeClass('just2');
-		}
-	}
+	// 		$(".just2").addClass('just1');
+	// 		$(".just1").removeClass('just2');
+	// 	}
+	// }
 
-	//风格
+	// //风格
 	// $(document).ready(function(){
 	// 	function clickMenu (menus, menuClassName) {
 	// 		menus.on('click', function(){
@@ -282,37 +269,25 @@
 	// 	var $mainMenuSpan  = $(".style td");
 	// 	clickMenu($mainMenuSpan,'show-style');
 	// })
-	$(document).ready(function(){
-		function clickMenu (menus, menuClassName) {
-			menus.on('click', function(){
-				$.each(menus, function () {
-					$(this).removeClass(menuClassName);
-				})
-				$(this).addClass(menuClassName);
-			})
-		}
-		var $mainMenuSpan  = $(".style td");
-		clickMenu($mainMenuSpan,'show-style');
-	})
 
-	//题材
-	$(document).ready(function(){
-		function clickMenu (menus, menuClassName) {
-			menus.on('click', function(){
-				$.each(menus, function () {
-					$(this).removeClass(menuClassName);
-				})
-				$(this).addClass(menuClassName);
-			})
-		}
-		var $mainMenuSpan  = $(".theme td");
-		clickMenu($mainMenuSpan,'show-theme');
-	})
-
+	// //题材
 	// $(document).ready(function(){
-	$scope.goBack = function(){
-		//通过调用浏览器的返回事件，实现返回到主页的效果
-		window.history.back();
-	}
-
+	// 	function clickMenu (menus, menuClassName) {
+	// 		menus.on('click', function(){
+	// 			$.each(menus, function () {
+	// 				$(this).removeClass(menuClassName);
+	// 			})
+	// 			$(this).addClass(menuClassName);
+	// 		})
+	// 	}
+	// 	var $mainMenuSpan  = $(".theme td");
+	// 	clickMenu($mainMenuSpan,'show-theme');
 	// })
+
+	// // $(document).ready(function(){
+	// document.goBack = function(){
+	// 	//通过调用浏览器的返回事件，实现返回到主页的效果
+	// 	window.history.back();
+	// }
+
+	// // })
