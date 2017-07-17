@@ -86,12 +86,7 @@ hr{
 	margin:10px auto;
 	overflow: hidden;
 }
-/*.reg{
-	position: absolute;
-	top: 190px;
-	right: 170px;
-	float: left;
-}*/
+
 .registered{
 	color:rgb(60,148,139);
 }
@@ -118,36 +113,3 @@ hr{
 	float:right;
 	
 }
-/*忘记密码*/
-/*.Forgot{
-	display: none;
-}
-.slide{
-width:  60%;
-}
-#code3{
-	width: 30%;
-	height: 30%;
-	border:1px solid black;
-	background-color:rgb(238,238,238);
-	border:none;
-	color: rgb(60,148,139);
-	font-style: italic;
-	font-size:20px;
-}
-.obtain{
-	background-color: white;
-	color: rgb(60,148,139);
-	border: 1px solid rgb(60,148,139);
-}
-.next_step{
-	width: 100%;
-	height:40px;
-	color: white;
-	font-size: 20px;
-	background-color: rgb(60,148,139);
-	text-align: center;
-	margin-top: 20px;
-	border:none;
-}
-*/
