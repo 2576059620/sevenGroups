@@ -15,6 +15,20 @@
 	<script src = "js/footer.js"></script>
 	<script src = "js/index.js"></script>
 	<title>首页</title>
+	<style>
+		.swiper-pagination-bullet{
+			background-color: gray;
+			width: 50px;
+			height: 1px;
+			border: 1px solid white;
+			border-radius: 0;
+			opacity: .6s;
+		}
+		.swiper-pagination-bullet-active{
+			/*background-color: white;*/
+			opacity: 1;
+		}
+	</style>
 </head>
 <body >
 	<div class="ys_boss">
@@ -26,6 +40,7 @@
 			<img src="images/X.jpg" class="ys_imgx">
 		</header>
 		<div>
+			<!-- 第一块内容 -->
 			<section class="section_head">
 				<img src="images/indexhead.jpg" class="section_head_img">
 				<div class="section_head_text">
@@ -34,6 +49,8 @@
 					<div>你可以买到</div></a>
 				</div>
 			</section>
+
+			<!-- 第二块内容 -->
 			<section>
 				<div class="jd_banner swiper-container">
 					<ul class="image_box swiper-wrapper">
@@ -44,8 +61,197 @@
 					<div class="swiper-pagination"></div>
 				</div>
 			</section>
+
+			<!-- 第三块内容 -->
 			<section>
-				
+				<div class="three clear_f">
+					<!-- 油画 -->
+					<div class="sort" onclick="sort1()">
+						<h1 class="">油画 </h1>
+						<img src="images/尖括号下.png" class="f_right">
+					</div>	
+					<div class="sort_box sort_display">
+						<div class="sort_content">
+							<img src="images/31.jpg" class="img">
+							<div class= "sort_text">
+								<div>项柳倩</div>
+								<div>wave2 2017</div>
+								<div>&yen;19,800</div>
+							</div>
+						</div>
+						<div class="sort_content">
+							<img src="images/32.jpg">
+							<div class= "sort_text">
+								<div>张庭群</div>
+								<div>2017.6.8 2017</div>
+								<div>&yen;110,800</div>
+							</div>
+						</div>
+					</div>
+					<div class="sort_box sort_display">
+						<div class="sort_content">
+							<img src="images/33.jpg" class="img">
+							<div class= "sort_text">
+								<div>高梦琳</div>
+								<div>血脉森林 2017</div>
+								<div>&yen;44,800</div>
+							</div>
+						</div>
+						<div class="sort_content">
+							<img src="images/34.jpg">
+							<div class= "sort_text">
+								<div>张辉</div>
+								<div>玉兰树植物 2017</div>
+								<div>&yen;19,800</div>
+							</div>
+						</div>
+					</div>
+					<!-- ￥2,000-5,000 -->
+					<div class="sort" onclick="sort2()">
+						<h1 class="">&yen;2,000-5,000 </h1>
+						<img src="images/尖括号下.png" class="f_right">
+					</div>	
+					<div class="sort_box sort_display">
+						<div class="sort_content">
+							<img src="images/35.jpg" class="img">
+							<div class= "sort_text">
+								<div>贾宽</div>
+								<div>谁知道 2017</div>
+								<div>&yen;1,080</div>
+							</div>
+						</div>
+						<div class="sort_content">
+							<img src="images/36.jpg">
+							<div class= "sort_text">
+								<div>张迪</div>
+								<div>鹿 2017</div>
+								<div>&yen;1,050</div>
+							</div>
+						</div>
+					</div>
+					<div class="sort_box sort_display">
+						<div class="sort_content">
+							<img src="images/37.jpg" class="img">
+							<div class= "sort_text">
+								<div>宋迪</div>
+								<div>white 2017</div>
+								<div>&yen;1,400</div>
+							</div>
+						</div>
+						<div class="sort_content">
+							<img src="images/38.jpg">
+							<div class= "sort_text">
+								<div>刘海伦</div>
+								<div>紫色孔雀 2017</div>
+								<div>&yen;1,800</div>
+							</div>
+						</div>
+					</div>
+					<!-- 抽象 -->
+					<div class="sort" onclick="sort3()">
+						<h1 class="">抽象</h1>
+						<img src="images/尖括号下.png" class="f_right">
+					</div>	
+					<div class="sort_box sort_display">
+						<div class="sort_content">
+							<img src="images/39.jpg" class="img">
+							<div class= "sort_text">
+								<div>唐明伟</div>
+								<div>中国大于 2017</div>
+								<div>&yen;29,080</div>
+							</div>
+						</div>
+						<div class="sort_content">
+							<img src="images/40.jpg">
+							<div class= "sort_text">
+								<div>王玉峰</div>
+								<div>打字机 2015</div>
+								<div>&yen;1,050</div>
+							</div>
+						</div>
+					</div>
+					<div class="sort_box sort_display">
+						<div class="sort_content">
+							<img src="images/41.jpg" class="img">
+							<div class= "sort_text">
+								<div>于文文</div>
+								<div>为什么不能一直线 2017</div>
+								<div>&yen;5,400</div>
+							</div>
+						</div>
+						<div class="sort_content">
+							<img src="images/42.jpg">
+							<div class= "sort_text">
+								<div>角一</div>
+								<div>物体系列 2017</div>
+								<div>&yen;5,800</div>
+							</div>
+						</div>
+					</div>
+					<div class="sort_box sort_display">
+						<div class="sort_content">
+							<img src="images/43.jpg" class="img">
+							<div class= "sort_text">
+								<div>段小刚</div>
+								<div>形状 2017</div>
+								<div>&yen;20,400</div>
+							</div>
+						</div>
+						<div class="sort_content">
+							<img src="images/44.jpg">
+							<div class= "sort_text">
+								<div>彭涛</div>
+								<div>说明书 2017</div>
+								<div>&yen;34,800</div>
+							</div>
+						</div>
+					</div>
+					<!-- 陈可 -->
+					<div class="sort" onclick="sort4()">
+						<h1 class="">陈可 </h1>
+						<img src="images/尖括号下.png" class="f_right">
+					</div>
+					<div class="sort_box sort_display">
+						<div class="sort_content">
+							<img src="images/45.jpg" class="img">
+							<div class= "sort_text">
+								<div>陈可</div>
+								<div>月夜 2017</div>
+								<div>&yen;201,400</div>
+							</div>
+						</div>
+						<div class="sort_content">
+							<img src="images/46.jpg">
+							<div class= "sort_text">
+								<div>陈可</div>
+								<div>海 2017</div>
+								<div>&yen;61,800</div>
+							</div>
+						</div>
+					</div>
+					<div class="sort_box sort_display">
+						<div class="sort_content">
+							<img src="images/47.jpg" class="img">
+							<div class= "sort_text">
+								<div>陈可</div>
+								<div>湖边 2017</div>
+								<div>&yen;61,400</div>
+							</div>
+						</div>
+						<div class="sort_content">
+							<img src="images/48.jpg">
+							<div class= "sort_text">
+								<div>陈可</div>
+								<div>瀑布 2017</div>
+								<div>&yen;81,800</div>
+							</div>
+						</div>
+					</div>
+					<!-- 更多 -->
+					<div class="sort" onclick="sort()">
+						<h1 class="">还有更多…</h1>
+					</div>
+				</div>
 			</section>
 			<section>
 				<div class="footer">
@@ -76,6 +282,8 @@
 							<li><a href="html/合作伙伴入驻.html">合作伙伴入驻</a></li>
 						</ul>
 					</ul>
+					<div class="footer_text">京ICP备16003461号 Copyright © 2015-2016 艺网</div>
+					<div>YWART.COM 版权所有</div>
 				</div>
 			</section>
 		</div>

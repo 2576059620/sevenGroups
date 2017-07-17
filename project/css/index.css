@@ -14,6 +14,7 @@
 	height: 280px;
 	box-shadow: rgba(0,0,0,0.4) 3px 5px 5px;
 	margin-top: 30px;
+	padding-bottom: 10px;
 }
 .section_head_text{
 	align-self: center;
@@ -42,8 +43,9 @@
 	padding-bottom: 20px;
 }
 
+/*第二块内容*/
 .jd_banner{
-	margin-top: 20px;
+	margin-top: 10px;
 	width: 100%;
 	overflow: hidden;
 	position: relative;
@@ -59,24 +61,61 @@
 }
 .jd_banner>.image_box>li>a,.jd_banner>.image_box>li>a>img{
 	width: 100%;
-	height: 250px;
+	height: 200px;
 	display: block;
 }
 
-
-.jd_banner>.circle_box{
-	width: 150px;
-	height: 10px;
-	position: absolute;
-	bottom: 5px;
-	left: 50%;
-	overflow: hidden;
-	margin-left: -75px;
+/*第三块内容*/
+.three{
+	margin-top: 10px;
+	background-color: white;
 }
-.jd_banner>.circle_box>li{
-	width: 10px;
-	height: 10px;
-	border: 1px solid #fff;
-	float: left;
-	/*margin-left: 10px;*/
+.sort{
+	width: 100%;
+	height: 100px;
+	border: 1px solid rgb(238,238,238);
+	line-height: 100px;
+}
+.sort img{
+	width: 20px;
+	height: 20px;
+	margin-top: 40px;
+	margin-right: 20px;
+	display: inline-block;
+}
+.sort h1{
+	margin-left: 20px;
+	display: inline-block;
+}
+.sort_box{
+	width: 100%;
+	height: 300px;
+	display: flex;
+	display: none;
+}
+.sort_content>img{
+	width: 102%;
+	height: 220px;
+	margin-left: 8px;
+}
+.sort_content>.img{
+	width: 101%;
+	margin-left: 0px;
+}
+.sort_text{
+	margin-left: 10px;
+}
+.sort_text>div:nth-child(1){
+	color: rgb(60,148,139);
+	font-size: 15px;
+	font-weight: bold;
+}
+.sort_text>div:nth-child(2){
+	font-size: 10px;
+	font-weight: bold;
+}
+.sort_text>div:nth-child(3){
+	font-size: 16px;
+	font-weight: bolder;
+	margin-top: 10px;
 }
