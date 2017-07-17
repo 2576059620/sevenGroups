@@ -528,7 +528,7 @@
 		<div class="select_colour">
 			<p>颜色</p>
 			<table>
-				<tr>
+				<tr class="colour">
 					<td class="show-color"><span class="color1"></span></td>
 					<td><span class="color2"></span></td>
 					<td><span class="color3"></span></td>
@@ -538,7 +538,7 @@
 					<td><span class="color7"></span></td>
 					<td><span class="color8"></span></td>
 				</tr>
-				<tr>
+				<tr class="colour">
 					<td><span class="color9"></span></td>
 					<td><span class="color10"></span></td>
 					<td><span class="color11"></span></td>
@@ -562,9 +562,9 @@
 		
 		<div class="style">
 			<p>风格</p>
-			<table>
+			<table class="style">
 				<tr>
-					<td>全部</td>
+					<td class="show-style">全部</td>
 					<td>抽象</td>
 					<td>具象</td>
 					<td>观念</td>
@@ -576,6 +576,30 @@
 					<td>其他</td>
 				</tr>
 			</table>
+		</div>
+
+		<div class="theme">
+			<p>题材</p>
+			<table class="theme">
+				<tr>
+					<td class="show-theme">全部</td>
+					<td>抽象</td>
+					<td>具象</td>
+					<td>观念</td>
+				</tr>
+				<tr>
+					<td>卡通</td>
+					<td>传统国画</td>
+					<td>实验水墨</td>
+					<td>其他</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="button">
+			<button>重置</button>
+			<button>确定</button>
+			<div class="close" onclick="goBack()"></div>
 		</div>
 
 	</div>

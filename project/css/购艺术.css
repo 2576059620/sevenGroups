@@ -63,7 +63,7 @@ body{
 	margin-right: 20px;
 }
 .biserial_highlight{
-	background-image: url(../images/multi_active.svg);/*ºÚ*/
+	background-image: url(../images/multi_active.svg);/*黑*/
 }
 .single_row{
 	height: 20px;
@@ -72,7 +72,7 @@ body{
 	margin-right: 10px;
 }
 .single_row_highlight{
-	background-image: url(../images/single_active.svg);/*ºÚ*/
+	background-image: url(../images/single_active.svg);/*黑*/
 }
 .filtrate{
 	width: 45px;
@@ -112,11 +112,12 @@ body{
 	display: none;
 	margin-top: -20px;
 }
-/*Ö÷Ò³ÏÔÊ¾*/
+/*主页隐藏*/
 .ys_boss{
 	display: none;
 }
 
+/*尺寸 价格*/
 .screen{
 	background-color: rgb(247,247,247);
 }
@@ -145,7 +146,7 @@ body{
 	font-weight: bold;
 }
 
-/*ÑÕÉ«Ñ¡Ôñ*/
+/*颜色*/
 .select_colour{
 	width: 100%;
 	height: 125px;
@@ -234,7 +235,7 @@ table span{
 	border: 1px solid black;
 }
 
-/*ÐÎ×´Ñ¡Ôñ*/
+/*形状*/
 .shape{
 	width: 100%;
 	height: 105px;
@@ -326,38 +327,77 @@ table span{
 	background-color: black;
 	border: none;
 }
-/*·ç¸ñ*/
-.style{
+/*风格 题材*/
+.style,.theme{
 	width: 100%;
 	height: 135px;
 	background-color: white;
 	margin-bottom: 10px;
 	padding-left: 15px;
 }
-.style>p{
+.style>p,.theme>p{
 	margin-left: 6px;
 	font-size: 15px;
 	font-weight: bold;
 	padding-top: 18px;
 }
-.style>table{
+.style>table,.theme>table{
 	width: 95%;
 	height: 75px;
 	margin-top: 15px;
 	margin-left: 10px;
 }
-.style>table tr,.style>table td{
-	border: 1px solid black;
+.style>table td,.theme>table td{
+	border: 1px solid rgb(239,239,239);
 	text-align: center;
-	border-spacing: 5px 5px;	
+	border-radius: 10px;
+	color: rgb(168,168,168);
 }
-.style>table td{
-	border-spacing: 5px 5px;	
+.style>table tr,.theme>table tr{
+	width: 95%;
+	height: 30px;
 }
-.style>table>tr{
-	width: 100%;
-	height: 50px;
-}
-.style>table tr td{
+.style>table tr td,.theme>table tr td{
 	width: 25%;
+}
+.style tr .show-style{
+	border: 1px solid rgb(129,129,129);
+	color: rgb(0,0,0);
+}
+.theme tr .show-theme{
+	border: 1px solid rgb(129,129,129);
+	color: rgb(0,0,0);
+}
+
+/*按钮*/
+.button{
+	border: 1px solid rgb(229,229,229);
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	position: fixed;
+	bottom: 0px;
+	overflow: hidden;
+}
+.button>button{
+	height: 60%;
+	width: 27%;
+	margin-top: 12px;
+	background-color: white;
+	border: 2px solid rgb(129,129,129);
+	color: rgb(109,109,109);
+	font-size: 13px;
+}
+.button>button:nth-child(1){
+	margin-left: 20px;
+}
+.close{
+	height: 40%;
+	width: 5%;
+	background-image: url(../images/差号.png);
+	background-size: 100% 100%;
+	display: inline-block;
+	float: right;
+	margin-top: 15px;
+	margin-right: 18px;
 }
