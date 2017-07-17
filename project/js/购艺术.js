@@ -19,7 +19,7 @@
 		$(".time").css("display","none");
 		$(".cost1").css("display","none");
 		$(".cost").css("display","inline");
-		$("#all").css("display","none");
+		$(".container").css("display","none");
 		$("#painting").css("display","block");
 	}
 	function time1(){
@@ -45,188 +45,226 @@
 		$(".cost").css("display","none");
 		$(".time1").css("display","none");
 		$(".time").css("display","inline");
-		$("#all").css("display","none");
+		$(".container").css("display","none");
 		$("#shoot").css("display","block");
-		$("#painting").css("display","none");
-		$("#print").css("display","none");
 	}
 	function cost1(){
 		$(".cost1 span").css("color","black");
 		var span=$(".cost1 span").text();
 		if (span=="▼") {
 			$(".cost1 span").text("▲");
-			$("#all").css("display","none");
+			$(".container").css("display","none");
 			$("#sculpture").css("display","block");
-			$("#shoot").css("display","none");
-			$("#painting").css("display","none");
-			$("#print").css("display","none");
 		}
 		if (span=="▲") {
 			$(".cost1 span").text("▼");
-			$("#all").css("display","none");
-			$("#sculpture").css("display","none");
+			$(".container").css("display","none");
 			$("#shoot").css("display","block");
-			$("#painting").css("display","none");
-			$("#print").css("display","none");
 		}
 	}
 
-	function biserial(){
-		var img = $(".biserial").css("background-image");
-		// console.log(img);
-		// console.log(img.split("/",6)[5]);
-		var img1=img.split("/",6)[5];
-		// console.log(img1.split('"',3)[0]);
-		var url=img1.split('"',3)[0];
-		if (url == "multi_active.svg") {
-			$(".biserial").css("background-image","url(../images/multi_column.svg)");
-			$(".single_row").css("background-image","url(../images/single_active.svg)");
-			$("#all").css("display","none");
-			$("#page").css("display","block");
-			$("#painting").css("display","none");
-			$("#print").css("display","none ");
-			$("#chinese").css("display","none");
-			$("#sculpture").css("display","none");
-			$("#shoot").css("display","none");
-			$("#else").css("display","none");
-			$("#water").css("display","none");
-		}
-		if (url == "multi_column.svg") {
-			$(".biserial").css("background-image","url(../images/multi_active.svg)");
-			$(".single_row").css("background-image","url(../images/single_column.svg)");
+//	来回切换
+	var flag = true;	//当前页面
+	function toggleView(){
+		flag = !flag;		
+		if (flag) {
+			$(".biserial").addClass('biserial_highlight') 
+			$(".single_row").removeClass('single_row_highlight');
 			$("#all").css("display","block");
-			$("#page").css("display","none");
-			$("#painting").css("display","none");
-			$("#print").css("display","none ");
-			$("#chinese").css("display","none");
-			$("#sculpture").css("display","none");
-			$("#shoot").css("display","none");
-			$("#else").css("display","none");
-			$("#water").css("display","none");
-		} 
-	}
-	function single_row(){
-		var img = $(".single_row").css("background-image");
-		// console.log(img);
-		// console.log(img.split("/",6)[5]);
-		var img1=img.split("/",6)[5];
-		// console.log(img1.split('"',3)[0]);
-		var url=img1.split('"',3)[0];
-		if (url == "single_column.svg") {
-			$(".biserial").css("background-image","url(../images/multi_column.svg)");
-			$(".single_row").css("background-image","url(../images/single_active.svg)");
-			$("#all").css("display","none");
+			$("container").css("display","none");
+		}else{
+			$(".single_row").addClass('single_row_highlight')
+			$(".biserial").removeClass('biserial_highlight')
+			$(".container").css("display","none");
 			$("#page").css("display","block");
-			$("#print").css("display","none ");
-			$("#chinese").css("display","none");
-			$("#sculpture").css("display","none");
-			$("#shoot").css("display","none");
-			$("#else").css("display","none");
-			$("#water").css("display","none");
-		}
-		if (url == "single_active.svg") {
-			$(".biserial").css("background-image","url(../images/multi_active.svg)");
-			$(".single_row").css("background-image","url(../images/single_column.svg)");
-			$("#all").css("display","block");
-			$("#page").css("display","none");
-			$("#painting").css("display","none");
-			$("#print").css("display","none ");
-			$("#chinese").css("display","none");
-			$("#sculpture").css("display","none");
-			$("#shoot").css("display","none");
-			$("#else").css("display","none");
-			$("#water").css("display","none");
 		}
 	}
 
-
-	//图片选择
-	//
-		//全部
+	//全部
 	function alls(){
+		$(".container").css("display","none");
 		$("#all").css("display","block");
-		$("#painting").css("display","none");
-		$("#print").css("display","none ");
-		$("#chinese").css("display","none");
-		$("#sculpture").css("display","none");
-		$("#shoot").css("display","none");
-		$("#else").css("display","none");
-		$("#water").css("display","none");
 	}
 	//油画
 	function painting(){
-		$("#all").css("display","none");
+		$(".container").css("display","none");
 		$("#painting").css("display","block");
-		$("#print").css("display","none ");
-		$("#chinese").css("display","none");
-		$("#sculpture").css("display","none");
-		$("#shoot").css("display","none");
-		$("#else").css("display","none");
-		$("#water").css("display","none");
 	}
 	//版画
 	 function print(){
-		$("#all").css("display","none");
-		$("#painting").css("display","none");
+		$(".container").css("display","none");
 		$("#print").css("display","block ");
-		$("#chinese").css("display","none");
-		$("#sculpture").css("display","none");
-		$("#shoot").css("display","none");
-		$("#else").css("display","none");
-		$("#water").css("display","none");
 	}
 	//水墨
 	function chinese(){
-		$("#all").css("display","none");
-		$("#painting").css("display","none");
-		$("#print").css("display","none ");
+		$(".container").css("display","none");
 		$("#chinese").css("display","block");
-		$("#sculpture").css("display","none");
-		$("#shoot").css("display","none");
-		$("#else").css("display","none");
-		$("#water").css("display","none");
 	}
 	//水彩(粉)
 	function water(){
+		$(".container").css("display","none");
 		$("#water").css("display","block");
-		$("#all").css("display","none");
-		$("#painting").css("display","none");
-		$("#print").css("display","none ");
-		$("#chinese").css("display","none");
-		$("#sculpture").css("display","none");
-		$("#shoot").css("display","none");
-		$("#else").css("display","none");
 	}
 	//雕塑
 	function sculpture(){
-		$("#all").css("display","none");
-		$("#painting").css("display","none");
-		$("#print").css("display","none ");
-		$("#chinese").css("display","none");
+		$(".container").css("display","none");
 		$("#sculpture").css("display","block");
-		$("#shoot").css("display","none");
-		$("#else").css("display","none");
-		$("#water").css("display","none");
 	}
 	//摄影
 	function shoot(){
-		$("#all").css("display","none");
-		$("#painting").css("display","none");
-		$("#print").css("display","none ");
-		$("#chinese").css("display","none");
-		$("#sculpture").css("display","none");
+		$(".container").css("display","none");
 		$("#shoot").css("display","block");
-		$("#else").css("display","none");
-		$("#water").css("display","none");
 	}
 	//其他
 	function elses(){
-		$("#all").css("display","none");
-		$("#painting").css("display","none");
-		$("#print").css("display","none ");
-		$("#chinese").css("display","none");
-		$("#sculpture").css("display","none");
-		$("#shoot").css("display","none");
+		$(".container").css("display","none");
 		$("#else").css("display","block");
-		$("#water").css("display","none");
+	}
+
+	//	颜色选择
+	$(document).ready(function(){
+		function clickMenu (menus, menuClassName) {
+			menus.on('click', function(){
+				$.each(menus, function () {
+					$(this).removeClass(menuClassName);
+				})
+				$(this).addClass(menuClassName);
+			})
+		}
+		var $mainMenuSpan  = $("tr td");
+		clickMenu($mainMenuSpan,'show-color');
+	})
+
+	//形状选择
+	// $(document).ready(function(){
+	// 	function clickMenu (menus, menuClassName) {
+	// 		menus.on('click', function(){
+	// 			$.each(menus, function () {
+	// 				$(this).removeClass(menuClassName);
+	// 			})
+	// 			$(this).addClass(menuClassName);
+	// 		})
+	// 	}
+	// 	var $mainMenuSpan  = $(".shape div");
+	// 	clickMenu($mainMenuSpan,'show-shape');
+	// })
+	//正方形
+	var just1 = true;
+	function just(){
+		just1 = !just1;		
+		if (!just1) {
+			$(".just").addClass('just2');
+			$(".just2").removeClass('just1');
+
+			$(".long2").addClass('long1');
+			$(".long1").removeClass('long2');
+
+			$(".vertical2").addClass('vertical1');
+			$(".vertical1").removeClass('vertical2');
+
+			$(".circle2").addClass('circle1');
+			$(".circle1").removeClass('circle2');
+
+			$(".star1").addClass('star');
+			$(".star").removeClass('star1');
+		}else{
+			$(".just2").addClass('just1');
+			$(".just1").removeClass('just2');
+		}
+	}
+	//长方形
+	var long1 = true;
+	function long(){
+		long1 = !long1;		
+		if (!long1) {
+			$(".long").addClass('long2');
+			$(".long2").removeClass('long1');
+
+			$(".just2").addClass('just1');
+			$(".just1").removeClass('just2');
+
+			$(".vertical2").addClass('vertical1');
+			$(".vertical1").removeClass('vertical2');
+
+			$(".circle2").addClass('circle1');
+			$(".circle1").removeClass('circle2');
+
+			$(".star1").addClass('star');
+			$(".star").removeClass('star1');
+		}else{
+			$(".long2").addClass('long1');
+			$(".long1").removeClass('long2');
+		}
+	}
+	//竖方形
+	var vertical1 = true;
+	function vertical(){
+		vertical1 = !vertical1;		
+		if (!vertical1) {
+			$(".vertical").addClass('vertical2');
+			$(".vertical2").removeClass('vertical1');
+
+			$(".long2").addClass('long1');
+			$(".long1").removeClass('long2');
+
+			$(".just2").addClass('just1');
+			$(".just1").removeClass('just2');
+
+			$(".circle2").addClass('circle1');
+			$(".circle1").removeClass('circle2');
+			
+			$(".star1").addClass('star');
+			$(".star").removeClass('star1');
+		}else{
+			$(".vertical2").addClass('vertical1');
+			$(".vertical1").removeClass('vertical2');
+		}
+	}
+	//圆
+	var circle1 = true;
+	function circle(){
+		circle1 = !circle1;		
+		if (!circle1) {
+			$(".circle").addClass('circle2');
+			$(".circle2").removeClass('circle1');	
+
+			$(".vertical2").addClass('vertical1');
+			$(".vertical1").removeClass('vertical2');
+				
+			$(".long2").addClass('long1');
+			$(".long1").removeClass('long2');
+
+			$(".just2").addClass('just1');
+			$(".just1").removeClass('just2');
+			
+			$(".star1").addClass('star');
+			$(".star").removeClass('star1');
+		}else{
+			$(".circle2").addClass('circle1');
+			$(".circle1").removeClass('circle2');
+		}
+	}
+	//星
+	var flag = true;
+	function star(){
+		flag = !flag;		
+		if (flag) {
+			$(".star1").addClass('star');
+			$(".star").removeClass('star1');
+		}else{
+			$(".star").addClass('star1');
+			$(".star1").removeClass('star');
+
+			$(".circle2").addClass('circle1');
+			$(".circle1").removeClass('circle2');	
+
+			$(".vertical2").addClass('vertical1');
+			$(".vertical1").removeClass('vertical2');
+				
+			$(".long2").addClass('long1');
+			$(".long1").removeClass('long2');
+
+			$(".just2").addClass('just1');
+			$(".just1").removeClass('just2');
+		}
 	}
