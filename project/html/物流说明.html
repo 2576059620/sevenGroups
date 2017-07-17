@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+	<script src="../js/jquery-3.1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/物流说明.css">
+
+	<title></title>
+</head>
+<body>
+	<div class="ys_boss">
+		<header class="ys_banner">		
+			<a href="https://www.ywart.com/login" class="ys_a"><input type="submit" value="创建账号"  class="ys_input1"></a>
+			<a href="https://www.ywart.com/login" class="ys_a"><input type="submit" value="登录" class="ys_input2"></a>
+			<input type="text" placeholder="搜索艺术家或艺术品" class="ys_input3">
+			<img src="../images/yuan.jpg" class="ys_img1" >
+			<img src="../images/X.jpg" class="ys_imgx">
+		
+		
+		</header>
+		
+		<div class="section_div">
+			<p>物流说明</p>
+			<hr><br><br><br>
+			为了确保艺术品能安全送抵用户手中，艺网会以最高规格艺术品物流方式进行发货。
+			<br><br>
+			在您下单购买艺术品后，艺网工作人员会在2个小时内与您取得联系，与您沟通如下事宜：
+			<br><br>
+			1 与您确认装裱艺术品装裱，由于部分艺术品画作在销售后进行装裱，这些艺术品需要5-6个工作日完成装裱工作方能寄送给您。
+			<br><br>
+			2 与您确认收货时间、地点和包装方式。
+			<br><br><br><br>
+			<img src="../images/bz.jpg" class="section_img1">
+			<br><br><br><br>
+			<p>关于艺网发货</p><br><br>
+			艺网所售艺术品都是高规格艺术品包装。
+			<br><br>
+			如果所购艺术品用于馈赠亲友需要特殊包装，请告知艺网客服代表，我们将尽心为您服务。
+			<br><br>
+			艺网艺术品的物流服务全权委托专业的艺术品物流公司EES百福东方进行服务，为每件艺术品投保运输险确保运输万无一失。
+			<br><br>
+			<hr>
+			<br><br>
+			<p>收货说明</p>
+			<br><br>
+			当您收到艺术品后请购买者本人或代收者配合物流人员完成以下工作：
+			<br><br>
+			1 请配合物流人员完成拍照确认，如果未发现损毁请在物流单上签字签收。
+			<br><br>
+			2 当面开箱验货，检查艺术品是否与所拍品一致，艺术品本体和装裱有无损坏。如有损坏请及时与客服联系（400-605-7033），与艺网商议解决。
+			<br><br>
+			以上操作中遇到任何问题，您均可要求物流人员将货品退回。
+			<br><br>
+			<hr>
+			<br><br>
+			<p>不同种类艺术品包装方式介绍</p>
+			<br><br>
+			版画、油画、水粉画: 作品在客户收到时是从艺术家工作室原样送达的，部分作品艺术家已配画框，包装会采用艺术品专业物流纸箱和内衬保护。
+			<br><br>
+			国画：艺网所售国画作品均未进行装裱，用户可以根据自己喜好来装裱。国画作品会装于加厚画筒中运输。
+			<br><br>
+			雕塑/装置：所有雕塑、装置艺术品艺网将委托物流公司制作木箱和保护进行运输，如果在收到艺术品后遇到组装问题，请与艺网客服联系。
+ 
+		</div>
+		<br><br><br><br><br><br><br><br>
+		
+
+
+
+
+	<footer class="footer">
+			<img src="../images/96.png" alt="">
+			<div>艺网APP<br>艺术生活方式专家</div>
+			<a href=""><input type="button" value="查看更多"></a>
+	</footer>
+
+	</div>
+	<script>
+				$(".ys_img1").click(function(){
+			$('.ys_input1').css('display', 'none');
+			$(".ys_input2").css("display","none");
+			$(".ys_input3").css("display","inline");
+			// $(".ys_img1").attr('src',"X.jpg"); 
+			$(".ys_img1").css("display","none");
+			$(".ys_imgx").css("display","inline");
+			$(".ys_a").css("display","none");
+			
+			
+		})
+		$(".ys_imgx").click(function(){
+			$('.ys_input1').css('display', 'inline');
+			$(".ys_	input2").css("display","inline");
+			$(".ys_input3").css("display","none");
+			// $(".ys_img1").attr('src',"X.jpg"); 
+			$(".ys_img1").css("display","inline");
+			$(".ys_imgx").css("display","none");
+			$(".ys_a").css("display","inline");
+			
+			
+		})
+				
+	</script>	
+</body>
+</html>

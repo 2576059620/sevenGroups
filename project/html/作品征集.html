@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+	<script src="../js/jquery-3.1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/作品征集.css">
+
+	<title></title>
+</head>
+<body>
+	<div class="ys_boss">
+		<header class="ys_banner">		
+			<a href="https://www.ywart.com/login" class="ys_a"><input type="submit" value="创建账号"  class="ys_input1"></a>
+			<a href="https://www.ywart.com/login" class="ys_a"><input type="submit" value="登录" class="ys_input2"></a>
+			<input type="text" placeholder="搜索艺术家或艺术品" class="ys_input3">
+			<img src="../images/yuan.jpg" class="ys_img1" >
+			<img src="../images/X.jpg" class="ys_imgx">
+		
+		
+		</header>
+		
+		<div class="section_div">
+			<p>艺网作品征集</p>
+			<br><br><hr>
+			<br><br>
+			艺网现面向艺术家征集可销售原创艺术作品，作品征集类型：油画、国画、版画、雕塑、水墨、水粉、摄影等作品类型。每位艺术家5-8件作品为宜。
+			<br><br>
+        	如果您有意向与艺网进行合作，且作品符合要求，请将以下资料整理后，以压缩包的形式发送至艺网征集邮箱。
+			<br><br>
+			1. 作品图片（像素不低于4096 x 2160px ）
+			<br><br>
+			2. 作品的信息（名称/尺寸/材质/创作时间/版数）
+			<br><br>
+			3. 作品细节图（签名图，钤印图）
+			<br><br>
+			4. 个人简历（教育经历/参展经历/获奖经历等信息）
+			<br><br>
+			5. 个人照片（像素不低于800 x 800px ）
+			<br><br>
+			6. 个人联系方式（电话/邮箱/微信号）
+			<br><br>
+			7. 作品自述或评论文章
+			<br><br>
+			8. 作品底价 
+			<br><br><br><br>
+			<p>特别说明：</p>
+			<br><br>
+			请提供未涉及其他艺术机构（含电商）销售的艺术作品，作品一经采用
+			<br><br>
+			立即签订艺术作品合作协议，进行作品独家代理，代理期不低于十个月。
+			<br><br>
+
+			征集热线： 010-65532511 
+			<br><br>
+			征集邮箱：ywart@ywart.com
+			<br><br>
+			征集微信号：ywart-1
+		</div>
+		<br><br><br><br><br><br><br><br>
+		
+
+
+
+
+	<footer class="footer">
+			<img src="../images/96.png" alt="">
+			<div>艺网APP<br>艺术生活方式专家</div>
+			<a href=""><input type="button" value="查看更多"></a>
+	</footer>
+
+	</div>
+	<script>
+				$(".ys_img1").click(function(){
+			$('.ys_input1').css('display', 'none');
+			$(".ys_input2").css("display","none");
+			$(".ys_input3").css("display","inline");
+			// $(".ys_img1").attr('src',"X.jpg"); 
+			$(".ys_img1").css("display","none");
+			$(".ys_imgx").css("display","inline");
+			$(".ys_a").css("display","none");
+			
+			
+		})
+		$(".ys_imgx").click(function(){
+			$('.ys_input1').css('display', 'inline');
+			$(".ys_	input2").css("display","inline");
+			$(".ys_input3").css("display","none");
+			// $(".ys_img1").attr('src',"X.jpg"); 
+			$(".ys_img1").css("display","inline");
+			$(".ys_imgx").css("display","none");
+			$(".ys_a").css("display","inline");
+			
+			
+		})
+				
+	</script>	
+</body>
+</html>
