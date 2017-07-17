@@ -131,7 +131,7 @@
 				$(this).addClass(menuClassName);
 			})
 		}
-		var $mainMenuSpan  = $("tr td");
+		var $mainMenuSpan  = $(".colour td");
 		clickMenu($mainMenuSpan,'show-color');
 	})
 
@@ -268,3 +268,51 @@
 			$(".just1").removeClass('just2');
 		}
 	}
+
+	//风格
+	// $(document).ready(function(){
+	// 	function clickMenu (menus, menuClassName) {
+	// 		menus.on('click', function(){
+	// 			$.each(menus, function () {
+	// 				$(this).removeClass(menuClassName);
+	// 			})
+	// 			$(this).addClass(menuClassName);
+	// 		})
+	// 	}
+	// 	var $mainMenuSpan  = $(".style td");
+	// 	clickMenu($mainMenuSpan,'show-style');
+	// })
+	$(document).ready(function(){
+		function clickMenu (menus, menuClassName) {
+			menus.on('click', function(){
+				$.each(menus, function () {
+					$(this).removeClass(menuClassName);
+				})
+				$(this).addClass(menuClassName);
+			})
+		}
+		var $mainMenuSpan  = $(".style td");
+		clickMenu($mainMenuSpan,'show-style');
+	})
+
+	//题材
+	$(document).ready(function(){
+		function clickMenu (menus, menuClassName) {
+			menus.on('click', function(){
+				$.each(menus, function () {
+					$(this).removeClass(menuClassName);
+				})
+				$(this).addClass(menuClassName);
+			})
+		}
+		var $mainMenuSpan  = $(".theme td");
+		clickMenu($mainMenuSpan,'show-theme');
+	})
+
+	// $(document).ready(function(){
+	$scope.goBack = function(){
+		//通过调用浏览器的返回事件，实现返回到主页的效果
+		window.history.back();
+	}
+
+	// })
