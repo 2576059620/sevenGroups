@@ -538,51 +538,51 @@
 			<p>颜色</p>
 			<table>
 				<tr class="colour">
-					<td class="colors1 show-color"><span class="color1"></span></td>
-					<td class="color"><span class="color2"></span></td>
-					<td class="color"><span class="color3"></span></td>
-					<td class="color"><span class="color4"></span></td>
-					<td class="color"><span class="color5"></span></td>
-					<td class="color"><span class="color6"></span></td>
-					<td class="color"><span class="color7"></span></td>
-					<td class="color"><span class="color8"></span></td>
+					<td class="colors1 color show-color" onclick="colour(this)"><span class="color1" onclick="colour(this)"></span></td>
+					<td class="color" onclick="colour(this)"><span class="color2"></span></td>
+					<td class="color" onclick="colour(this)"><span class="color3"></span></td>
+					<td class="color" onclick="colour(this)"><span class="color4"></span></td>
+					<td class="color" onclick="colour(this)"><span class="color5"></span></td>
+					<td class="color" onclick="colour(this)"><span class="color6"></span></td>
+					<td class="color" onclick="colour(this)"><span class="color7"></span></td>
+					<td class="color" onclick="colour(this)"><span class="color8"></span></td>
 				</tr>
 				<tr class="colour">
-					<td class="color"><span class="color9"></span></td>
-					<td class="color"><span class="color10"></span></td>
-					<td class="color"><span class="color11"></span></td>
-					<td class="color"><span class="color12"></span></td>
-					<td class="color"><span class="color13"></span></td>
-					<td class="color"><span class="color14"></span></td>
-					<td class="color"><span class="color15"></span></td>
-					<td class="color"><span class="color16"></span></td>
+					<td class="color" onclick="colour(this)"><span class="color9"></span></td>
+					<td class="color" onclick="colour(this)"><span class="color10"></span></td>
+					<td class="color" onclick="colour(this)"><span class="color11"></span></td>
+					<td class="color" onclick="colour(this)"><span class="color12"></span></td>
+					<td class="color" onclick="colour(this)"><span class="color13"></span></td>
+					<td class="color" onclick="colour(this)"><span class="color14"></span></td>
+					<td class="color" onclick="colour(this)"><span class="color15"></span></td>
+					<td class="color" onclick="colour(this)"><span class="color16"></span></td>
 				</tr>
 			</table>
 		</div>
 		
 		<div class="shape">
 			<p>形状</p>
-			<div class="just shap just1" onclick="just()"></div>
-			<div class="long shap" onclick="long()"></div>
-			<div class="vertical shap" onclick="vertical()"></div>
-			<div class="circle shap" onclick="circle()"></div>
-			<span class="star" onclick="star()"></span>
+			<div class="just shape" onclick="selectShape(this,false)"></div>
+			<div class="long shape" onclick="selectShape(this,false)"></div>
+			<div class="vertical shape" onclick="selectShape(this,false)"></div>
+			<div class="circle shape" onclick="selectShape(this,false)"></div>
+			<span class="star" onclick="selectShape(this,true)"></span>
 		</div>
 		
 		<div class="style">
 			<p>风格</p>
 			<table class="style">
 				<tr>
-					<td class="style2 show-style style1" onclick="all1()">全部</td>
-					<td class="abstract style1" onclick="abstract()">抽象</td>
-					<td class="utensil style1" onclick="utensil()">具象</td>
-					<td class="style1">观念</td>
+					<td class="all show-style style1" onclick="style1(this)">全部</td>
+					<td class="abstract style1" onclick="style1(this)">抽象</td>
+					<td class="utensil style1" onclick="style1(this)">具象</td>
+					<td class="concept style1" onclick="style1(this)">观念</td>
 				</tr>
 				<tr>
-					<td class="style1">卡通</td>
-					<td class="style1">传统国画</td>
-					<td class="style1">实验水墨</td>
-					<td class="style1">其他</td>
+					<td class="cartoon style1" onclick="style1(this)">卡通</td>
+					<td class="tradition style1" onclick="style1(this)">传统国画</td>
+					<td class="test style1" onclick="style1(this)">实验水墨</td>
+					<td class="else1 style1" onclick="style1(this)">其他</td>
 				</tr>
 			</table>
 		</div>
@@ -591,16 +591,16 @@
 			<p>题材</p>
 			<table class="theme">
 				<tr>
-					<td class="themen1 show-theme">全部</td>
-					<td class="themen2">抽象</td>
-					<td class="themen2">具象</td>
-					<td class="themen2">观念</td>
+					<td class="themen1 themen2 show-theme" onclick="theme(this)">全部</td>
+					<td class="themen2" onclick="theme(this)">抽象</td>
+					<td class="themen2" onclick="theme(this)">具象</td>
+					<td class="themen2" onclick="theme(this)">观念</td>
 				</tr>
 				<tr>
-					<td class="themen2">卡通</td>
-					<td class="themen2">传统国画</td>
-					<td class="themen2">实验水墨</td>
-					<td class="themen2">其他</td>
+					<td class="themen2" onclick="theme(this)">卡通</td>
+					<td class="themen2" onclick="theme(this)">传统国画</td>
+					<td class="themen2" onclick="theme(this)">实验水墨</td>
+					<td class="themen2" onclick="theme(this)">其他</td>
 				</tr>
 			</table>
 		</div>

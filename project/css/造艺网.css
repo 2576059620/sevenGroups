@@ -164,17 +164,14 @@ ul,ol{
 /*myself 章节*/
 section{
 	width: 100%;
-	height:1500px; 
 	max-width: 640px;
 	min-width: 320px;
     background-color: rgb(238,238,238);
-	/*border:1px solid black;*/
 	margin:auto;
 }
 .section_bg{
 	width: 100%;
 	height: 600px;
-	/*border:1px solid red;*/
 	background-image: url(../images/banner_bg.jpg);
 	background-repeat:no-repeat;
 	background-size:100% 600px;
@@ -191,7 +188,6 @@ section{
 	width: 80%;
 	height: 50%;
 	margin: 50px auto;
-	/*border:1px solid red;*/
 }
 .section_workes>a>img{
 	width: 100%;
@@ -201,7 +197,6 @@ section{
 .section_logo_en{
 	max-width: 640px;
 	min-width: 320px;
-	/*border:1px solid red;*/
 	width: 30%;
 	height: 30%;
 	margin: 0 auto;
@@ -236,12 +231,26 @@ hr{
 	height:350px;
 	max-width: 640px;
 	min-width: 320px;
-	/*border:1px solid blue;*/
-	display: flex;
 }
 .year{
 	width: 100%;
-	height: 100%;
+	overflow: hidden;
+}
+.year>div img{
+	width: 100%;
+}
+.f_left{
+	float: left;
+	background-color: rgb(228,229,223);
+}
+.f_right{
+	float: right;
+}
+.w_30{
+	width: 30%;
+}
+.w_65{
+	width: 65%;
 }
 .tops_box>.year>a>img{
 	width: 50%;
@@ -251,15 +260,10 @@ hr{
 .tops_box>.year>a{
 
 }
-.year_text{
-	width: 50%;
-	height: 50%;
-	background-color: rgb(228,229,223);
+.f_left>div p{
+	font-size: 0.1px;
 	text-align: center;
-	padding:15px;
-
 }
-.year_text>p{
-	font-size:1px;
+.one{
+	background-color:rgb(209,196,107);
 }
-
