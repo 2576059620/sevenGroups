@@ -122,18 +122,18 @@
 	}
 
 	//	颜色选择
-	$(document).ready(function(){
-		function clickMenu (menus, menuClassName) {
-			menus.on('click', function(){
-				$.each(menus, function () {
-					$(this).removeClass(menuClassName);
-				})
-				$(this).addClass(menuClassName);
-			})
+	function colour(ele){
+		if ($(ele).hasClass('show-color')) {
+			$(".color").removeClass('show-color');	
+			$(ele).removeClass('show-color');
+			$(".colors1").addClass('show-color');	
+		}else{
+			$(".colors1").removeClass('show-color1'); 
+			$(".color").removeClass('show-color'); 
+			$(ele).removeClass('show-color');
+			$(ele).addClass('show-color');
 		}
-		var $mainMenuSpan  = $(".colour td");
-		clickMenu($mainMenuSpan,'show-color');
-	})
+	}
 	//形状选择
 	function selectShape(ele,isStar){// isStar背景星图片
 		if (isStar) {			//如果点击的是星 其他移除所以高亮属性
@@ -153,125 +153,32 @@
 			}
 		}
 	}
-
 	//风格
-	// var flag = true;
-	// function all1(){
-	// 	flag = !flag;		
-	// 	if (flag) {			
-	// 		$(".style2").addClass('show-style');
-	// 		$(".abstract").removeClass('show-style');
-	// 		$(".utensil").removeClass('show-style');
-	// 		$(".concept").removeClass('show-style');
-	// 		$(".cartoon").removeClass('show-style');
-	// 		$(".tradition").removeClass('show-style');
-	// 		$(".test").removeClass('show-style');
-	// 		$(".else1").removeClass('show-style');
-
-	// 	}else{			
-			
-	// 	}
-	// }
-	// var flag = true;
-	// function abstract(){
-	// 	flag = !flag;		
-	// 	if (flag) {
-	// 		$(".style2").addClass('show-style');
-	// 		$(".abstract").removeClass('show-style');
-	// 		$(".utensil").removeClass('show-style');
-	// 		$(".concept").removeClass('show-style');
-	// 		$(".cartoon").removeClass('show-style');
-	// 		$(".tradition").removeClass('show-style');
-	// 		$(".test").removeClass('show-style');
-	// 		$(".else1").removeClass('show-style');
-	// 	}else{
-	// 		$(".abstract").addClass('show-style');
-	// 		$(".style2").removeClass('show-style');
-	// 		// $(".utensil").removeClass('show-style');
-	// 		// $(".concept").removeClass('show-style');
-	// 		// $(".cartoon").removeClass('show-style');
-	// 		// $(".tradition").removeClass('show-style');
-	// 		// $(".test").removeClass('show-style');
-	// 		// $(".else1").removeClass('show-style');
-			
-	// 	}
-	// }
-	// var flag = true;
-	// function utensil(){
-	// 	flag = !flag;		
-	// 	if (flag) {
-	// 		$(".style2").addClass('show-style');
-	// 		$(".utensil").removeClass('show-style');
-	// 		$(".abstract").removeClass('show-style');
-	// 		$(".concept").removeClass('show-style');
-	// 		$(".cartoon").removeClass('show-style');
-	// 		$(".tradition").removeClass('show-style');
-	// 		$(".test").removeClass('show-style');
-	// 		$(".else1").removeClass('show-style');
-	// 	}else{
-	// 		$(".utensil").addClass('show-style');
-	// 		$(".style2").removeClass('show-style');
-	// 		// $(".abstract").removeClass('show-style');
-	// 		// $(".concept").removeClass('show-style');
-	// 		// $(".cartoon").removeClass('show-style');
-	// 		// $(".tradition").removeClass('show-style');
-	// 		// $(".test").removeClass('show-style');
-	// 		// $(".else1").removeClass('show-style');
-			
-	// 	}
-	// }
-	// var flag = true;
-	// function concept(){
-	// 	flag = !flag;		
-	// 	if (flag) {
-	// 		$(".style2").addClass('show-style');
-	// 		$(".utensil").removeClass('show-style');
-	// 		$(".abstract").removeClass('show-style');
-	// 		$(".concept").removeClass('show-style');
-	// 		$(".cartoon").removeClass('show-style');
-	// 		$(".tradition").removeClass('show-style');
-	// 		$(".test").removeClass('show-style');
-	// 		$(".else1").removeClass('show-style');
-	// 	}else{
-	// 		$(".concept").addClass('show-style');
-	// 		$(".style2").removeClass('show-style');
-	// 		// $(".abstract").removeClass('show-style');
-	// 		// $(".concept").removeClass('show-style');
-	// 		// $(".cartoon").removeClass('show-style');
-	// 		// $(".tradition").removeClass('show-style');
-	// 		// $(".test").removeClass('show-style');
-	// 		// $(".else1").removeClass('show-style');
-			
-	// 	}
-	// }
-		
-	$(document).ready(function(){
-		function clickMenu (menus, menuClassName) {
-			menus.on('click', function(){
-				$.each(menus, function () {
-					$(this).removeClass(menuClassName);
-				})
-				$(this).addClass(menuClassName);
-			})
+	function style1(ele){
+		if ($(ele).hasClass('show-style')) {	
+			$(".style1").removeClass('show-style');	
+			$(ele).removeClass('show-style');
+			$(".all").addClass('show-style');	
+		}else{
+			$(".all").removeClass('show-style1');
+			$(".style1").removeClass('show-style'); 
+			$(ele).removeClass('show-style');
+			$(ele).addClass('show-style');
 		}
-		var $mainMenuSpan  = $(".style td");
-		clickMenu($mainMenuSpan,'show-style');
-	})
-
+	}
 	//题材
-	$(document).ready(function(){
-		function clickMenu (menus, menuClassName) {
-			menus.on('click', function(){
-				$.each(menus, function () {
-					$(this).removeClass(menuClassName);
-				})
-				$(this).addClass(menuClassName);
-			})
+	function theme(ele){
+		if ($(ele).hasClass('show-theme')) {	
+			$(".themen2").removeClass('show-theme');	
+			$(ele).removeClass('show-theme');
+			$(".themen1").addClass('show-theme');	
+		}else{
+			$(".themen1").removeClass('show-theme1');
+			$(".themen2").removeClass('show-theme'); 
+			$(ele).removeClass('show-theme');
+			$(ele).addClass('show-theme');
 		}
-		var $mainMenuSpan  = $(".theme td");
-		clickMenu($mainMenuSpan,'show-theme');
-	})
-
+	}
 
 	//筛选
 	function screen(){
@@ -296,19 +203,17 @@
 	function reset(){
 		$(".complete").attr("selected","");
 		$(".complete1").attr("selected","");
-		
-		$(".colors1").addClass('show-color');
+
+		$(".colors1").addClass('show-color1');
 		$(".color").removeClass('show-color');
-		$(".style2").addClass('show-style');
+
+		$(".all").addClass('show-style1');
 		$(".style1").removeClass('show-style');
-		$(".themen1").addClass('show-theme');
+
+		$(".themen1").addClass('show-theme1');
 		$(".themen2").removeClass('show-theme');
 
-		$(".just").removeClass('just2');
-		$(".long").removeClass('long2');
-		$(".vertical").removeClass('vertical2');
-		$(".circle").removeClass('circle2');
-
+		$(".shape").removeClass('shape_highlight');
 		$(".star1").addClass('star');
 		$(".star").removeClass('star1');
 	}

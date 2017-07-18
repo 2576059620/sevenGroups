@@ -1,10 +1,10 @@
-var app=angular.module("app",["ionic","ui.router"]);
-app.controller('goBack',function(){
-	//定义返回事件
-	$scope.goBack=function(){
-		window.history.back();
-	}
-});
+	var app=angular.module("app",[]);
+	app.controller('goBack',function($scope){
+		//定义返回事件
+		$scope.goBack=function(){
+			window.history.back();
+		}
+	});
 
 	$("#gallery").animate({
 		"padding-top":"30px",

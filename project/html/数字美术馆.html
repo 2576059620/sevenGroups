@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="../css/数字美术馆.css">
 	<script src="../js/jquery-3.1.1.min.js"></script>
 </head>
-<body ng-app="app">
+<body ng-app="app" ng-controller="goBack">
 	<div id="setting">
 		<header>
 			<div>
@@ -28,7 +28,7 @@
 			<a href="登录.html" id="entrance"><h4>进入</h4><div><p id="roll">﹥</p><p id="roll1">﹥</p></div></a>
 		</section>
 		<nav>
-			<button class="button" ng-click="goBack" id="nav">
+			<button class="button" ng-click="goBack()" id="nav">
 		</nav>
 	</div>
 </body>
