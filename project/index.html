@@ -22,7 +22,7 @@
 			height: 1px;
 			border: 1px solid white;
 			border-radius: 0;
-			opacity: .6s;
+			opacity: .6;
 		}
 		.swiper-pagination-bullet-active{
 			/*background-color: white;*/
@@ -54,9 +54,9 @@
 			<section>
 				<div class="jd_banner swiper-container">
 					<ul class="image_box swiper-wrapper">
-						<li  class="swiper-slide"><a href="#"><img src="images/dwd2app.jpg" alt=""></a></li>
-						<li  class="swiper-slide"><a href="#"><img src="images/collectbannerMobi.jpg" alt=""></a></li>
-						<li  class="swiper-slide"><a href="#"><img src="images/framehead.png" alt=""></a></li>
+						<li  class="swiper-slide"><a href="html/多维度.html"><img src="images/dwd2app.jpg" alt=""></a></li>
+						<li  class="swiper-slide"><a href="html/藏艺术.html""><img src="images/collectbannerMobi.jpg" alt=""></a></li>
+						<li  class="swiper-slide"><img src="images/framehead.png" alt=""></li>
 					</ul>
 					<div class="swiper-pagination"></div>
 				</div>
@@ -257,9 +257,9 @@
 			<section>
 				<div class="four">
 					<div class="sort">
-						<a href="购艺术.html"><h1 class="more">阅读有趣的专题</h1></a>
+						<h1 class="more">阅读有趣的专题</h1>
 					</div>
-					<img src="images/专题.png" alt="">
+					<a href="html/版画.html"><img src="images/专题.png" alt=""></a>
 					<div class="four_box">
 						<div class="four_img">放在"家"里欣赏</div>
 						<div class="four_img1">
@@ -321,30 +321,34 @@
 		</div>
 		<footer class="ys_footer">
 			<ul class="ys_footer2">
-				<a href="">
+				<a href="html/购艺术.html">
 					<li>购艺术</li>
 				</a>
-				<a href="">
+				<a href="html/造艺网.html">
 					<li>造艺</li>
 				</a>
-				<a href="">
+				<a href="html/藏艺术.html">
 					<li>藏艺术</li>
 				</a>
-				<a href="" class="foot">
+				<a href="html/数字美术馆.html" class="foot">
 					<li>数字美术馆</li>
 				</a>
 			</ul>
 			<div class="menu"> <span class="menu_span1 f_left">艺网</span> <span class="menu_span2 f_right">▲</span></div>
 			
-			<a href="" class="ys_img3"><img src="images/发现.png" ></a>
-			<a href="" class="ys_img4"><img src="images/购物车.jpg" ></a>
-			<a href=""  class="ys_img5"><img src="images/我.jpg"></a>
+			<div class="ys_img">
+				<ul>
+					<li class="ys_img3"><div>发现</div></li>
+					<li class="ys_img4"><a href="">购物车</a></li>
+					<li class="ys_img5"><a href="">我</a></li>
+				</ul>		
+			</div>
 		</footer>
 	</div>
 	<script>
 		var swiper = new Swiper('.swiper-container', {
 		    loop:true,
-		    autoplay:3000,
+		    autoplay:4000,
 		    pagination: '.swiper-pagination',
 		    paginationClickable: true,
 		    nextButton: '.swiper-button-next',
