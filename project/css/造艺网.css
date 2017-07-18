@@ -168,7 +168,6 @@ section{
 	min-width: 320px;
     background-color: rgb(238,238,238);
 	margin:auto;
-	height: 1900px;
 }
 .section_bg{
 	width: 100%;
@@ -284,7 +283,7 @@ hr{
 	opacity: 0.3;
 }
 .del_top{
-	display: flex;
+	/*display: flex;*/
 	overflow: hidden;
 	width: 100%;
 	height: 50%;
@@ -294,8 +293,8 @@ hr{
 .del_top>a>img{
 	width: 100%;
 	height: 50%;
-	/*max-width: 640px;
-	min-width: 320px;*/
+	max-width: 640px;
+	min-width: 320px;
 }
 .top1{
 
@@ -306,4 +305,12 @@ hr{
 }
 .top3{
 	display: none;
+}
+.del_bottom{
+	width: 100%;
+	display: flex;
+}
+.del_bottom>span>img{
+	width: 90%;
+	height: 90%;
 }
