@@ -47,11 +47,14 @@ function help4() {
 		$(".display4").css("display","block");
 		$(".help4 span").text("×");
 		$(".help4").css("font-weight","bolder");
+		$(".help4").removeClass('box_buttom');
+		$(".display4").addClass('box_buttom bottom');
 	}
 	if (help =="×"){
 		$(".display4").css("display","none");
 		$(".help4 span").text("+");
 		$(".help4").css("font-weight","");
+		$(".help4").addClass('box_buttom');
 	}
 		
 }
