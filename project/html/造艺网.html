@@ -8,6 +8,9 @@
 	<!-- <link rel="stylesheet" href="../css/index.css"> -->
 	<link rel="stylesheet" href="../css/base.css">
 	<script src = "../js/造艺网.js"></script>
+	<!-- swiper -->
+	<link rel="stylesheet" href="../lib/Swiper-3.4.2/dist/css/swiper.css">
+	<script src="../lib/Swiper-3.4.2/dist/js/swiper.js"></script>
 	<title>造艺网</title>
 </head>
 <body >
@@ -42,54 +45,72 @@
             	<div class="tops">
 					<b>造艺臻选&nbsp;/&nbsp;TOPS</b>
             	</div>	
-            	<div class="tops_box">
-            		<div class="year">
-            			<div class="f_left w_30">
-            				<div>
+            	<div class="tops_box tops_box swiper-container">
+            		<div class="year swiper-wrapper">
+            			<div class="f_left w_30 swiper-slide">
+            				<!-- <div class="swiper-slide">
             					<a href="https://www.ywart.com/artworks/1x70p2">
             						<img src="../images/50.jpg" alt="去年图片圆桌">
             					</a>
-            				</div>
-            				<div>
+            				</div> -->
+            		<!-- 		<div class="swiper-slide">
 								<p><a href="https://www.ywart.com/artworks/1x70p2"><b>《去年》</b></a></p>
 								<p><a href="https://www.ywart.com/artist/1yxmqg">应晶晶</a></p>
 								<p>36x45cm</p>
 								<p>299版/艺术家签名</p><br>
 								<p><b>￥499</b>&nbsp;(含装裱)</p>
             				</div>
-            			</div>
-            			<div class="f_right w_65">
+            			</div> -->
+            			<div class="f_right w_65 swiper-slide">
 							<img src="../images/tops_03.jpg" alt="橘灯图片">
             			</div>
             		</div>
-						<!-- 二 -->
-		
-            	</div> <!-- 第一个总框 --> 
-
-        			<!-- 二 -->
-        			  	<div class="tops_box">
-            		<div class="year">
-            			<div class="f_left w_30">
-							<div class="one">
-								<p><a href="https://www.ywart.com/artworks/1x70p2"><b>《入定》</b></a></p>
-								<p><a href="https://www.ywart.com/artist/1yxmqg">钟飚</a></p>
+						<!-- 二部分 入定 -->
+				<!-- <div class="tops_box swiper-container">		 -->
+				<!-- 	<div class="year swiper-wrapper">
+            			<div class="f_left w_30 swiper-slide">
+							<div class="one swiper-slide">
+								<p><a href="https://www.ywart.com/artworks/16lk6y"><b>《入定》</b></a></p>
+								<p><a href="https://www.ywart.com/artist/1558l5">钟飚</a></p>
 								<p>36x45cm</p>
 								<p>299版/艺术家签名</p><br>
 								<p><b>￥499</b>&nbsp;(含装裱)</p>
-            				</div>
-            				<div>
-            					<a href="https://www.ywart.com/artworks/1x70p2">
-            						<img src="../images/48.jpg" alt="去年图片圆桌">
+            				</div> -->
+            		<!-- 		<div class="swiper-slide">
+            					<a href="https://www.ywart.com/artworks/16lk6y">
+            						<img src="../images/48.jpg" alt="钟飚入定图">
             					</a>
             				</div>
+            			</div> -->
+            			<div class="f_right w_65 swiper-slide">
+							<img src="../images/tops_04_replace.jpg" alt="钟飚入定大图片">
             			</div>
-            			<div class="f_right w_65">
-							<img src="../images/tops_04_replace.jpg" alt="橘灯图片">
-            			</div>
-            		</div>
-						<!-- 二 -->
+					</div>
+            	</div>  <!-- 第一个总框 -->
+
+			<!-- 精致呈现-->
+        		<div class="tops_tow">
+					<b>精致呈现&nbsp;/&nbsp;DELICATE</b>
+						<hr>					
+            	</div>
+          <!-- 点击图片 -->
+					<div class="del_top">
+						<!-- <div> -->
+							<a href="https://www.ywart.com/artworks/1p71xq" class="top1">
+								<img src="../images/delicate_03.jpg" alt="黑花与陶罐"></a>
+							<a href="https://www.ywart.com/artworks/1o01rm" class="top2">
+								<img src="../images/delicate_04.jpg" alt="归你，归我"></a>
+							<a href="https://www.ywart.com/artworks/12nm6e" class="top3">
+								<img src="../images/delicate_08.jpg" alt="无题-0378028"></a>
+						<!-- </div> -->
+						<div>
+							<img src="" alt="">
+							<img src="" alt="">
+							<img src="" alt="">
+						</div>
+					</div>
 		
-            	</div> <!-- 第一个总框 --> 
+           
 		 	</section>
 		<!-- 页脚 -->
 		<footer class="ys_footer">
@@ -114,5 +135,9 @@
 			<a href=""  class="ys_img5"><img src="../images/我.jpg"></a>
 		</footer>
 	</div>
+
+	<script>
+		var swiper = new Swiper('.swiper-container');
+	</script>
 </body>
 </html>
