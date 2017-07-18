@@ -562,27 +562,27 @@
 		
 		<div class="shape">
 			<p>形状</p>
-			<div class="just shap just1" onclick="just()"></div>
-			<div class="long shap" onclick="long()"></div>
-			<div class="vertical shap" onclick="vertical()"></div>
-			<div class="circle shap" onclick="circle()"></div>
-			<span class="star" onclick="star()"></span>
+			<div class="just shape" onclick="selectShape(this,false)"></div>正方形
+			<div class="long shape" onclick="selectShape(this,false)"></div>长方形
+			<div class="vertical shape" onclick="selectShape(this,false)"></div>
+			<div class="circle shape" onclick="selectShape(this,false)"></div>	圆
+			<span class="star" onclick="selectShape(this,true)"></span>	星
 		</div>
 		
 		<div class="style">
 			<p>风格</p>
 			<table class="style">
 				<tr>
-					<td class="style2 show-style style1" onclick="all1()">全部</td>
+					<td class="style2 show-style" onclick="all1()">全部</td>
 					<td class="abstract style1" onclick="abstract()">抽象</td>
 					<td class="utensil style1" onclick="utensil()">具象</td>
-					<td class="style1">观念</td>
+					<td class="concept style1" onclick="concept()">观念</td>
 				</tr>
 				<tr>
-					<td class="style1">卡通</td>
-					<td class="style1">传统国画</td>
-					<td class="style1">实验水墨</td>
-					<td class="style1">其他</td>
+					<td class="cartoon style1" onclick="cartoon()">卡通</td>
+					<td class="tradition style1" onclick="tradition()">传统国画</td>
+					<td class="test style1" onclick="test()">实验水墨</td>
+					<td class="else1 style1" onclick="else1()">其他</td>
 				</tr>
 			</table>
 		</div>
