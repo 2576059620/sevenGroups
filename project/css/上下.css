@@ -133,20 +133,20 @@ ul,ol{
 }
 .ys_img3{
 	background-image: url(../images/menu_select.png);
-	background-position: 25px 4px;
+	background-position: 50% 5%;
 	background-size: 25px 25px;
 	background-repeat: no-repeat;
 }
 
 .ys_img4{
 	background-image: url(../images/menu_shoppingcart.png);
-	background-position: 22px 4px;
+	background-position: 50% 5%;
 	background-size: 25px 25px;
 	background-repeat: no-repeat;
 }
 .ys_img5{
 	background-image: url(../images/menu_myself.png);
-	background-position: 24px 4px;
+	background-position: 50% 5%;
 	background-size: 25px 25px;
 	background-repeat: no-repeat;
 }
