@@ -168,13 +168,13 @@ section{
 	max-width: 640px;
 	min-width: 320px;
     background-color: rgb(238,238,238);
-	border:1px solid black;
+	/*border:1px solid black;*/
 	margin:auto;
 }
 .section_bg{
 	width: 100%;
 	height: 600px;
-	border:1px solid red;
+	/*border:1px solid red;*/
 	background-image: url(../images/banner_bg.jpg);
 	background-repeat:no-repeat;
 	background-size:100% 600px;
@@ -182,7 +182,7 @@ section{
 }
 .bg_box{
 	width: 100%;
-	height: 92%;
+	height: 100%;
 	background-color:rgba(0,0,0,0.5);	
 }
 .section_workes{
@@ -236,11 +236,30 @@ hr{
 	height:350px;
 	max-width: 640px;
 	min-width: 320px;
-	border:1px solid blue;
-
+	/*border:1px solid blue;*/
+	display: flex;
+}
+.year{
+	width: 100%;
+	height: 100%;
 }
 .tops_box>.year>a>img{
 	width: 50%;
 	height: 50%;
-	/*border:1px solid red ;*/
+
 }
+.tops_box>.year>a{
+
+}
+.year_text{
+	width: 50%;
+	height: 50%;
+	background-color: rgb(228,229,223);
+	text-align: center;
+	padding:15px;
+
+}
+.year_text>p{
+	font-size:1px;
+}
+
