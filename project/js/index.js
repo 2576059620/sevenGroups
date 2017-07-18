@@ -46,3 +46,12 @@ function sort4(){
 		$(".sort>img").attr("src","images/尖括号下.png");
 	}
 }
+function home1(){
+	$(".four_img").css("background-image","url(images/home1.jpg)")
+}
+function home2(){
+	$(".four_img").css("background-image","url(images/home2.jpg)")
+}
+function home3(){
+	$(".four_img").css("background-image","url(images/home3.jpg)")
+}

@@ -257,18 +257,65 @@
 	}
 
 	//风格
-	$(document).ready(function(){
-		function clickMenu (menus, menuClassName) {
-			menus.on('click', function(){
-				$.each(menus, function () {
-					$(this).removeClass(menuClassName);
-				})
-				$(this).addClass(menuClassName);
-			})
+	var flag = true;
+	function all1(){
+		flag = !flag;		
+		if (flag) {
+			$(".style2").addClass('show-style');
+			$(".style1").removeClass('show-style');
+			$(".style2").removeClass('style1');
+		}else{
+			$(".style2").addClass('style1');
 		}
-		var $mainMenuSpan  = $(".style td");
-		clickMenu($mainMenuSpan,'show-style');
-	})
+	}
+	var flag = true;
+	function abstract(){
+		flag = !flag;		
+		if (flag) {
+			$(".style2").removeClass('style1');
+			$(".style2").addClass('show-style');
+			$(".abstract").removeClass('show-style');
+			// $(".abstract").removeClass('style1');
+			$(".style1").removeClass('show-style');
+		}else{
+			$(".abstract").addClass('show-style');
+			$(".style2").removeClass('show-style');
+			$(".style2").addClass('style1');
+			$(".abstract").removeClass('style1');
+			$(".style1").removeClass('show-style');	
+			
+		}
+	}
+	var flag = true;
+	function utensil(){
+		flag = !flag;		
+		if (flag) {
+			// $(".style2").removeClass('style1');
+			// $(".style2").addClass('show-style');
+			// $(".utensil").removeClass('show-style');
+			// $(".utensil").removeClass('style1');
+			// $(".style1").removeClass('show-style');
+		}else{
+			// $(".utensil").addClass('show-style');
+			// $(".style2").removeClass('show-style');
+			// $(".utensil").removeClass('style1');
+			// $(".style1").removeClass('show-style');			
+			
+		}
+	}
+		
+	// $(document).ready(function(){
+	// 	function clickMenu (menus, menuClassName) {
+	// 		menus.on('click', function(){
+	// 			$.each(menus, function () {
+	// 				$(this).removeClass(menuClassName);
+	// 			})
+	// 			$(this).addClass(menuClassName);
+	// 		})
+	// 	}
+	// 	var $mainMenuSpan  = $(".style td");
+	// 	clickMenu($mainMenuSpan,'show-style');
+	// })
 
 	//题材
 	$(document).ready(function(){

@@ -107,22 +107,48 @@ ul,ol{
 	max-width: 640px;
 }
 
-.ys_img3{
+.ys_footer .ys_img{
 	height: 100%;
-	width: 20%;	
-	padding-top: 3px;
-	margin-left: 5px;
+	width: 100%;
 }
+.ys_img ul li{
+	height: 50px;
+	width: 25%;
+	float: left;
+	font-size: 13px;
+	color: white;
+	margin-left: 20px;
+	text-align: center;
+}
+.ys_img ul li,li>a{
+	font-size: 13px;
+	color: white;
+}
+.ys_img ul li>div{
+	margin-top: 33px;
+}
+.ys_img ul li>a{
+	display: inline-block;
+	margin-top: 33px;
+}
+.ys_img3{
+	background-image: url(../images/menu_select.png);
+	background-position: 50% 5%;
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+}
+
 .ys_img4{
-	height: 100%;
-	width: 20%;
-	padding-top: 2px;
-	margin-left: 5px;
+	background-image: url(../images/menu_shoppingcart.png);
+	background-position: 50% 5%;
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
 }
 .ys_img5{
-	height: 100%;
-	width: 20%;
-	padding-top: 5px;
+	background-image: url(../images/menu_myself.png);
+	background-position: 50% 5%;
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
 }
 .menu{
 	height: 100%;
