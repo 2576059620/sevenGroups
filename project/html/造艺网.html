@@ -103,10 +103,15 @@
 							<a href="https://www.ywart.com/artworks/12nm6e" class="top3">
 								<img src="../images/delicate_08.jpg" alt="无题-0378028"></a>
 						<!-- </div> -->
-						<div>
-							<img src="" alt="">
-							<img src="" alt="">
-							<img src="" alt="">
+						<div class="del_bottom">
+							<span class="worke1">
+								<img src="../images/41.jpg" alt="黑花与陶罐">
+							</span>
+								<span class="worke2"><img src="../images/40.jpg" alt="归你，归我">
+							</span>
+							<span class="worke3">
+								<img src="../images/35.jpg" alt="无题">
+							</span>
 						</div>
 					</div>
 		
@@ -138,6 +143,24 @@
 
 	<script>
 		var swiper = new Swiper('.swiper-container');
+
+		// 点击事件
+		$(document).ready(function(){
+			$(".worke1").click(function(){
+				$(".top1").css("display","inline");
+				$(".top2").css("display","none");
+				$(".top3").css("display","none");
+			})
+			$(".worke2").click(function(){
+				$(".top1").css("display","none");
+				$(".top2").css("display","inline");
+				$(".top3").css("display","none");
+			})
+			$(".worke3").click(function(){
+				$(".top1").css("display","none");
+				$(".top2").css("display","none");
+				$(".top3").css("display","inline");
+			})
+		})
 	</script>
 </body>
-</html>
