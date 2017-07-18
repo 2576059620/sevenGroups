@@ -257,7 +257,7 @@
 	}
 
 	//风格
-	// var flag = true;
+	var flag = true;
 	function all1(){
 		flag = !flag;		
 		if (flag) {
@@ -272,16 +272,17 @@
 	function abstract(){
 		flag = !flag;		
 		if (flag) {
-			// $(".style2").removeClass('style1');
-			// $(".style2").addClass('show-style');
-			// $(".abstract").removeClass('show-style');
+			$(".style2").removeClass('style1');
+			$(".style2").addClass('show-style');
+			$(".abstract").removeClass('show-style');
 			// $(".abstract").removeClass('style1');
-			// $(".style1").removeClass('show-style');
+			$(".style1").removeClass('show-style');
 		}else{
-			// $(".abstract").addClass('show-style');
-			// $(".style2").removeClass('show-style');
-			// $(".abstract").removeClass('style1');
-			// $(".style1").removeClass('show-style');	
+			$(".abstract").addClass('show-style');
+			$(".style2").removeClass('show-style');
+			$(".style2").addClass('style1');
+			$(".abstract").removeClass('style1');
+			$(".style1").removeClass('show-style');	
 			
 		}
 	}
