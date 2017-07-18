@@ -65,7 +65,7 @@
 	display: block;
 }
 
-/*第三块内容*/
+/*第三块内容*/ 
 .three{
 	margin-top: 10px;
 	background-color: white;
@@ -200,4 +200,7 @@
 }
 .ys_img3{
 	background-image: url(../images/menu_found.png);
+}
+.help_display>li>a{
+	color: black;
 }

@@ -242,7 +242,9 @@ table span{
 .show-color{
 	border: 1px solid black;
 }
-
+.show-color1{
+	border: 1px solid black;
+}
 /*形状*/
 .shape{
 	width: 100%;
@@ -267,12 +269,7 @@ table span{
 	border: 1px solid rgb(102,102,102);
 	margin-bottom: 5px;
 	margin-left: 12px;
-}
-.just1{
 	background-color: white;
-}
-.just2{
-	background-color: black;
 }
 .long{
 	height: 18px;
@@ -280,24 +277,14 @@ table span{
 	border: 1px solid rgb(102,102,102);
 	margin-left: 40px;
 	margin-bottom: 8px;
-}
-.long1{
 	background-color: white;
-}
-.long2{
-	background-color: black;
 }
 .vertical{
 	height: 35px;
 	width: 18px;
 	border: 1px solid rgb(102,102,102);
 	margin-left: 40px;
-}
-.vertical1{
 	background-color: white;
-}
-.vertical2{
-	background-color: black;
 }
 .circle{
 	height: 27px;
@@ -306,13 +293,13 @@ table span{
 	margin-left: 40px;
 	border-radius: 27px;
 	margin-bottom: 5px;
-}
-.circle1{
 	background-color: white;
 }
-.circle2{
+/*图形选中后的背景色*/
+.shape_highlight{
 	background-color: black;
 }
+/*星*/
 .star{
 	height: 30px;
 	width: 30px;
@@ -321,10 +308,6 @@ table span{
 	background-image: url(../images/icon_star_empty.svg);
 }
 .star1{
-	height: 30px;
-	width: 30px;
-	margin-left: 40px;
-	margin-bottom: 5px;
 	background-image: url(../images/icon_star.svg);	/*黑*/
 }
 .show-shape{
@@ -372,7 +355,15 @@ table span{
 	border: 1px solid rgb(129,129,129);
 	color: rgb(0,0,0);
 }
+.style tr .show-style1{
+	border: 1px solid rgb(129,129,129);
+	color: rgb(0,0,0);
+}
 .theme tr .show-theme{
+	border: 1px solid rgb(129,129,129);
+	color: rgb(0,0,0);
+}
+.theme tr .show-theme1{
 	border: 1px solid rgb(129,129,129);
 	color: rgb(0,0,0);
 }

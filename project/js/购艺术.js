@@ -122,215 +122,63 @@
 	}
 
 	//	颜色选择
-	$(document).ready(function(){
-		function clickMenu (menus, menuClassName) {
-			menus.on('click', function(){
-				$.each(menus, function () {
-					$(this).removeClass(menuClassName);
-				})
-				$(this).addClass(menuClassName);
-			})
-		}
-		var $mainMenuSpan  = $(".colour td");
-		clickMenu($mainMenuSpan,'show-color');
-	})
-
-	//正方形
-	var just1 = true;
-	function just(){
-		just1 = !just1;		
-		if (!just1) {
-			$(".just").addClass('just2');
-			$(".just2").removeClass('just1');
-
-			$(".long2").addClass('long1');
-			$(".long1").removeClass('long2');
-
-			$(".vertical2").addClass('vertical1');
-			$(".vertical1").removeClass('vertical2');
-
-			$(".circle2").addClass('circle1');
-			$(".circle1").removeClass('circle2');
-
-			$(".star1").addClass('star');
-			$(".star").removeClass('star1');
+	function colour(ele){
+		if ($(ele).hasClass('show-color')) {
+			$(".color").removeClass('show-color');	
+			$(ele).removeClass('show-color');
+			$(".colors1").addClass('show-color');	
 		}else{
-			$(".just2").addClass('just1');
-			$(".just1").removeClass('just2');
+			$(".colors1").removeClass('show-color1'); 
+			$(".color").removeClass('show-color'); 
+			$(ele).removeClass('show-color');
+			$(ele).addClass('show-color');
 		}
 	}
-	//长方形
-	var long1 = true;
-	function long(){
-		long1 = !long1;		
-		if (!long1) {
-			$(".long").addClass('long2');
-			$(".long2").removeClass('long1');
-
-			$(".just2").addClass('just1');
-			$(".just1").removeClass('just2');
-
-			$(".vertical2").addClass('vertical1');
-			$(".vertical1").removeClass('vertical2');
-
-			$(".circle2").addClass('circle1');
-			$(".circle1").removeClass('circle2');
-
-			$(".star1").addClass('star');
-			$(".star").removeClass('star1');
+	//形状选择
+	function selectShape(ele,isStar){// isStar背景星图片
+		if (isStar) {			//如果点击的是星 其他移除所以高亮属性
+			$(".shape").removeClass('shape_highlight');	//移除
+			if ($(ele).hasClass('star1')) {		//判断是否有某属性
+				$(ele).removeClass('star1');	//如果没有则移除属性
+			}else{
+				$(ele).addClass('star1');	//如果没有则添加属性
+			}
 		}else{
-			$(".long2").addClass('long1');
-			$(".long1").removeClass('long2');
+			$(".star").removeClass('star1'); //如果没有则移除黑色星
+			if ($(ele).hasClass('shape_highlight')) {	//判断如果有这个属性
+				$(ele).removeClass('shape_highlight');	//则移除
+			}else{
+				$(".shape").removeClass('shape_highlight');//移除所有的
+				$(ele).addClass('shape_highlight');	//	点击添加属性
+			}
 		}
 	}
-	//竖方形
-	var vertical1 = true;
-	function vertical(){
-		vertical1 = !vertical1;		
-		if (!vertical1) {
-			$(".vertical").addClass('vertical2');
-			$(".vertical2").removeClass('vertical1');
-
-			$(".long2").addClass('long1');
-			$(".long1").removeClass('long2');
-
-			$(".just2").addClass('just1');
-			$(".just1").removeClass('just2');
-
-			$(".circle2").addClass('circle1');
-			$(".circle1").removeClass('circle2');
-			
-			$(".star1").addClass('star');
-			$(".star").removeClass('star1');
-		}else{
-			$(".vertical2").addClass('vertical1');
-			$(".vertical1").removeClass('vertical2');
-		}
-	}
-	//圆
-	var circle1 = true;
-	function circle(){
-		circle1 = !circle1;		
-		if (!circle1) {
-			$(".circle").addClass('circle2');
-			$(".circle2").removeClass('circle1');	
-
-			$(".vertical2").addClass('vertical1');
-			$(".vertical1").removeClass('vertical2');
-				
-			$(".long2").addClass('long1');
-			$(".long1").removeClass('long2');
-
-			$(".just2").addClass('just1');
-			$(".just1").removeClass('just2');
-			
-			$(".star1").addClass('star');
-			$(".star").removeClass('star1');
-		}else{
-			$(".circle2").addClass('circle1');
-			$(".circle1").removeClass('circle2');
-		}
-	}
-	//星
-	var flag = true;
-	function star(){
-		flag = !flag;		
-		if (flag) {
-			$(".star1").addClass('star');
-			$(".star").removeClass('star1');
-		}else{
-			$(".star").addClass('star1');
-			$(".star1").removeClass('star');
-
-			$(".circle2").addClass('circle1');
-			$(".circle1").removeClass('circle2');	
-
-			$(".vertical2").addClass('vertical1');
-			$(".vertical1").removeClass('vertical2');
-				
-			$(".long2").addClass('long1');
-			$(".long1").removeClass('long2');
-
-			$(".just2").addClass('just1');
-			$(".just1").removeClass('just2');
-		}
-	}
-
 	//风格
-	var flag = true;
-	function all1(){
-		flag = !flag;		
-		if (flag) {
-			$(".style2").addClass('show-style');
-			$(".style1").removeClass('show-style');
-			$(".style2").removeClass('style1');
-		}else{
-			$(".style2").addClass('style1');
-		}
-	}
-	var flag = true;
-	function abstract(){
-		flag = !flag;		
-		if (flag) {
-			$(".style2").removeClass('style1');
-			$(".style2").addClass('show-style');
-			$(".abstract").removeClass('show-style');
-			// $(".abstract").removeClass('style1');
-			$(".style1").removeClass('show-style');
-		}else{
-			$(".abstract").addClass('show-style');
-			$(".style2").removeClass('show-style');
-			$(".style2").addClass('style1');
-			$(".abstract").removeClass('style1');
+	function style1(ele){
+		if ($(ele).hasClass('show-style')) {	
 			$(".style1").removeClass('show-style');	
-			
-		}
-	}
-	var flag = true;
-	function utensil(){
-		flag = !flag;		
-		if (flag) {
-			// $(".style2").removeClass('style1');
-			// $(".style2").addClass('show-style');
-			// $(".utensil").removeClass('show-style');
-			// $(".utensil").removeClass('style1');
-			// $(".style1").removeClass('show-style');
+			$(ele).removeClass('show-style');
+			$(".all").addClass('show-style');	
 		}else{
-			// $(".utensil").addClass('show-style');
-			// $(".style2").removeClass('show-style');
-			// $(".utensil").removeClass('style1');
-			// $(".style1").removeClass('show-style');			
-			
+			$(".all").removeClass('show-style1');
+			$(".style1").removeClass('show-style'); 
+			$(ele).removeClass('show-style');
+			$(ele).addClass('show-style');
 		}
 	}
-		
-	// $(document).ready(function(){
-	// 	function clickMenu (menus, menuClassName) {
-	// 		menus.on('click', function(){
-	// 			$.each(menus, function () {
-	// 				$(this).removeClass(menuClassName);
-	// 			})
-	// 			$(this).addClass(menuClassName);
-	// 		})
-	// 	}
-	// 	var $mainMenuSpan  = $(".style td");
-	// 	clickMenu($mainMenuSpan,'show-style');
-	// })
-
 	//题材
-	$(document).ready(function(){
-		function clickMenu (menus, menuClassName) {
-			menus.on('click', function(){
-				$.each(menus, function () {
-					$(this).removeClass(menuClassName);
-				})
-				$(this).addClass(menuClassName);
-			})
+	function theme(ele){
+		if ($(ele).hasClass('show-theme')) {	
+			$(".themen2").removeClass('show-theme');	
+			$(ele).removeClass('show-theme');
+			$(".themen1").addClass('show-theme');	
+		}else{
+			$(".themen1").removeClass('show-theme1');
+			$(".themen2").removeClass('show-theme'); 
+			$(ele).removeClass('show-theme');
+			$(ele).addClass('show-theme');
 		}
-		var $mainMenuSpan  = $(".theme td");
-		clickMenu($mainMenuSpan,'show-theme');
-	})
-
+	}
 
 	//筛选
 	function screen(){
@@ -355,19 +203,17 @@
 	function reset(){
 		$(".complete").attr("selected","");
 		$(".complete1").attr("selected","");
-		
-		$(".colors1").addClass('show-color');
+
+		$(".colors1").addClass('show-color1');
 		$(".color").removeClass('show-color');
-		$(".style2").addClass('show-style');
+
+		$(".all").addClass('show-style1');
 		$(".style1").removeClass('show-style');
-		$(".themen1").addClass('show-theme');
+
+		$(".themen1").addClass('show-theme1');
 		$(".themen2").removeClass('show-theme');
 
-		$(".just").removeClass('just2');
-		$(".long").removeClass('long2');
-		$(".vertical").removeClass('vertical2');
-		$(".circle").removeClass('circle2');
-
+		$(".shape").removeClass('shape_highlight');
 		$(".star1").addClass('star');
 		$(".star").removeClass('star1');
 	}
