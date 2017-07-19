@@ -1,0 +1,79 @@
+body{
+	width: 100%;
+	height: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+/*头部*/
+header{
+	text-align: center;
+	width: 100%;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	background-color: black;
+}
+div>.button{
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	background-image: url(../images/left_arrow.png);
+	background-size: 18px 18px;
+	background-position: 13px 13px; 
+	background-repeat: no-repeat;
+	align-content: center; 
+}
+header *{
+	color: white;
+}
+header>h4{
+	flex-grow: 1;
+	font-size: 20px;
+	font-weight: bold;
+}
+header>a{
+	justify-content: flex-end;
+	margin: auto;
+	margin-right: 10px;
+	font-size: 16px;
+	color: rgb(37,191,175);
+}
+
+/*尾部*/
+div>a{
+	width: 100%;
+}
+.like{
+	width: 5%;
+	height: 50%;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.shop{
+	/*width: 21%;*/
+	/*background-image: url(../images/iconCart.png);*/
+}
+.join{
+	/*width: 100%;*/
+	/*height: 100%;*/
+	/*background-image: url(../images/加入购物.png);*/
+}
+.buy{
+	/*background-image: url(../images/购买.png);*/
+}
+footer>div{
+	position: fixed;
+	bottom:0%;
+	width: 100%;
+	height: 44px;
+	border: 1px solid black;
+}
+div>a>span{
+	display: inline-block;
+}
+div a img{
+	width: 50px;
+	height: 44px;
+
+}
