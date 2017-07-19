@@ -223,6 +223,23 @@
 							</div>						
 						</div><!-- 图片总框 -->
           		</div><!-- 总框 -->
+          		<!-- 轮播图的二部分 -->
+          		<div class="what">
+					<h2>WHAT'S MAKE ART?</h2>
+						<hr>
+				   <p>
+				   全球领先的艺术电商艺网 <b>YWART.COM</b> 不断以开创性产品和创新灵感为艺术和生活开启无限可能。探
+				   索边界、挣脱禁锢，挑战传统是我们秉承的精神，艺
+				   网创立副牌－ 造艺 MAKE ART，造艺旗下高品质和
+				   极具设计感的产品将再现独特的艺术、时尚理念与互
+				   联网思维，打造专属你的艺术品。
+				   	<br>
+				   	<div class="switch_img">
+						<img src="../images/bottom_frame.jpg" class="frame" alt="纸箱图片">
+						<!-- <img src="../images/bottom_zhengshu.jpg"  class="zhengshu" alt="签名图片"> -->
+				   	</div>
+				   </p>
+          		</div> 
 		 	</section>
 		 	<br>
 		 	<br>
@@ -234,6 +251,8 @@
 		 	<br>
 		 	<br>
 		 	<br>
+	
+		 <!-- 	<br>
 		 	<br>
 		 	<br>
 		 	<br>
@@ -248,23 +267,7 @@
 		 	<br>
 		 	<br>
 		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
+		 	<br> -->
 		<!-- 页脚 -->
 		<footer class="ys_footer">
 			<ul class="ys_footer2">
@@ -294,9 +297,10 @@
 	</div>
 
 	<script>
+	// 滑动
 		var swiper = new Swiper('.swiper-container');
 
-		// 点击事件
+		// 点击三个图片事件
 		$(document).ready(function(){
 			$(".worke1").click(function(){
 				$(".top1").css("display","inline");
@@ -314,5 +318,24 @@
 				$(".top3").css("display","inline");
 			})
 		})
+
+		// 下边图片自动变换
+		var flag = true;
+		
+		var timer = setInterval(function () {
+			$('.frame').animate({opacity:0},500,function(){
+				if (flag) {
+				$('.frame').attr('src',"../images/bottom_zhengshu.jpg");
+				flag = false;
+
+			}else{
+				$('.frame').attr('src',"../images/bottom_frame.jpg");
+				flag = true;
+			}
+        	$('.frame').animate({opacity:1},500);
+			});
+			
+        // $('.zhengshu').fadeToggle(500);
+    }, 3000);
 	</script>
 </body>
