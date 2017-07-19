@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="../lib/Swiper-3.4.2/dist/css/swiper.css">
 	<script src="../lib/Swiper-3.4.2/dist/js/swiper.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/上下.css">
+	<!-- footer -->
 	<title>造艺网</title>
 </head>
 <body >
@@ -234,40 +235,80 @@
 				   极具设计感的产品将再现独特的艺术、时尚理念与互
 				   联网思维，打造专属你的艺术品。
 				   	<br>
-				   	<div class="switch_img">
-						<img src="../images/bottom_frame.jpg" class="frame" alt="纸箱图片">
-						<!-- <img src="../images/bottom_zhengshu.jpg"  class="zhengshu" alt="签名图片"> -->
-				   	</div>
+					   	<div class="switch_img">
+							<img src="../images/bottom_frame.jpg" class="frame" alt="纸箱图片">	
+					   	</div>
 				   </p>
           		</div> 
+          		<div class="des_bottom">
+					<ul>
+						<li>
+							<img src="../images/三角.png" alt="三角" class="triangle">
+							<b>30亿像素色彩还原系统</b>
+							<p>
+                        		德国CRUSE博物馆级超高清精度扫描，<br>&nbsp;&nbsp;&nbsp;30亿像素值高度还原专业色彩还原系统，<br>
+                        		保证扫描数据色彩的真实感和层次感
+                   			</p>
+						</li>
+						<li>
+							&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/三角.png" alt="三角" class="triangle">
+							<b>博物馆收藏级艺术品复制用纸</b>
+							<p>
+                        		德国进口泛太克艺术纸印刷，博物馆收藏<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级艺术品复制用纸原纸不含酸，不含木质素，<br>
+                        		自然白色
+                   			 </p>
+						</li>
+						<li>
+							<img src="../images/三角.png" alt="三角" class="triangle">
+							<b>展览级原木画框</b>
+							<p>
+                        		展览级原木画框，高温湿度环境下不变形<br>&nbsp;&nbsp;加厚亚克力板材，展示作品色彩亮丽无丝毫<br>畸变
+                   			</p>
+						</li>
+						<li>
+							<img src="../images/三角.png" alt="三角" class="triangle">
+							<b>艺术家签名收藏证书</b>
+							<p>
+                       			每件版画作品均配有唯一版号的收藏证书，作<br>品版号可选，配有艺术家签名，具有收藏价值
+                    		</p>
+						</li>
+					</ul>
+          		</div>
+          		<!-- footer -->
+	          		<div class="footer">
+					<ul>
+						<li class="help help1" onclick="help1()">YWART.com <span>+</span></li>
+						<ul class="help_display display1">
+							<li><a href="index.html">精选</a></li>
+							<li><a href="html/购艺术.html">购艺术</a></li>
+							<li><a href="html/造艺.html">造艺</a></li>
+							<li><a href="html/藏艺术.html">藏艺术</a></li>
+							<li><a href="html/我的珍藏.html">我的珍藏</a></li>
+						</ul>
+						<li class="help help2" onclick="help2()">了解艺网 <span>+</span></li>
+						<ul class="help_display display2">
+							<li><a href="html/关于我们.html">关于我们</a></li>
+							<li><a href="html/工作机会.html">工作机会</a></li>
+							<li><a href="html/网站地图.html">网站地图</a></li>
+						</ul>
+						<li class="help help3" onclick="help3()">支持与帮助 <span>+</span></li>
+						<ul class="help_display display3">
+							<li><a href="html/如何购买.html">如何购买</a></li>
+							<li><a href="html/物流说明.html">物流说明</a></li>
+							<li><a href="html/联系我们.html">联系我们</a></li>
+						</ul>
+						<li class="help help4 box_buttom" onclick="help4()">合作 <span>+</span></li>
+						<ul class="help_display display4">
+							<li><a href="html/作品征集.html">作品征集</a></li>
+							<li><a href="html/合作伙伴入驻.html">合作伙伴入驻</a></li>
+						</ul>
+					</ul>
+					<div class="footer_text">京ICP备16003461号 Copyright © 2015-2016 艺网</div>
+						<div>YWART.COM 版权所有</div>
+				</div>
 		 	</section>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-	
-		 <!-- 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br>
-		 	<br> -->
+		 
+		 	
 		<!-- 页脚 -->
 		<footer class="ys_footer">
 			<ul class="ys_footer2">
@@ -320,8 +361,8 @@
 		})
 
 		// 下边图片自动变换
-		var flag = true;
-		
+		// 默认第一张图片
+		var flag = true;   		
 		var timer = setInterval(function () {
 			$('.frame').animate({opacity:0},500,function(){
 				if (flag) {
@@ -333,9 +374,70 @@
 				flag = true;
 			}
         	$('.frame').animate({opacity:1},500);
-			});
-			
-        // $('.zhengshu').fadeToggle(500);
+			});		
     }, 3000);
+
+		// footer底部
+		//sectiond底部footer点击事件
+function help1() {
+	var help = $(".help1 span").text();
+	if (help =="+") {
+		$(".display1").css("display","block");
+		$(".help1 span").text("×");
+		$(".help1").css("font-weight","bolder");
+	}
+	if (help =="×"){
+		$(".display1").css("display","none");
+		$(".help1 span").text("+");
+		$(".help1").css("font-weight","");
+	}
+		
+}
+function help2() {
+	var help = $(".help2 span").text();
+	if (help =="+") {
+		$(".display2").css("display","block");
+		$(".help2 span").text("×");
+		$(".help2").css("font-weight","bolder");
+	}
+	if (help =="×"){
+		$(".display2").css("display","none");
+		$(".help2 span").text("+");
+		$(".help2").css("font-weight","");
+	}
+		
+}
+function help3() {
+	var help = $(".help3 span").text();
+	if (help =="+") {
+		$(".display3").css("display","block");
+		$(".help3 span").text("×");
+		$(".help3").css("font-weight","bolder");
+	}
+	if (help =="×"){
+		$(".display3").css("display","none");
+		$(".help3 span").text("+");
+		$(".help3").css("font-weight","");
+	}
+		
+}
+function help4() {
+	var help = $(".help4 span").text();
+	if (help =="+") {
+		$(".display4").css("display","block");
+		$(".help4 span").text("×");
+		$(".help4").css("font-weight","bolder");
+		$(".help4").removeClass('box_buttom');
+		$(".display4").addClass('box_buttom bottom');
+	}
+	if (help =="×"){
+		$(".display4").css("display","none");
+		$(".help4 span").text("+");
+		$(".help4").css("font-weight","");
+		$(".help4").addClass('box_buttom');
+	}
+		
+}
+
 	</script>
 </body>

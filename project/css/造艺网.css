@@ -391,6 +391,80 @@ hr{
 	width: 90%;
 	height:80%;
 }
-.zhengshu{
+.des_bottom{
+	width: 100%;
+	height: 500px;
+	background-color: rgba(0,0,0,0.8);
+}
+.triangle{
+	width: 30px;
+	height: 30px;
+}
+.des_bottom>ul>li>b{
+	font-size:1.2rem;
+	color: white;
+}
+.des_bottom>ul>li>p{
+	color: white;
+	font-size: 0.8rem;
+	padding-top: 10px;
+
+}
+.des_bottom>ul>li{
+	text-align: center;
+	padding-top:30px;
+}
+/*内容底部的footer类*/
+/*section{
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+}*/
+.footer{
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 60px;
+}
+ul>.help{
+	width: 96%;
+	height: 40px;
+	line-height: 40px;
+	border-top:1px solid rgb(238,238,238);
+	margin-left: 2%;
+	padding-left: 20px;
+}
+ul>.help>span{
+	float: right;
+	margin-right: 2%;
+	padding-right: 10px;
+}
+.help_display{
 	display: none;
+}
+.help_display *{
+	padding-top: 5px;
+	margin-left: 5%;
+}
+.help_display>li:last-child{
+	padding-bottom: 10px;
+}
+.box_buttom{
+	border-bottom:1px solid rgb(238,238,238);
+}
+.footer>div{
+	margin-left: 5%;
+	color: #999;
+	font-size: 12px;
+}
+.footer>.footer_text{
+	margin-top: 10px;
+}
+.bottom{
+	width: 96%;
+	margin-left: 2%;
+	padding-left: 0px;
+}
+.help_display>li>a{
+	color:black;
 }
