@@ -202,7 +202,9 @@
 	//重置按钮
 	function reset(){
 		$(".complete").attr("selected","");
+		$(".complete").removeAttr("selected");
 		$(".complete1").attr("selected","");
+		$(".complete1").removeAttr("selected");
 
 		$(".colors1").addClass('show-color1');
 		$(".color").removeClass('show-color');
