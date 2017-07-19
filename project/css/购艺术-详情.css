@@ -5,6 +5,12 @@ body{
 	min-width: 320px;
 	margin: 0 auto;
 }
+.div_box{
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+}
 /*头部*/
 header{
 	text-align: center;
@@ -41,39 +47,47 @@ header>a{
 }
 
 /*尾部*/
-div>a{
-	width: 100%;
-}
-.like{
-	width: 5%;
-	height: 50%;
-	margin-left: 10px;
-	margin-top: 20px;
-}
-.shop{
-	/*width: 21%;*/
-	/*background-image: url(../images/iconCart.png);*/
-}
-.join{
-	/*width: 100%;*/
-	/*height: 100%;*/
-	/*background-image: url(../images/加入购物.png);*/
-}
-.buy{
-	/*background-image: url(../images/购买.png);*/
-}
-footer>div{
+.ys_footer{
 	position: fixed;
 	bottom:0%;
+	height: 50px;
 	width: 100%;
-	height: 44px;
-	border: 1px solid black;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	box-shadow: 0px 1px 3px ;
+	min-width: 320px;
+	max-width: 640px;
 }
-div>a>span{
-	display: inline-block;
+.ys_footer .ys_img{
+	height: 100%;
+	width: 100%;
 }
-div a img{
-	width: 50px;
-	height: 44px;
+.ys_img ul li{
+	height: 50px;
+	width: 20%;
+	float: left;
+	font-size: 13px;
+	color: white;
+	text-align: center;
+}
+.ys_img ul li:nth-child(3),.ys_img ul li:nth-child(4){
+	width: 30%;
+	line-height: 50px;
+	font-size: 1rem;
+}
+.ys_img ul li:nth-child(3){
+	background-color: #000;
+}
+.ys_img ul li:nth-child(4){
+	background-color: rgb(238,64,60);
+}
+.ys_img ul li a{
+	color: white;
 
+}
+.ys_img>ul>li>a>img{
+	width: 25px;
+	height: 25px;
+	margin-top: 15px;
 }
