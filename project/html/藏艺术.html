@@ -23,7 +23,7 @@
 		</header>
 		<div class="center">
 			<img src="../images/banner.jpg" class="center_img1">
-			<a href="" class="center_input1"><input type="button" value="浏览藏艺术全部作品◥" ></a>
+			<a href="" class="center_a"><input type="button" class="center_input1 input" value="浏览藏艺术全部作品◥" ></a>
 			<div class="center_div1">
 				YWART藏艺术<br>
 				开启收藏级艺术品的互联网新时代
@@ -32,7 +32,7 @@
 				<img src="../images/visa.jpg">
 			</div>
 			<br>
-			<a href="" class="center_div3">王广义</a>
+			<a href="" class="center_div3 center_a1">王广义</a>
 			<div class="center_div4">
 				VISA,1995<br>
 				布面油画 150x120cm
@@ -91,7 +91,15 @@
 				</ul>		
 			</div>
 		</footer>
-		
 	</div>
+	<script>
+		 $(window).on("scroll", function () {
+                    if ($(document).scrollTop() > 100) {
+                         $('.center_a').stop().animate({ left: "-29%", "letter-spacing": "1px", });
+                    } else {
+                       $('.center_a').stop().animate({left:"0px","letter-spacing":0});
+                    }
+                })
+	</script>
 </body>
 </html>

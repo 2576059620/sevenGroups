@@ -102,25 +102,22 @@ margin: 0 auto;
 	width: 100%;
 	height: 250px;
 }
-.center>.center_input1{
-
-	height: 40px;
-	width: 200px;
-	margin: 0 auto;
+.center_a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: fixed;
 	top: 100px;
-	
-	
-
+	left: 0;
+	width: 100%;
 }
-.center>.center_input1>input{
-	height: 100%;
-	width:100%;	
+.center>a>.center_input1{
+	height: 40px;
+	width: 50%;
 	background-color: rgba(0,0,0,0.7);
 	border-radius: 30px;
 	color: white;
 	font-size: 1.1rem;
-	margin: 0 auto;
 }
 .center>.center_div1{
 	text-align: center;
@@ -133,19 +130,22 @@ margin: 0 auto;
 .center>.center_div2{
 	height: 222px;
 	width: 333px;
-	
 	margin-top: 40px;
 	margin: 0 auto;
 }
 .center>.center_div2>img{
 	width: 100%;
 	height: 100%;
+	margin-top: 30px;
 }
 .center>.center_div3{
 	margin-left: 40px;
-	margin-top: 50px;
 	font-size: 14px;
 	font-weight: bold;
+	display: block;
+}
+.center_a1{
+	/*margin-top: 20px;*/
 }
 .center>.center_div4{
 	color: rgba(0,0,0,0.7);
@@ -161,6 +161,7 @@ margin: 0 auto;
 .center>.center_div5>img{
 	height: 16px;
 	width: 12px;
+	/*margin-top: 30px;*/
 }
 .center>.center_div6{
 	height: 222px;
