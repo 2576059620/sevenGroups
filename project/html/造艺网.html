@@ -5,20 +5,37 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 	<script type="text/javascript" src = "../js/jquery-3.1.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/造艺网.css">
-	<!-- <link rel="stylesheet" href="../css/index.css"> -->
 	<link rel="stylesheet" href="../css/base.css">
 	<script src = "../js/造艺网.js"></script>
-	<!-- swiper -->
 	<link rel="stylesheet" href="../lib/Swiper-3.4.2/dist/css/swiper.css">
 	<script src="../lib/Swiper-3.4.2/dist/js/swiper.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/上下.css">
+	<script src = "../js/footer.js"></script>
 	<title>造艺网</title>
+	<style>
+		.swiper-pagination-bullet{
+			background-color: black;
+			width: 12px;
+			height: 12px;
+			border-radius: 6px;
+			opacity: 1;
+			margin-bottom: 100%;
+
+		}
+		.swiper-pagination-bullet-active{
+			background-color: rgb(60,148,139);
+			padding-left: 40px;
+		}
+		.swiper-container-horizontal > .swiper-pagination-bullets{
+			top: 0px;
+		}
+	</style>
 </head>
 <body >
 	<div class="ys_boss">
 		<header class="ys_banner">		
-			<a href="https://www.ywart.com/login" class="ys_a"><input type="submit" value="创建账号"  class="ys_input1"></a>
-			<a href="https://www.ywart.com/login" class="ys_a"><input type="submit" value="登录" class="ys_input2"></a>
+			<a href="登录-请注册.html" class="ys_a"><input type="submit" value="创建账号"  class="ys_input1"></a>
+			<a href="login 登录.html" class="ys_a"><input type="submit" value="登录" class="ys_input2"></a>
 			<input type="text" placeholder="搜索艺术家或艺术品" class="ys_input3">
 			<img src="../images/yuan.jpg" class="ys_img1" >
 			<img src="../images/X.jpg" class="ys_imgx">
@@ -121,135 +138,340 @@
 					    <hr>					
             	</div>  
           <!-- 全部商品轮播图 -->
-          		<div class="all_box"> <!-- 总框 -->
-				<!-- 	<div class="all_round">
-						<div><span></span></div>
-						<div><span></span></div>
-						<div><span></span></div>
-					</div> -->
-						<div class="img_box"><!-- 图片总框 -->
-							<div class="all_work">
-								<a href="https://www.ywart.com/artworks/16lk6y">
-									<img src="../images/48.jpg" alt="全部钟飚">
-								</a>
+          		<div class="all_box swiper-container"> <!-- 总框 -->
+          			<div class="swiper-pagination"></div>
+					<div class="swiper-wrapper">
+						<!-- 第一大块轮播 -->
+						<div class=" swiper-slide">
+							<div class="img_box"><!-- 图片总框 -->
+								<div class="all_work">
+									<a href="https://www.ywart.com/artworks/16lk6y">
+										<img src="../images/48.jpg" alt="全部钟飚">
+									</a>
 									<div class="all_text"><!-- 图片文本框 -->
 										<p>
-                                			<a class="author_name" href="https://www.ywart.com/artist/1558l5">钟飚</a>
-                            			</p>
-                            			<p>
-                                			<a href="https://www.ywart.com/artworks/16lk6y">入定</a>&nbsp;&nbsp;<span>2016</span>
-                            			</p>
-                            			<p class="ysp_price">¥699</p>
+	                                		<a class="author_name" href="https://www.ywart.com/artist/1558l5">钟飚</a>
+	                            		</p>
+	                            		<p>
+	                                		<a href="https://www.ywart.com/artworks/16lk6y">入定</a>&nbsp;&nbsp;<span>2016</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥699</p>
 									</div>
-							</div>
-									<!-- 图片文本框 -->
-							<div class="all_work2">	
-								<a href="https://www.ywart.com/artworks/1o01xm">
-									<img src="../images/42.jpg" alt="异乡人">
-								</a>	
+								</div>
+										<!-- 图片文本框 -->
+								<div class="all_work2">	
+									<a href="https://www.ywart.com/artworks/1o01xm">
+										<img src="../images/42.jpg" alt="异乡人">
+									</a>	
 									<div class="all_text">
 										<p>
-                               		 		<a class="author_name" href="https://www.ywart.com/artist/19029w">王瑃燕</a>
-                           				 </p>
-                            			<p>
-                               				 <a href="https://www.ywart.com/artworks/1o01xm">异乡人</a>&nbsp;&nbsp;<span>2015</span>
-                            			</p>
-                            			<p class="ysp_price">¥949</p>	
+	                               		 	<a class="author_name" href="https://www.ywart.com/artist/19029w">王瑃燕</a>
+	                           			</p>
+	                            		<p>
+	                               			<a href="https://www.ywart.com/artworks/1o01xm">异乡人</a>&nbsp;&nbsp;<span>2015</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥949</p>	
 									</div>
-							</div>						
-						</div><!-- 图片总框 -->
-						<!-- 2 -->
-						<div class="img_box"><!-- 图片总框 -->
-							<div class="all_work">
-								<a href="https://www.ywart.com/artworks/1g1nmq">
-									<img src="../images/46.jpg" alt="全部朱兴国">
-								</a>
+								</div>						
+							</div><!-- 图片总框 -->
+							<!-- 2 -->
+							<div class="img_box"><!-- 图片总框 -->
+								<div class="all_work">
+									<a href="https://www.ywart.com/artworks/1g1nmq">
+										<img src="../images/46.jpg" alt="全部朱兴国">
+									</a>
 									<div class="all_text"><!-- 图片文本框 -->
 										<p>
-                                			<a class="author_name" href="https://www.ywart.com/artist/1dxpk4">朱兴国</a>
-                            			</p>
-                            			<p>
-                                			<a href="https://www.ywart.com/artworks/1g1nmq">白&nbsp;No.2</a>&nbsp;&nbsp;<span>2016</span>
-                            			</p>
-                            			<p class="ysp_price">¥619</p>
+		                                	<a class="author_name" href="https://www.ywart.com/artist/1dxpk4">朱兴国</a>
+		                            	</p>
+		                            	<p>
+		                                	<a href="https://www.ywart.com/artworks/1g1nmq">白&nbsp;No.2</a>&nbsp;&nbsp;<span>2016</span>
+		                            	</p>
+		                            	<p class="ysp_price">¥619</p>
 									</div>
-							</div>
-									<!-- 图片文本框 -->
-							<div class="all_work2">	
-								<a href="https://www.ywart.com/artworks/1mxp68">
-									<img src="../images/45.jpg" alt="黑色no4">
-								</a>	
+								</div>
+										<!-- 图片文本框 -->
+								<div class="all_work2">	
+									<a href="https://www.ywart.com/artworks/1mxp68">
+										<img src="../images/45.jpg" alt="黑色no4">
+									</a>	
 									<div class="all_text">
 										<p>
-                               		 		<a class="author_name" href="https://www.ywart.com/artist/1dxpk4">朱兴国</a>
-                           				 </p>
-                            			<p>
-                               				 <a href="https://www.ywart.com/artworks/1mxp68">黑色No.4</a>&nbsp;&nbsp;<span>2016</span>
-                            			</p>
-                            			<p class="ysp_price">¥949</p>	
+	                               		 	<a class="author_name" href="https://www.ywart.com/artist/1dxpk4">朱兴国</a>
+	                           			</p>
+	                            		<p>
+	                               			<a href="https://www.ywart.com/artworks/1mxp68">黑色No.4</a>&nbsp;&nbsp;<span>2016</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥949</p>	
 									</div>
-							</div>						
-						</div><!-- 图片总框 -->
-						<!-- 3 -->
-						<div class="img_box"><!-- 图片总框 -->
-							<div class="all_work">
-								<a href="https://www.ywart.com/artworks/1lrdv2">
-									<img src="../images/37.jpg" alt="全部应晶晶">
-								</a>
+								</div>						
+							</div><!-- 图片总框 -->
+							<!-- 3 -->
+							<div class="img_box"><!-- 图片总框 -->
+								<div class="all_work">
+									<a href="https://www.ywart.com/artworks/1lrdv2">
+										<img src="../images/37.jpg" alt="全部应晶晶">
+									</a>
 									<div class="all_text"><!-- 图片文本框 -->
 										<p>
-                                			<a class="author_name" href="https://www.ywart.com/artist/1dxpk4">应晶晶</a>
-                            			</p>
-                            			<p>
-                                			<a href="https://www.ywart.com/artworks/1g1nmq">水墨.水晶.晶No.5</a>&nbsp;&nbsp;<span>2016</span>
-                            			</p>
-                            			<p class="ysp_price">¥619</p>
+	                                		<a class="author_name" href="https://www.ywart.com/artist/1dxpk4">应晶晶</a>
+	                            		</p>
+	                            		<p>
+	                                		<a href="https://www.ywart.com/artworks/1g1nmq">水墨.水晶.晶No.5</a>&nbsp;&nbsp;<span>2016</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥619</p>
 									</div>
-							</div>
-									<!-- 图片文本框 -->
-							<div class="all_work2">	
-								<a href="https://www.ywart.com/artworks/1x70p2">
-									<img src="../images/50.jpg" alt="应晶晶">
-								</a>	
+								</div>
+										<!-- 图片文本框 -->
+								<div class="all_work2">	
+									<a href="https://www.ywart.com/artworks/1x70p2">
+										<img src="../images/50.jpg" alt="应晶晶">
+									</a>	
 									<div class="all_text">
 										<p>
-                               		 		<a class="author_name" href="https://www.ywart.com/artist/1yxmqg">应晶晶</a>
-                           				 </p>
-                            			<p>
-                               				 <a href="https://www.ywart.com/artworks/1mxp68">去年</a>&nbsp;&nbsp;<span>2016</span>
-                            			</p>
-                            			<p class="ysp_price">¥849</p>	
+	                               		 	<a class="author_name" href="https://www.ywart.com/artist/1yxmqg">应晶晶</a>
+	                           			 </p>
+	                            		<p>
+	                               			<a href="https://www.ywart.com/artworks/1mxp68">去年</a>&nbsp;&nbsp;<span>2016</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥849</p>	
 									</div>
-							</div>				
-						</div><!-- 图片总框 -->		
-
+								</div>				
+							</div><!-- 图片总框 -->	
+						</div>
+						<!-- 第二大块轮播 -->
+						<div class=" swiper-slide">
+							<div class="img_box"><!-- 图片总框 -->
+								<div class="all_work">
+									<a href="https://www.ywart.com/artworks/16lk6y">
+										<img src="../images/31.jpg" alt="全部钟飚">
+									</a>
+									<div class="all_text"><!-- 图片文本框 -->
+										<p>
+	                                		<a class="author_name" href="https://www.ywart.com/artist/1558l5">钟飚</a>
+	                            		</p>
+	                            		<p>
+	                                		<a href="https://www.ywart.com/artworks/16lk6y">入定</a>&nbsp;&nbsp;<span>2016</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥699</p>
+									</div>
+								</div>
+										<!-- 图片文本框 -->
+								<div class="all_work2">	
+									<a href="https://www.ywart.com/artworks/1o01xm">
+										<img src="../images/32.jpg" alt="异乡人">
+									</a>	
+									<div class="all_text">
+										<p>
+	                               		 	<a class="author_name" href="https://www.ywart.com/artist/19029w">王瑃燕</a>
+	                           			</p>
+	                            		<p>
+	                               			<a href="https://www.ywart.com/artworks/1o01xm">异乡人</a>&nbsp;&nbsp;<span>2015</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥949</p>	
+									</div>
+								</div>						
+							</div><!-- 图片总框 -->
+							<!-- 2 -->
+							<div class="img_box"><!-- 图片总框 -->
+								<div class="all_work">
+									<a href="https://www.ywart.com/artworks/1g1nmq">
+										<img src="../images/33.jpg" alt="全部朱兴国">
+									</a>
+									<div class="all_text"><!-- 图片文本框 -->
+										<p>
+		                                	<a class="author_name" href="https://www.ywart.com/artist/1dxpk4">朱兴国</a>
+		                            	</p>
+		                            	<p>
+		                                	<a href="https://www.ywart.com/artworks/1g1nmq">白&nbsp;No.2</a>&nbsp;&nbsp;<span>2016</span>
+		                            	</p>
+		                            	<p class="ysp_price">¥619</p>
+									</div>
+								</div>
+										<!-- 图片文本框 -->
+								<div class="all_work2">	
+									<a href="https://www.ywart.com/artworks/1mxp68">
+										<img src="../images/34.jpg" alt="黑色no4">
+									</a>	
+									<div class="all_text">
+										<p>
+	                               		 	<a class="author_name" href="https://www.ywart.com/artist/1dxpk4">朱兴国</a>
+	                           			</p>
+	                            		<p>
+	                               			<a href="https://www.ywart.com/artworks/1mxp68">黑色No.4</a>&nbsp;&nbsp;<span>2016</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥949</p>	
+									</div>
+								</div>						
+							</div><!-- 图片总框 -->
+							<!-- 3 -->
+							<div class="img_box"><!-- 图片总框 -->
+								<div class="all_work">
+									<a href="https://www.ywart.com/artworks/1lrdv2">
+										<img src="../images/35.jpg" alt="全部应晶晶">
+									</a>
+									<div class="all_text"><!-- 图片文本框 -->
+										<p>
+	                                		<a class="author_name" href="https://www.ywart.com/artist/1dxpk4">应晶晶</a>
+	                            		</p>
+	                            		<p>
+	                                		<a href="https://www.ywart.com/artworks/1g1nmq">水墨.水晶.晶No.5</a>&nbsp;&nbsp;<span>2016</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥619</p>
+									</div>
+								</div>
+										<!-- 图片文本框 -->
+								<div class="all_work2">	
+									<a href="https://www.ywart.com/artworks/1x70p2">
+										<img src="../images/36.jpg" alt="应晶晶">
+									</a>	
+									<div class="all_text">
+										<p>
+	                               		 	<a class="author_name" href="https://www.ywart.com/artist/1yxmqg">应晶晶</a>
+	                           			 </p>
+	                            		<p>
+	                               			<a href="https://www.ywart.com/artworks/1mxp68">去年</a>&nbsp;&nbsp;<span>2016</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥849</p>	
+									</div>
+								</div>				
+							</div><!-- 图片总框 -->	
+						</div>	
+						<!-- 第三大块轮播 -->
+						<div class=" swiper-slide">
+							<div class="img_box"><!-- 图片总框 -->
+								<div class="all_work">
+									<a href="https://www.ywart.com/artworks/16lk6y">
+										<img src="../images/38.jpg" alt="全部钟飚">
+									</a>
+									<div class="all_text"><!-- 图片文本框 -->
+										<p>
+	                                		<a class="author_name" href="https://www.ywart.com/artist/1558l5">钟飚</a>
+	                            		</p>
+	                            		<p>
+	                                		<a href="https://www.ywart.com/artworks/16lk6y">入定</a>&nbsp;&nbsp;<span>2016</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥699</p>
+									</div>
+								</div>
+										<!-- 图片文本框 -->
+								<div class="all_work2">	
+									<a href="https://www.ywart.com/artworks/1o01xm">
+										<img src="../images/39.jpg" alt="异乡人">
+									</a>	
+									<div class="all_text">
+										<p>
+	                               		 	<a class="author_name" href="https://www.ywart.com/artist/19029w">王瑃燕</a>
+	                           			</p>
+	                            		<p>
+	                               			<a href="https://www.ywart.com/artworks/1o01xm">异乡人</a>&nbsp;&nbsp;<span>2015</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥949</p>	
+									</div>
+								</div>						
+							</div><!-- 图片总框 -->
+							<!-- 2 -->
+							<div class="img_box"><!-- 图片总框 -->
+								<div class="all_work">
+									<a href="https://www.ywart.com/artworks/1g1nmq">
+										<img src="../images/40.jpg" alt="全部朱兴国">
+									</a>
+									<div class="all_text"><!-- 图片文本框 -->
+										<p>
+		                                	<a class="author_name" href="https://www.ywart.com/artist/1dxpk4">朱兴国</a>
+		                            	</p>
+		                            	<p>
+		                                	<a href="https://www.ywart.com/artworks/1g1nmq">白&nbsp;No.2</a>&nbsp;&nbsp;<span>2016</span>
+		                            	</p>
+		                            	<p class="ysp_price">¥619</p>
+									</div>
+								</div>
+										<!-- 图片文本框 -->
+								<div class="all_work2">	
+									<a href="https://www.ywart.com/artworks/1mxp68">
+										<img src="../images/45.jpg" alt="黑色no4">
+									</a>	
+									<div class="all_text">
+										<p>
+	                               		 	<a class="author_name" href="https://www.ywart.com/artist/1dxpk4">朱兴国</a>
+	                           			</p>
+	                            		<p>
+	                               			<a href="https://www.ywart.com/artworks/1mxp68">黑色No.4</a>&nbsp;&nbsp;<span>2016</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥949</p>	
+									</div>
+								</div>						
+							</div><!-- 图片总框 -->
+							<!-- 3 -->
+							<div class="img_box"><!-- 图片总框 -->
+								<div class="all_work">
+									<a href="https://www.ywart.com/artworks/1lrdv2">
+										<img src="../images/37.jpg" alt="全部应晶晶">
+									</a>
+									<div class="all_text"><!-- 图片文本框 -->
+										<p>
+	                                		<a class="author_name" href="https://www.ywart.com/artist/1dxpk4">应晶晶</a>
+	                            		</p>
+	                            		<p>
+	                                		<a href="https://www.ywart.com/artworks/1g1nmq">水墨.水晶.晶No.5</a>&nbsp;&nbsp;<span>2016</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥619</p>
+									</div>
+								</div>
+										<!-- 图片文本框 -->
+								<div class="all_work2">	
+									<a href="https://www.ywart.com/artworks/1x70p2">
+										<img src="../images/50.jpg" alt="应晶晶">
+									</a>	
+									<div class="all_text">
+										<p>
+	                               		 	<a class="author_name" href="https://www.ywart.com/artist/1yxmqg">应晶晶</a>
+	                           			 </p>
+	                            		<p>
+	                               			<a href="https://www.ywart.com/artworks/1mxp68">去年</a>&nbsp;&nbsp;<span>2016</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥849</p>	
+									</div>
+								</div>				
+							</div><!-- 图片总框 -->	
+						</div>	
+						<!-- 第四大块轮播 -->
+						<div class=" swiper-slide">
+							<div class="img_box"><!-- 图片总框 -->
+								<div class="all_work">
+									<a href="https://www.ywart.com/artworks/16lk6y">
+										<img src="../images/43.jpg" alt="全部钟飚">
+									</a>
+									<div class="all_text"><!-- 图片文本框 -->
+										<p>
+	                                		<a class="author_name" href="https://www.ywart.com/artist/1558l5">钟飚</a>
+	                            		</p>
+	                            		<p>
+	                                		<a href="https://www.ywart.com/artworks/16lk6y">入定</a>&nbsp;&nbsp;<span>2016</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥699</p>
+									</div>
+								</div>
+										<!-- 图片文本框 -->
+								<div class="all_work2">	
+									<a href="https://www.ywart.com/artworks/1o01xm">
+										<img src="../images/44.jpg" alt="异乡人">
+									</a>	
+									<div class="all_text">
+										<p>
+	                               		 	<a class="author_name" href="https://www.ywart.com/artist/19029w">王瑃燕</a>
+	                           			</p>
+	                            		<p>
+	                               			<a href="https://www.ywart.com/artworks/1o01xm">异乡人</a>&nbsp;&nbsp;<span>2015</span>
+	                            		</p>
+	                            		<p class="ysp_price">¥949</p>	
+									</div>
+								</div>						
+							</div><!-- 图片总框 -->
+						</div>		
+					</div>
           		</div><!-- 总框 -->
          <!-- 轮播图的二部分 -->
-				
-          	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           		<div class="what">
 					<h2>WHAT'S MAKE ART?</h2>
 						<hr>
@@ -337,26 +559,26 @@
 		<!-- 页脚 -->
 		<footer class="ys_footer">
 			<ul class="ys_footer2">
-				<a href="">
+				<a href="../index.html">
+					<li>艺网</li>
+				</a>
+				<a href="购艺术.html">
 					<li>购艺术</li>
 				</a>
-				<a href="">
-					<li>造艺</li>
-				</a>
-				<a href="">
+				<a href="藏艺术.html">
 					<li>藏艺术</li>
 				</a>
-				<a href="" class="foot">
+				<a href="数字美术馆.html" class="foot">
 					<li>数字美术馆</li>
 				</a>
 			</ul>
-			<div class="menu"> <span class="menu_span1 f_left">购艺术</span> <span class="menu_span2 f_right">▲</span></div>
+			<div class="menu"> <span class="menu_span1 f_left">造艺</span> <span class="menu_span2 f_right">▲</span></div>
 			
 			<div class="ys_img">
 				<ul>
-					<li class="ys_img3"><div>筛选</div></li>
-					<li class="ys_img4"><a href="">购物车</a></li>
-					<li class="ys_img5"><a href="">我</a></li>
+					<li class="ys_img3"><a href="login 登录.html"><div>发现</div></a></li>
+					<li class="ys_img4"><a href="login 登录.html">购物车</a></li>
+					<li class="ys_img5"><a href="login 登录.html">我</a></li>
 				</ul>		
 			</div>
 		</footer>
@@ -402,74 +624,16 @@
 			});		
     }, 3000);
 
-		// footer底部
-		//sectiond底部footer点击事件
-function help1() {
-	var help = $(".help1 span").text();
-	if (help =="+") {
-		$(".display1").css("display","block");
-		$(".help1 span").text("×");
-		$(".help1").css("font-weight","bolder");
-	}
-	if (help =="×"){
-		$(".display1").css("display","none");
-		$(".help1 span").text("+");
-		$(".help1").css("font-weight","");
-	}
-		
-}
-function help2() {
-	var help = $(".help2 span").text();
-	if (help =="+") {
-		$(".display2").css("display","block");
-		$(".help2 span").text("×");
-		$(".help2").css("font-weight","bolder");
-	}
-	if (help =="×"){
-		$(".display2").css("display","none");
-		$(".help2 span").text("+");
-		$(".help2").css("font-weight","");
-	}
-		
-}
-function help3() {
-	var help = $(".help3 span").text();
-	if (help =="+") {
-		$(".display3").css("display","block");
-		$(".help3 span").text("×");
-		$(".help3").css("font-weight","bolder");
-	}
-	if (help =="×"){
-		$(".display3").css("display","none");
-		$(".help3 span").text("+");
-		$(".help3").css("font-weight","");
-	}
-		
-}
-function help4() {
-	var help = $(".help4 span").text();
-	if (help =="+") {
-		$(".display4").css("display","block");
-		$(".help4 span").text("×");
-		$(".help4").css("font-weight","bolder");
-		$(".help4").removeClass('box_buttom');
-		$(".display4").addClass('box_buttom bottom');
-	}
-	if (help =="×"){
-		$(".display4").css("display","none");
-		$(".help4 span").text("+");
-		$(".help4").css("font-weight","");
-		$(".help4").addClass('box_buttom');
-	}
-		
-}
-// 轮播图 
-// var swiper = new Swiper('.swiper-container', {
-//         pagination: '.swiper-pagination',
-//         slidesPerView: 3,
-//         slidesPerColumn: 2,
-//         paginationClickable: true,
-//         spaceBetween: 30
-//     });
+	// 轮播图 
+	    var swiper = new Swiper('.swiper-container', {
+	    	loop:true,
+		    pagination: '.swiper-pagination',
+		    paginationClickable: true,
+		    nextButton: '.swiper-button-next',
+        	prevButton: '.swiper-button-prev',
+        	// spaceBetween: 30,
+        	centeredSlides: true,
+        	autoplayDisableOnInteraction: false
+		});
 	</script>
 </body>
