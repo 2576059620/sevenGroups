@@ -11,17 +11,19 @@
 <body ng-app="app" ng-controller="goBack">
 	<!-- 忘记密码 -->
 	<div class="Forgot">
-		<img src="../images/差号.png" ng-click="goBack()" class="poor">
-		<form>
+		<div><img src="../images/差号.png" ng-click="goBack()" class="poor"></div>
+		<form class="form">
 		<!-- 关闭按钮 -->	  	
 			<input type="tel" required="" placeholder="请输入手机号" class="Forgot_text">
-			<input type="text" placeholder="请输入旁边的验证码" class="slide"> 
-			<!-- 随机验证码点击按钮 -->
-			<input type="button" id="code3" value="A152" onclick="createCode()">
+			<div>
+				<input type="text" placeholder="请输入旁边的验证码" class="slide"> 
+				<!-- 随机验证码点击按钮 -->
+				<input type="button" id="code3" value="A152" onclick="createCode()">
+			</div>
 			<br><br>
 			<input type="submit" value="获取短信验证码" class="obtain">
 			<br><br>
-			<input type="text" placeholder="请输入手机收到的验证码">
+			<input type="text" placeholder="请输入手机收到的验证码"  class="code">
 			<button class="next_step">下一步</button>
 		</form>
     </div>

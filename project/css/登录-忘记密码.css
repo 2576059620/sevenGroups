@@ -44,22 +44,31 @@ ul,li{
 	/*display: none;*/
 	
 }
-.Forgot>form{
-	/*margin-top: 30px;*/
+.Forgot>.form{
+	margin-top: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-.slide{
-width:  60%;
+.Forgot>.form>input,.Forgot>.form>.next_step,.Forgot>.form>div{
+	width: 80%;
+}
+.Forgot>.form>div>.slide{
+	width: 60%;
+	align-self: left;
+}
+.Forgot>.form>div{
+	margin-top: 15px;
 }
 #code3{
 	width: 30%;
 	height: 30%;
 	border:1px solid black;
-	background-color:rgb(238,238,238);
 	border:none;
 	color: rgb(60,148,139);
 	font-style: italic;
 	font-size:20px;
-	/*background-image: url(../images/验证码图片.jpg);*/
 }
 .obtain{
 	background-color: white;
@@ -76,12 +85,22 @@ width:  60%;
 	margin-top: 20px;
 	border:none;
 }
-.poor{
+.Forgot>div{
+	width: 100%;
+	/*border: 1px solid red;*/
+	height: 25px;
+	margin-top: 10px;
+	
+}
+.Forgot div .poor{
 	width: 25px;
 	height: 25px;
 	background-image: url(../images/差号.png);
 	float:right;
-	margin-top: 10px;
 	margin-right: 10px;
-	
+}
+.Forgot_text,.slide,.code{
+	font-size: 16px;
+	color: rgb(192,192,192);
+	border-bottom: 2px solid rgb(238,238,238);
 }

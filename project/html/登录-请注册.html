@@ -5,38 +5,47 @@
 	<title>登录-请注册</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="../css/登录-请注册.css">
+	<script src="../lib/js/ionic.bundle.min.js"></script>
 	<script src="../js/登录-请注册.js"></script>
 </head>
-<body>
+<body ng-app="app" ng-controller="goBack">
 	<div class="box">
 		<!-- 关闭按钮 -->
-		<a href="https://www.ywart.com/"><img src="../images/差号.png" alt="" class="poor"></a>	
-			<form action="">
-				<h2>注册艺网，立获首购优惠！</h2>
-					<input type="tel" required="" placeholder="请输入手机号"><br>
-					<input type="text" required placeholder="请输入旁边验证码" class="register_text">
-					<!-- 随机验证码 -->
-					<div class="reg">
-						<a onClick="swapPic();">
-							<img name="randimg" src="../images/验证码图片.jpg">
-						</a>
-					</div>
-							<br>
-							<input type="submit" class="obtain" value="获取短信验证码">
-								<div class="account">
-									<span>已有账号？</span>
-									<a href="../html/login 登录.html"><span class="registered_text">请登录</span></a>
-								</div>
-								<br>
-									<div class="divider">
-										<hr><p>或</p>	
-									</div>
-										<div class="icon_three">
-											<a href="../html/微博登录.html"><img src="../images/微博图标.png" alt="微博" class="three_img"></a>
-											<a href="../html/微信登录.html"><img src="../images/微信图标.png" alt="微信" class="three_img"></a>
-											<a href="#"><img src="../images/F图标.png" alt="" class="three_img"></a>
-										</div>
-			</form>
+		<div><img src="../images/差号.png" ng-click="goBack()" class="poor"></div>	
+		<form action="" class="form">
+			<h1 style="width: 80%">注册艺网，立获首购优惠！</h1>
+			<input type="tel" required="" placeholder="请输入手机号" style="width: 80%" class="slide"><br>
+			<div class="div">
+				<input type="text" required placeholder="请输入旁边验证码" class="register_text">
+				<a onClick="swapPic()">
+					<img name="randimg" src="../images/验证码图片.jpg">
+				</a>
+			</div>
+			<br>
+			<input type="submit" class="obtain" value="获取短信验证码">
+			<div class="account">
+				<span>已有账号？</span>
+				<a href="../html/login 登录.html"><span class="registered_text">请登录</span></a>
+			</div>
+			<br>
+			<div class="divider">
+				<hr><p>或</p>	
+			</div>
+			<div class="icon_three">
+				<a href="../html/微博登录.html"><img src="../images/微博.png" alt="微博" class="three_img1"></a>
+				<a href="../html/微信登录.html"><img src="../images/微信.png" alt="微信" class="three_img"></a>
+				<a href="#"><img src="../images/F图片.png" alt="" class="three_img"></a>
+			</div>
+		</form>
 	</div>
+	 <script>
+    	var app=angular.module("app",[]);
+		app.controller('goBack',function($scope){
+			//定义返回事件
+			$scope.goBack=function(){
+				window.history.back();
+			}
+		});
+    </script>
 </body>
 </html>
