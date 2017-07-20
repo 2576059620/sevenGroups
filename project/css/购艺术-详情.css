@@ -4,6 +4,7 @@ body{
 	max-width: 640px;
 	min-width: 320px;
 	margin: 0 auto;
+	background-color: rgb(238,238,238);
 }
 .div_box{
 	width: 100%;
@@ -15,20 +16,21 @@ body{
 header{
 	text-align: center;
 	width: 100%;
-	height: 45px;
+	height: 50px;
 	display: flex;
 	align-items: center;
 	background-color: black;
 }
 div>.button{
-	width: 20px;
-	height: 20px;
+	width: 50px;
+	height: 50px;
 	background-color: black;
-	background-image: url(../images/left_arrow.png);
+	background-image: url(../images/返回.png);
 	background-size: 18px 18px;
-	background-position: 13px 13px; 
+	background-position: center; 
 	background-repeat: no-repeat;
 	align-content: center; 
+	border: none;
 }
 header *{
 	color: white;
@@ -58,6 +60,7 @@ header>a{
 	box-shadow: 0px 1px 3px ;
 	min-width: 320px;
 	max-width: 640px;
+	background-color: white;
 }
 .ys_footer .ys_img{
 	height: 100%;
@@ -90,4 +93,286 @@ header>a{
 	width: 25px;
 	height: 25px;
 	margin-top: 15px;
+}
+
+nav>div{
+	text-align: right;
+	font-size: 18px;	
+	margin: 5px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+nav>img{
+	display: block;
+	width: 80%;
+	margin: auto;
+}
+
+section>.introduce{
+	width: 100%;
+	height: 220px;
+	background-color: white;
+	margin-top: 40px;
+}
+.name *{
+	display: inline-block;
+}
+.name>div{
+	font-size: 19px;
+	font-weight: bold;
+	margin: 20px;
+}
+.name>span{
+	height: 22px;
+	width: 45px;
+	margin-left: 67%;
+	text-align: center;
+	border-radius: 15px;
+	font-size: 12px;
+	background-color: rgb(192,192,192);
+	color: white;
+}
+.picture,.picture1{
+	font-size: 12px;
+	color: rgb(74,74,74);
+	margin-left: 20px;
+}
+.picture{
+	margin-top: -5px;
+
+}
+.picture1{
+	margin-bottom: 15px;
+}
+.price{
+	width: 90%;
+	height: 37px;
+	margin-left: 5%;
+	border-bottom: 1px solid rgb(238,238,238);
+}
+.price *{
+	display: inline-block;
+}
+.price>div{
+	font-size: 20px;
+	color: red;
+	font-weight: bold;
+	margin-right: 36%;
+}
+.price>span{
+	color: rgb(102,102,102);
+	font-size: 12px;
+	margin-left: 15px;
+}
+.select{
+	width: 90%;
+	height: 37px;
+	margin-left: 5%;
+	border-bottom: 1px solid rgb(238,238,238);
+}
+.select *{
+	width: 21%;
+	height: 25px;
+	display: inline-block;
+	font-size: 12px;
+	text-align: right;
+	color: rgb(102,102,102);
+	margin: 10px;
+	background-image: url(../images/选中.png);
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+}
+.select span:first-child{
+	width: 12%;
+	margin-left: 0px;
+}
+.frame{
+	width: 100%;
+	height: 36px;
+	line-height: 35px;
+	margin-left: 3%;
+}
+.frame *{
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 10px;
+}
+.classical{
+	color: rgb(153,153,153);
+	margin-right: 33%;
+}
+.frame1{
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/right_arrow_black.png);
+	background-size: 13px 13px;
+	background-repeat: no-repeat;
+	background-position: 0px 6px;
+	padding-top: 10px;
+}
+
+.content{
+	width: 100%;
+	height: 158px;
+	background-color: white;
+	margin-top: 10px;
+}
+.content>div{
+	width: 90%;
+	margin-left: 5%;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	padding-top: 20px;
+}
+.content>p{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 12px;
+	line-height: 22px;
+}
+
+.production{
+	width: 100%;
+	background-color: white;
+	margin-top: 10px;
+}
+.message{
+	width: 90%;
+	margin-left: 5%;
+	height: 50px;
+	border-bottom: 1px solid rgb(168,168,168);
+}
+.message span{
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	padding-top: 5%;
+	color: rgb(193,193,193);
+}
+.message1{
+	margin-left: -4px;
+}
+.message>.detail{
+	border-bottom: 4px solid black;
+	color: black;
+}
+.production1{
+	margin-top: 30px;
+}
+.production1>img{
+	width: 90%;
+	margin-left: 5%;
+	margin-bottom: 25px;
+}
+.production1>p{
+	width: 90%;
+	margin-left: 5%;
+	margin-bottom: 30px;
+}
+.text{
+	padding-bottom: 40px;
+}
+.production1{
+	/*display: none;*/
+}
+.art_message{
+
+}
+.art_message{
+	margin-top: 20px;
+	display: none;
+}
+.art_message>div{
+	width: 90%;
+	color: rgb(102,102,102);
+	margin-top: 5px;
+	margin-left: 5%;
+}
+.three{
+	letter-spacing: 3.7px;
+}
+.two{
+	letter-spacing: 12px;
+}
+.spot{
+	margin-right: 25px;
+	margin-left: 5px;
+}
+.size{
+	padding-bottom: 35px;
+}
+
+.author{
+	width: 75%;
+	background-color: white;
+	margin-top: 30px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 30px;
+}
+.author>img{
+	width: 45%;
+	margin-top: 30px;
+	align-self: center;
+	border-radius: 100px;
+}
+.author>div{
+	align-self: center;
+	color: rgb(168,168,168);
+}
+.author .text1{
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.author div span{
+	color: black;
+	font-weight: bold;
+}
+.like{
+	margin-top: 55px;
+	text-align: center;
+	font-size: 17px;
+}
+.recommend{
+	margin-top: 20px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 100px;
+}
+.recommend a{
+	display: flex;
+	justify-content: center;
+	width: 30%;
+	margin-left: 2%;
+}
+.recommend img{
+	width: 100%;
+	height: 100%;
+	margin-top: 20px;
+}
+.recommend a:first-child{
+	margin-left: 0%;
+}
+#nav{
+	width: 40px;
+	height: 30px;
+	min-height: 30px;
+	height: 10px;
+	border: 1px solid white;
+	position: fixed;
+	bottom: 75px;
+	right: -5px;
+	background-color: rgb(153,153,153);
+	background-image: url(../images/house.png);
+	background-size: 58% 70%;
+	background-repeat: no-repeat;
+	background-position: 7px 4px;
+	border-radius: 5px;
 }
