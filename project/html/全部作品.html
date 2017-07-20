@@ -1,22 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 	<title>全部作品</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<script src="../js/jquery-3.1.1.min.js"></script>
 	<style>
-		.all_box{
+		body{
 			width: 100%;
 			height: 100%;
 			max-width: 640px;
 			min-width: 320px;
-			background-image: url(../images/login_back.jpg);
+			margin: 0 auto;
+		}
+		#setting{
+			height: 100%;
+			width: 100%;
+			background-image: url(../images/login-back-3.jpg);
 			background-repeat: no-repeat;
+			background-size: 300% 100%;
+			background-attachment: fixed;
+			background-position: 36% 200%;
+		}
+		.all_box{
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			opacity: 0.5;
+		}
+		.all_box>.all_opacity{
+			display: flex;
+			justify-content: center;
+			opacity: 1;
+			margin-bottom: 150px;
+		}
+		.all_box .all_center{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			text-align: right;
+			margin-top: 46%;
+			padding-right: 50px;
+		}
+		nav{
+			margin-bottom: 90%;
+			max-width: 640px;
+			min-width: 320px;
+			height: 50px;
 		}
 	</style>
 </head>
 <body>
-	<div class="all_box">
-		<div></div>
+	<div id="setting">
+		<div class="all_box">
+			<div class="all_opacity">
+				<div class="all_center">
+					<h3 id="gallery">艺网数字美术馆 首展</h3>
+					<h5 id="YWART">YWART VIRTUAL MUSEUM FIRST SHOW</h5>
+					<h3 id="not">無間</h3>
+					<h3 class="text" id="unl">Unlimited</h3>
+					<a href="登录.html" id="entrance"><h4>进入</h4><div><p id="roll">﹥</p><p id="roll1">﹥</p></div></a>
+				</div>
+				<nav></nav>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

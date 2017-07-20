@@ -37,15 +37,20 @@ input{
 ul,li{
 	list-style-type: none;/*去掉列表样式*/
 }
-.login_box{
-	width: 100%;
-	min-height: 1900px;
-	background-color: rgb(255,255,255);
-	padding: 30px;
-}
-.login_box>form{
+.login_box>.form,.login_box{
 	width: 100%;
 	margin: 0 auto;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.login_box>.form>input,.login_box>.divider{
+	width: 80%;
+}
+.form{
+	margin-top: 30px;
 }
 form>h6>a{
 	color:rgb(60,148,139);
@@ -56,6 +61,20 @@ form>h6>a{
 	border:none;
 	color: white;
 	background-color: rgb(60,148,139);
+}
+.login_box>div{
+	width: 100%;
+	/*border: 1px solid red;*/
+	height: 25px;
+	margin-top: 10px;
+	
+}
+.login_box div .poor{
+	width: 25px;
+	height: 25px;
+	background-image: url(../images/差号.png);
+	float:right;
+	margin-right: 10px;
 }
 hr{
 	color: rgba(246,246,246,);
@@ -81,30 +100,35 @@ hr{
 	background-color: white;
 	opacity: 0.8;
 }
-.account{
+.login_box>.account{
 	text-align: center;
-	margin:10px auto;
 	overflow: hidden;
+	margin-top: 50px;
 }
 
 .registered{
 	color:rgb(60,148,139);
 }
-.three_img1{
-	margin:auto;
-	width: 70px;
-	height:35px;
-	padding-left: 20px;
-}
 .three_img{
-	margin:auto;
-	width: 50px;
-	height: 30px;
-	padding-left: 10px;
+	width: 45px;
+	height: 40px;
+	margin:auto 15px;
+	 
 }
-.icon_three{ 
+.three_img1{
+	width: 65px;
+	height: 45px;
+	margin:auto 15px;
+	 
+}
+.login_box>.icon_three{ 
 	margin-top: 20px;
 	margin-left:50px;
+	display: flex;
+	justify-content: center;
+	/*border:1px solid red;*/
+	margin:auto;
+	margin-top: 40px;
 }
 .poor{
 	width: 20px;

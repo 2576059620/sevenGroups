@@ -6,13 +6,14 @@
 	<title>详情页</title>
 	<link rel="stylesheet" href="../css/base.css">
 	<script src="../lib/js/ionic.bundle.min.js"></script>
-	<link rel="stylesheet" href="../lib/css/ionic.min.css">
+	<!-- <link rel="stylesheet" href="../lib/css/ionic.min.css"> -->
 	<link rel="stylesheet" href="../css/购艺术-详情.css">
 	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/购艺术-详情.js"></script>
 </head>
 <body>
 	<div class="div_box">
-		<header>
+		<header ng-app="app" ng-controller="goBack">
 				<div>
 					<button class="button" ng-click="goBack()">
 					</button>
@@ -20,13 +21,89 @@
 				<h4>他的林</h4>
 				<a href="购艺术.html">购艺术</a>
 		</header>
+		<nav>
+			<div>1/1</div>
+			<img src="../images/01.jpg" alt="">
+		</nav>
+		<section>
+			<div class="introduce">
+				<div class="name">
+					<div>方民</div>
+					<span>未售</span>
+				</div>
+				<div class="picture">古院小路 , 2016</div>
+				<div class="picture1">布面油画 50×60cm</div>
+				<div class="price">
+					<div>&yen;2,050</div>
+					<span>运费 : &yen;100</span>
+					<span>装裱费 : &yen;80</span>
+				</div>
+				<div class="select">
+					<span>原创</span>
+					<span>无选中装裱</span>
+				</div>
+				<div class="frame">
+					<span>选择画框装裱</span>
+					<span class="classical">已选择 : 金色古典 无卡纸</span>
+					<div class="frame1"></div>
+				</div>
+			</div>
+			<div class="content">
+				<div>编辑推荐</div>
+				<p>
+					鲜明的色彩搭配给观者眼前一亮的感觉，随意却不失章法的线条将古院落的灵动一笔勾出。 路面上的色彩像流动的丝绸，又像泛着光的小河，给小镇的古朴增添了一份欢快和灵动，也让观者的心随之雀跃起来。
+				</p>
+			</div>
+			<div class="production">
+				<div class="message">
+					<span class="detail detail1" onclick="detail()">作品细节</span>
+					<span class="message1" onclick="message1()">艺术品信息</span>
+				</div>
+				<div class="production1">
+					<img src="../images/01.jpg" alt="">
+					<p>
+						对于风景当我的目的地设定在了远方，抛弃光怪陆离的冰冷世界，选择与温婉多情或磅礴大气的景致为伴。——艺术家自述
+					</p>
+					<img src="../images/01.jpg" alt="">
+					<p class="text">
+						欣喜、收获、感慨、感动，总有一个能让我忘却所有的疲惫，一心只想朝着前方再走几步。而此时，画中就有了故事，在情景交融中，山水画鸟鱼虫纷纷扰扰与我为伴。这就是一场关于我的 “艺术狂欢”。 ——艺术家自述
+					</p>
+				</div>
+				<div class="art_message">
+					<div>作 品 名 称<span class="spot">:</span><span>古院小路</span></div>
+					<div>作 品 类 型<span class="spot">:</span><span>油画</span></div>
+					<div><span class="three">艺 术 家</span><span class="spot">:</span><span class="three1">方民</span></div>
+					<div><span class="two">风 格</span><span class="spot">:</span><span class="two1">写实</span></div>
+					<div><span class="two">材 质</span><span class="spot">:</span><span class="two1">布面油画</span></div>
+					<div><span class="two">题 材</span><span class="spot">:</span><span class="two1">风景</span></div>
+					<div>创 作 时 间<span class="spot">:</span><span>2016</span></div>
+					<div>所 在 位 置<span class="spot">:</span><span>北京</span></div>
+					<div class="size"><span class="two">尺 寸</span><span class="spot">:</span><span class="two1">50×60cm</span></div>
+				</div>
+			</div>
+			<div class="author">
+				<img src="../images/作者1.jpg" alt="">
+				<div class="text1">方民</div>
+				<div>共<span> 9 </span>件作品</div>
+			</div>
+			<div class="like">可能你也喜欢</div>
+			<div class="recommend">
+				<a href="购艺术-详情.html"><img src="../images/31.jpg" alt=""></a>
+				<a href="购艺术-详情.html"><img src="../images/32.jpg" alt=""></a>
+				<a href="购艺术-详情.html"><img src="../images/33.jpg" alt=""></a>
+			</div>
+		</section>
+
+		<nav>
+			<a href="购艺术.html" id="nav"></a>
+		</nav>
 		<footer class="ys_footer">
 			<div class="ys_img">
 				<ul>
-					<li><a href=""><img src="../images/iconHearthollow.png" alt=""></a></li>
-					<li><a href=""><img src="../images/iconCart.png" alt=""></a></li>
-					<li><a href="">加入购物车</a></li>
-					<li><a href="">立即购买</a></li>
+					<li><a href="login 登录.html"><img src="../images/iconHearthollow.png" alt=""></a></li>
+					<li><a href="login 登录.html"><img src="../images/iconCart.png" alt=""></a></li>
+					<li><a href="login 登录.html">加入购物车</a></li>
+					<li><a href="login 登录.html">立即购买</a></li>
 				</ul>		
 			</div>
 		</footer>
