@@ -327,7 +327,7 @@ hr{
 }
 .all>hr{
 	border:1px solid black;
-	margin-top: 20px;
+	margin-top: 8px;
 	width: 100%;
 	opacity: 0.3;	
 }
@@ -415,12 +415,6 @@ hr{
 	padding-top:30px;
 }
 /*内容底部的footer类*/
-/*section{
-	width: 100%;
-	max-width: 640px;
-	min-width: 320px;
-	margin: 0 auto;
-}*/
 .footer{
 	width: 100%;
 	background-color: #fff;
@@ -468,3 +462,9 @@ ul>.help>span{
 .help_display>li>a{
 	color:black;
 }
+/*轮播实验*/
+/*.all_box2{
+	display: flex;
+	overflow:hidden;
+	float: right;
+}*/

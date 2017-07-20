@@ -5,24 +5,34 @@
 	<title>登录-忘记密码</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="../css/登录-忘记密码.css">
+	<script src="../lib/js/ionic.bundle.min.js"></script>
 	<script src="../js/登录-忘记密码.js"></script>
 </head>
-<body>
+<body ng-app="app" ng-controller="goBack">
 	<!-- 忘记密码 -->
 	<div class="Forgot">
+		<img src="../images/差号.png" ng-click="goBack()" class="poor">
 		<form>
-		<!-- 关闭按钮 -->
-			  <a href="https://www.ywart.com/"><img src="../images/差号.png" alt="" class="poor"></a>
-				<input type="tel" required="" placeholder="请输入手机号" class="Forgot_text">
-				<input type="text" placeholder="请输入旁边的验证码" class="slide"> 
-				<!-- 随机验证码点击按钮 -->
-				<input type="button" id="code3" value="A152" onclick="createCode()">
-				<br><br>
-				<input type="submit" value="获取短信验证码" class="obtain">
-				<br><br>
-				<input type="text" placeholder="请输入手机收到的验证码">
-				<button class="next_step">下一步</button>
-			</form>
+		<!-- 关闭按钮 -->	  	
+			<input type="tel" required="" placeholder="请输入手机号" class="Forgot_text">
+			<input type="text" placeholder="请输入旁边的验证码" class="slide"> 
+			<!-- 随机验证码点击按钮 -->
+			<input type="button" id="code3" value="A152" onclick="createCode()">
+			<br><br>
+			<input type="submit" value="获取短信验证码" class="obtain">
+			<br><br>
+			<input type="text" placeholder="请输入手机收到的验证码">
+			<button class="next_step">下一步</button>
+		</form>
     </div>
+    <script>
+    	var app=angular.module("app",[]);
+		app.controller('goBack',function($scope){
+			//定义返回事件
+			$scope.goBack=function(){
+				window.history.back();
+			}
+		});
+    </script>
 </body>
 </html>
