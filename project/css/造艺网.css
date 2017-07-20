@@ -462,3 +462,9 @@ ul>.help>span{
 .help_display>li>a{
 	color:black;
 }
+/*轮播实验*/
+/*.all_box2{
+	display: flex;
+	overflow:hidden;
+	float: right;
+}*/
